@@ -6,7 +6,6 @@ function AddBox() {
     const [farms, setFarms] = useState([])
     const [sections, setSections] = useState<undefined | Array<any>>(undefined)
     const [section, setSection] = useState<undefined | string>()
-    const [globalState, setGlobalState] = useGlobalState()
 
     function AddNewBox() {
         fetch("/api/addbox", {
@@ -43,27 +42,36 @@ function AddBox() {
     return (
         <>
         
-            <form>
-                <select onChange={(event) => {GetSections(event.target.value)}}>
-                    <option>Select Farm</option>
-                    {farms.map((farm: {name: string, _id: string}) => 
-                    <option value={farm._id}>
-                        {farm.name}
-                    </option>)}
-                </select>
+            <form className="m-2">
+                <div className="form-floating my-2">
+                    <select className="form-control" id="selectFarm" onChange={(event) => {GetSections(event.target.value)}}>
+                        <option>Select Farm</option>
+                        {farms.map((farm: {name: string, _id: string}) => 
+                        <option value={farm._id}>
+                            {farm.name}
+                        </option>)}
+                    </select>
+                    <label htmlFor="selectFarm">Select Farm</label>
+                </div>
 
                 {sections && 
-                <select onChange={(event) => {setSection(event.target.value)}}>
-                    {sections.map((section) => 
-                    <option value={section._id}>
-                        {section.name}
-                    </option>)}
-                </select>}
+                <div className="form-floating my-2">
+                    <select id="selectSection" className="form-control" onChange={(event) => {setSection(event.target.value)}}>
+                        {sections.map((section) => 
+                        <option value={section._id}>
+                            {section.name}
+                        </option>)}
+                    </select>
+                    <label htmlFor="selectSection">Select Section</label>
+                </div>}
 
-                <input onChange={(event) => {
-                    setName(event.target.value)
-                }}/>
-                <button onClick={AddNewBox} type="button">Add</button>
+                <div className="form-floating my-2">
+                    <input className="form-control" id="boxName" onChange={(event) => {
+                        setName(event.target.value)
+                    }}/>
+                    <label htmlFor="boxName">Box Name</label>
+                </div>
+                <button className="btn btn-success w-100" onClick={AddNewBox} type="button">Add</button>
             </form>
         
         </>

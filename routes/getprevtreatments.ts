@@ -6,7 +6,7 @@ async function getprevioustreatments(req: express.Request, res: express.Response
     let userid = ""
     jwt.verify(req.cookies.token, "secret", (err: any, decoded: any) => {
         if(err) return res.status(401).json({auth: false})
-        userid = decoded.username
+        userid = decoded.userid
     })
     const docs = await BoxTreatment.find({treatedBy: userid})
     res.status(200).json({treatments: docs})

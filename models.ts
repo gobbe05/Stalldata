@@ -38,8 +38,10 @@ const BoxTreatmentSchema = new mongoose.Schema({
     name: String,
     box: String,
     boxid: String,
+    companyname: String,
     addedAt: Date,
-    treatedBy: String
+    treatedBy: String,
+    treatedByName: String,
 })
 
 export const BoxTreatment = mongoose.model("BoxTreatment", BoxTreatmentSchema)

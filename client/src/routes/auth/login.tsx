@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react"
 import { useNavigate } from "react-router"
+import { Link } from "react-router-dom"
 
 function Login() {
     const [username ,setUsername] = useState<string>("")
@@ -26,16 +27,17 @@ function Login() {
 
     return (
         <>
-            <form className="text-white">
-                <div>
-                    <label className="form-label" htmlFor="email">Username</label>
+            <form className="my-auto mx-4">
+                <div className="form-floating my-2">
                     <input className="form-control" id="email" name="username" onChange={(event) => setUsername(event.target.value)} />
+                    <label className="form-label" htmlFor="email">Username</label>
                 </div>
-                <div>
-                    <label className="form-label" htmlFor="password">Password</label>
+                <div className="form-floating my-2">
                     <input className="form-control" id="password" type="password" name="password" onChange={(event) => setPassword(event.target.value)}  />
+                    <label className="form-label" htmlFor="password">Password</label>
                 </div>
-                <button type="button" className="btn btn-primary" onClick={FetchLogin}>Login</button>
+                <button type="button" className="btn btn-success w-100" onClick={FetchLogin}>Login</button>
+                <p className="mt-2">Don't have an account? <Link to="/auth/signup">Sign up</Link></p>
             </form>
         </>
     )

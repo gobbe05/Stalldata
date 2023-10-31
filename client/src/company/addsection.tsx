@@ -28,18 +28,25 @@ function AddSection() {
     return (
         <>
         
-            <form>
-                <select onChange={(event) => {setFarmid(event.target.value)}} className="form-select">
-                    {farms.map((farm: {name: string, _id: string}) => 
-                        <option value={farm._id}>
-                            {farm.name}
-                        </option>
-                    )}
-                </select>
-                <input onChange={(event) => {
-                    setName(event.target.value)
-                }}/>
-                <button onClick={AddNewSection} type="button">Add</button>
+            <form className="m-2">
+                <div className="form-floating my-2">
+                    <select id="selectFarm" onChange={(event) => {setFarmid(event.target.value)}} className="form-select">
+                        {farms.map((farm: {name: string, _id: string}) => 
+                            <option value={farm._id}>
+                                {farm.name}
+                            </option>
+                        )}
+                    </select>
+                    <label htmlFor="selectFarm">Select Farm</label>
+                </div>
+                <div className="form-floating my-2">
+                    <input id="sectionName" className="form-control" onChange={(event) => {
+                        setName(event.target.value)
+                    }}/>
+                    <label htmlFor="sectionName">Section Name</label>
+                </div>
+                <button className="btn btn-success w-100" onClick={AddNewSection} type="button">Add</button>
+                
             </form>
         
         </>

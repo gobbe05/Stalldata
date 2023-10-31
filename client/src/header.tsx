@@ -25,18 +25,25 @@ function Header() {
         .then((data) => {
             if(data.auth == true) updateGlobalState("loggedin", true)
         })
+
+        fetch("/api/getcurrentcompany", {
+            method: "GET",
+            credentials: "include"
+        })
+        .then((response) => response.json())
+        .then((data) => {data.company && updateGlobalState("companyname", data.company.name)})
     }, [])
     return (
         <>
         <nav className="navbar bg-dark-subtle">
             <div className="container-fluid">
-                <a className="navbar-brand m-2" href="#"><h1>Stalldata</h1></a>
+                <a className="navbar-brand m-2" href="#"><h3>Stalldata - {globalState.companyname}</h3></a>
                 <button className="bg-transparent border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
                   <span className="navbar-toggler-icon"></span>
                 </button>
                 <div className="offcanvas offcanvas-end" tabIndex={-1} id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
                     <div className="offcanvas-header">
-                        <h1 className="offcanvas-title" id="offcanvasNavbarLabel">Stalldata</h1>
+                        <h3 className="offcanvas-title m-2" id="offcanvasNavbarLabel">Stalldata - {globalState.companyname}</h3>
                         <button type="button" className="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                     </div>
                     <div className="offcanvas-body">

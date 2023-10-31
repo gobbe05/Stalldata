@@ -12,7 +12,7 @@ async function login(req: express.Request, res: express.Response) {
     hashedpassword && bcrypt.compare(password, hashedpassword, (err, success) => {
         if(err) return res.status(500).json({error: err})
         if(!success) return res.status(401).json({message: "Invalid Password"})
-        const token = jwt.sign({username: dbUser.id}, "secret")
+        const token = jwt.sign({userid: dbUser._id, username: dbUser.username}, "secret")
         res.cookie("token", token)
         res.status(200).json({message: "success"})
     })

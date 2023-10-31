@@ -48,9 +48,9 @@ const router = createBrowserRouter(
           <Route path="createcompany" element={<CreateCompany />}/>
         </Route>,
         <Route path="/company" element={<Company />}>
+          <Route index element={<TreatedBoxes />}/>
           <Route path="users" element={<Users />} />
           <Route path="accept" element={<AcceptUsers />}/>
-          <Route path="treatedboxes" element={<TreatedBoxes />}/>
           <Route path="addtreatment" element={<AddTreatment />}/>
           <Route path="addfarm" element={<AddFarm />}/>
           <Route path="addsection" element={<AddSection />}/>

@@ -1,11 +1,11 @@
 import { Outlet } from "react-router"
 import Header from "./header"
 import {  createContext, useEffect, useState } from "react"
+import { useGlobalState } from "./GlobalState"
 
 export const AlertContext = createContext<any>(null)
 
 function Layout() {
-    
     function AddAlert(type: string, message: string) {
         setAlerts((prev: any) => {
             return [...prev, {type: type, message: message}]

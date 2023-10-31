@@ -11,32 +11,33 @@ function Behandling() {
       
     return (
         <>
-          <div className="mt-5 mx-4">
-            <div className="d-flex">
-              <Link className="btn btn-success rounded w-100 my-2 py-4 fs-2" to="choosefarm">Start treatment</Link>
+          <div className="m-3">
+            <div className="d-flex my-2">
+              <Link className="btn btn-success rounded w-100 my-2 py-3" to="choosefarm">Start treatment</Link>
             </div>
-            <div className="mt-4 overflow-x-scroll">
-              <table className="table table-striped fs-3">
-                  <thead>
-                      <tr className="fs-4">
-                          <th scope="col">#</th>
-                          <th scope="col">Name</th>
-                          <th scope="col">Box</th>
-                          <th scope="col">Created At</th>
-                      </tr>
-                  </thead>
-                  <tbody>
-                      {treatedboxes.map((item: {_id: string, name: string, box: string, addedAt: string}, index: number) => 
-                      <tr className="fs-5">
-                          <td className="text-nowrap" scope="row">{index}</td>
-                          <td className="text-nowrap">{item.name}</td>
-                          <td className="text-nowrap">{item.box}</td>
-                          <td className="text-nowrap">{item.addedAt}</td>
-                      </tr>)}
-                  </tbody>
-              </table>
+              <div className="overflow-x-scroll rounded m-3">
+                <table className="table table-borderless table-striped caption-top ">
+                    <caption className="fs-5">Your previous treatments</caption>
+                    <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Name</th>
+                            <th scope="col">Box</th>
+                            <th scope="col">Created At</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {treatedboxes.map((item: {_id: string, name: string, box: string, addedAt: string}, index: number) => 
+                        <tr>
+                            <td className="text-nowrap" scope="row">{index}</td>
+                            <td className="text-nowrap">{item.name}</td>
+                            <td className="text-nowrap">{item.box}</td>
+                            <td className="text-nowrap">{item.addedAt}</td>
+                        </tr>)}
+                    </tbody>
+                </table>
+              </div>
             </div>
-          </div>
         </>
     )
 }

@@ -5,6 +5,9 @@ import cookieParser from 'cookie-parser'
 import Protected from './middleware/protected'
 import { acceptuserroute, addboxroute, addfarmroute, addsectionroute, addtreatmentroute, addtreatmenttoboxroute, checkcompanycoderoute, createcompanyroute, getauthroute, getboxesroute, getcompanyusersroute, getcurrentcompanyroute, getfarmsroute, getprevioustreatmentsroute, getsectionsroute, gettreatedboxesroute, gettreatmentsroute, getunacceptedusersroute, loginroute, logoutroute, signuproute } from './routes/routes'
 import GetCompany from './middleware/company'
+import { Parser } from 'json2csv'
+import { BoxTreatment } from './models'
+import GetUser from './middleware/username'
 mongoose.connect("mongodb://127.0.0.1:27017")
 
 const app = express()
@@ -34,7 +37,7 @@ app.use(express.static("dist"))
 /* Create new farm*/            app.post("/api/addfarm", Protected, GetCompany, addfarmroute)
 /* Create new section */        app.post("/api/addsection", Protected, addsectionroute)
 /* Create box */                app.post("/api/addbox", Protected, addboxroute)
-/* Add a new treatment to box*/ app.post("/api/addtreatmenttobox", Protected, addtreatmenttoboxroute)
+/* Add a new treatment to box*/ app.post("/api/addtreatmenttobox", Protected, GetCompany, GetUser, addtreatmenttoboxroute)
 /* Create new company */        app.post("/api/createcompany", Protected, createcompanyroute)
 /* Validate if company code is 
     Correct*/                   app.post("/api/checkcompanycode", checkcompanycoderoute)
@@ -44,6 +47,31 @@ app.use(express.static("dist"))
 /* Signup */                    app.post("/api/signup", signuproute)
 /* Logout */                    app.post("/api/logout", logoutroute)
 
+app.get("/api/getcsv", async (req: express.Request, res: express.Response) => {
+    const fields: Array<{label: string, value: string}> = [{
+        label: "Name",
+        value: "name"
+    }, {
+        label: "Box",
+        value: "box"
+    }, {
+        label: "AddedAt",
+        value: "addedAt"
+    }]
+    const docs = await BoxTreatment.find({})
+    const json2csv = new Parser({fields: fields})
+
+    try {
+        const csv = json2csv.parse(docs)
+        res.attachment('data.csv')
+        res.status(200).send(csv)
+    } catch (error: any) {
+        console.log('error:', error.message)
+        res.status(500).send(error.message)
+    }
+    
+    
+})
 app.get("*", (req, res) => {
     res.sendFile(__dirname + "/dist/index.html")
 })
