@@ -23,13 +23,13 @@ function ChooseFarm() {
     }, [])
     return (
         <>
-        <div className="d-flex flex-wrap gap-2 my-4">
+        <div className="d-flex flex-wrap gap-2 m-4">
             {farms.map((item: any) => 
             <div className={`w-100`} onClick={() => {Farm(item.name, item._id)}}>
                 <Item name={item.name} selected={globalState.farm}/>
             </div>)}
+            {globalState.farm ? <Link to="/behandling/choosesection" className="btn btn-success w-100">Next</Link> : <DisabledButton type="danger" message="Please choose a farm before continuing" />}
         </div>
-        {globalState.farm ? <Link to="/behandling/choosesection" className="btn btn-success w-100">Next</Link> : <DisabledButton type="danger" message="Please choose a farm before continuing" />}
         </>
     )
 }
@@ -41,7 +41,7 @@ export function DisabledButton({type, message} : {type: string, message: string}
     }
 
     return (
-        <div onClick={() => {Warning(type, message)}}>
+        <div className="w-100" onClick={() => {Warning(type, message)}}>
             <button className="btn btn-secondary w-100" disabled>Next</button>
         </div>
         

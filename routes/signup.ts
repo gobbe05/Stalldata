@@ -4,7 +4,7 @@ import jwt from 'jsonwebtoken'
 import { Company, User } from '../models'
 
 async function signup(req: express.Request, res: express.Response) {
-    const {email, username, password, confirmpassword, companycode} = req.body
+    const {email, username, firstName, lastName, password, confirmpassword, companycode} = req.body
     const usernameExists = await User.findOne({username: username})
     const emailExists = await User.findOne({email: email})
 
@@ -17,6 +17,8 @@ async function signup(req: express.Request, res: express.Response) {
     const user = new User({
         email: email,
         username: username,
+        firstName: firstName,
+        lastName: lastName,
         password: hash,
         accepted: false,
         company: companycode

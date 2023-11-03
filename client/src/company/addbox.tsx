@@ -42,10 +42,9 @@ function AddBox() {
     return (
         <>
         
-            <form className="m-2">
+            <form className="m-2 mt-4">
                 <div className="form-floating my-2">
                     <select className="form-control" id="selectFarm" onChange={(event) => {GetSections(event.target.value)}}>
-                        <option>Select Farm</option>
                         {farms.map((farm: {name: string, _id: string}) => 
                         <option value={farm._id}>
                             {farm.name}

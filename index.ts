@@ -3,11 +3,12 @@ import mongoose from 'mongoose'
 import cors from 'cors'
 import cookieParser from 'cookie-parser'
 import Protected from './middleware/protected'
-import { acceptuserroute, addboxroute, addfarmroute, addsectionroute, addtreatmentroute, addtreatmenttoboxroute, checkcompanycoderoute, createcompanyroute, getauthroute, getboxesroute, getcompanyusersroute, getcurrentcompanyroute, getfarmsroute, getprevioustreatmentsroute, getsectionsroute, gettreatedboxesroute, gettreatmentsroute, getunacceptedusersroute, loginroute, logoutroute, signuproute } from './routes/routes'
+import { acceptuserroute, addboxroute, addfarmroute, addsectionroute, addtreatmentroute, addtreatmenttoboxroute, checkcompanycoderoute, createcompanyroute, deleteaccountroute, deleteboxtreatmentroute, deletecompanyroute, deletepersonalboxtreatmentroute, getauthroute, getboxesroute, getcompaniesroute, getcompanyusersroute, getcurrentcompanyroute, getfarmsroute, getprevioustreatmentsroute, getsectionsroute, gettreatedboxesroute, gettreatmentsroute, getunacceptedusersroute, loginroute, logoutroute, signuproute } from './routes/routes'
 import GetCompany from './middleware/company'
 import { Parser } from 'json2csv'
 import { BoxTreatment } from './models'
 import GetUser from './middleware/username'
+import ProtectedAdmin from './middleware/protectedadmin'
 mongoose.connect("mongodb://127.0.0.1:27017")
 
 const app = express()
@@ -29,6 +30,7 @@ app.use(express.static("dist"))
 /* Get Current Company */       app.get("/api/getcurrentcompany", Protected, getcurrentcompanyroute)
 /* Get Farms By Company */      app.get("/api/getfarms", Protected, GetCompany, getfarmsroute)
 /* Get Users By Company*/       app.get("/api/getcompanyusers", Protected, GetCompany, getcompanyusersroute)
+/* Get Companies */             app.get("/api/getcompanies", Protected, getcompaniesroute)
 
 /* POST */
 /* Get Sections */              app.post("/api/getsections", Protected, getsectionsroute)
@@ -46,6 +48,12 @@ app.use(express.static("dist"))
 /* Login */                     app.post("/api/login", loginroute)
 /* Signup */                    app.post("/api/signup", signuproute)
 /* Logout */                    app.post("/api/logout", logoutroute)
+
+/* DELETE */
+/* Delete Account*/             app.delete("/api/deleteaccount", Protected, deleteaccountroute)
+/* Delete Personal Treatment */ app.delete("/api/deletepersonalboxtreatment", Protected, GetUser, deletepersonalboxtreatmentroute)
+/* Delete Treatment */          app.delete("/api/deleteboxtreatment", Protected, deleteboxtreatmentroute)
+/* Delete Company */            app.delete("/api/deletecompany", ProtectedAdmin, deletecompanyroute)
 
 app.get("/api/getcsv", async (req: express.Request, res: express.Response) => {
     const fields: Array<{label: string, value: string}> = [{

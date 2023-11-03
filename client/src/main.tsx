@@ -25,6 +25,7 @@ import Admin from './admin/admin.tsx'
 import CreateCompany from './admin/createcompany.tsx'
 import ChooseCompany from './routes/auth/choosecompany.tsx'
 import Users from './company/users.tsx'
+import Companies from './admin/companies.tsx'
 
 const router = createBrowserRouter(
   createRoutesFromElements([
@@ -34,17 +35,16 @@ const router = createBrowserRouter(
         <Route path="login" element={<Login />} />
         <Route path="signup" element={<Signup />} />
       </Route>
-      <Route index element={<App />}/>
-        <Route path="/behandling">
-          <Route index element={<Behandling />}/>
-          <Route element={<CreateTreatmentLayout />}>
-            <Route path="choosefarm" element={<ChooseFarm />}/>
+      <Route index element={<Behandling />}/>
+          <Route path="/behandling" element={<CreateTreatmentLayout />}>
+            <Route index element={<ChooseFarm />}/>
             <Route path="choosesection" element={<ChooseSection />}/>
             <Route path="choosebox" element={<ChooseBox />}/>
+            <Route path="choosetreatment" element={<ChooseTreatment />}/>,
           </Route>
-          <Route path="choosetreatment" element={<ChooseTreatment />}/>
-        </Route>,
+          
         <Route path="/admin" element={<Admin />}>
+          <Route path="companies" element={<Companies />} />
           <Route path="createcompany" element={<CreateCompany />}/>
         </Route>,
         <Route path="/company" element={<Company />}>

@@ -15,7 +15,7 @@ function AddTreatment() {
     }
     return (
         <>
-            <form className="m-2">
+            <form className="m-2 mt-4">
                 <div className="form-floating">
                     <input className="form-control" id="treatmentName" onChange={(event) => {
                         setName(event.target.value)

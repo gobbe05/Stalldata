@@ -6,6 +6,7 @@ import { useGlobalState } from "./GlobalState"
 export const AlertContext = createContext<any>(null)
 
 function Layout() {
+    const [globalState, updateGlobalState] = useGlobalState()
     function AddAlert(type: string, message: string) {
         setAlerts((prev: any) => {
             return [...prev, {type: type, message: message}]
@@ -15,6 +16,27 @@ function Layout() {
         }, 3000)
     }
     const [alerts, setAlerts] = useState<Array<any>>([])
+
+    useEffect(() => {
+        fetch("/api/getauth")
+        .then((response) => response.json())
+        .then((data) => {
+            if(data.auth == true) updateGlobalState("loggedin", true)
+            if(data.role) updateGlobalState("role", data.role)
+        })
+    }, [])
+    useEffect(() => {
+        fetch("/api/getcurrentcompany", {
+            method: "GET",
+            credentials: "include"
+        })
+        .then((response) => response.json())
+        .then((data) => {
+            if(data.company) updateGlobalState("companyname", data.company.name)
+            else updateGlobalState("companyname", "")
+        }
+            )
+    }, [globalState.loggedin])
 
     return (
         <>

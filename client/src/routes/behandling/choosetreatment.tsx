@@ -26,7 +26,7 @@ function ChooseTreatment() {
     }
 
     useEffect(() => {
-        if(!globalState.section) navigate("/behandling/choosefarm")
+        if(!globalState.farm || !globalState.section || !globalState.box) navigate("/behandling")
         fetch("/api/gettreatments")
         .then((response) => response.json())
         .then((data) => {
@@ -37,7 +37,7 @@ function ChooseTreatment() {
 
     return (
         <>
-            <form className="my-auto mx-2">
+            <form className="m-4">
                 <p className="text-white">{globalState.farm && globalState.farm.name}\{globalState.section && globalState.section.name}\{globalState.box && globalState.box.name}</p>
                 <select onChange={(event) => {setName(event.target.value)}} className="form-select">
                     {treatments.map((treatment: {name: string}) => 

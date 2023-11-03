@@ -8,6 +8,19 @@ function TreatedBoxes() {
         .then((response) => response.json())
         .then((data) => {setTreatedboxes(data.boxtreatments)})
     }, [])
+
+    async function DeleteBoxTreatment(boxid: string) {
+        await fetch("/api/deleteboxtreatment", {
+            method: "DELETE",
+            body: JSON.stringify({
+                treatedboxId: boxid
+            }),
+            headers: {
+                "Content-Type" : "application/json"
+            },
+            credentials: "include"
+        })
+    }
     return (
         <>
             <div className="overflow-x-scroll m-4">
@@ -18,6 +31,7 @@ function TreatedBoxes() {
                             <th scope="col">Name</th>
                             <th scope="col">Box</th>
                             <th scope="col">Created At</th>
+                            <th scope="col"></th>
                         </tr>
                     </thead>
                     <tbody>
@@ -27,6 +41,8 @@ function TreatedBoxes() {
                             <td className="text-nowrap">{item.name}</td>
                             <td className="text-nowrap">{item.box}</td>
                             <td className="text-nowrap">{item.addedAt}</td>
+                            <td className="text-nowrap"><button onClick={() => {console.log(item)
+                                DeleteBoxTreatment(item._id)}} className="btn btn-danger">Delete</button></td>
                         </tr>)}
                     </tbody>
                 </table>

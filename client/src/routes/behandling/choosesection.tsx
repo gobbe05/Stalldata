@@ -16,7 +16,7 @@ function ChooseSection() {
     }
 
     useEffect(() => {
-        if(!globalState.farm) navigate("/behandling/choosefarm")
+        if(!globalState.farm) navigate("/behandling")
         updateGlobalState("behandling", {page: "section"})
         fetch("/api/getsections", {
             method: "POST",
@@ -32,13 +32,13 @@ function ChooseSection() {
     }, [])
     return (
         <>
-            <div className="d-flex flex-wrap gap-2 my-4">
+            <div className="d-flex flex-wrap gap-2 m-4">
                 {sections.map((item: any) => 
                 <div className="w-100" onClick={() => {Section(item.name, item._id)}}>
                     <Item name={item.name} selected={globalState.section}/>
                 </div>)}
+                {globalState.section ? <Link to="/behandling/choosebox" className="btn btn-success  w-100">Next</Link> : <DisabledButton type="danger" message="Please choose a section before continuing"/>}
             </div>
-            {globalState.section ? <Link to="/behandling/choosebox" className="btn btn-success  w-100">Next</Link> : <DisabledButton type="danger" message="Please choose a section before continuing"/>}
         </>
     )
 }

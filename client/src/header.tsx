@@ -18,26 +18,11 @@ function Header() {
             }
         })
     }
-
-    useEffect(() => {
-        fetch("/api/getauth")
-        .then((response) => response.json())
-        .then((data) => {
-            if(data.auth == true) updateGlobalState("loggedin", true)
-        })
-
-        fetch("/api/getcurrentcompany", {
-            method: "GET",
-            credentials: "include"
-        })
-        .then((response) => response.json())
-        .then((data) => {data.company && updateGlobalState("companyname", data.company.name)})
-    }, [])
     return (
         <>
         <nav className="navbar bg-dark-subtle">
             <div className="container-fluid">
-                <a className="navbar-brand m-2" href="#"><h3>Stalldata - {globalState.companyname}</h3></a>
+                <a className="navbar-brand m-2" href="#"><h3>Stalldata {globalState.companyname && "- "} {globalState.companyname}</h3></a>
                 <button className="bg-transparent border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
                   <span className="navbar-toggler-icon"></span>
                 </button>
@@ -51,10 +36,10 @@ function Header() {
                                 {!globalState.loggedin && 
                                 <>
                                     <li className="nav-item">
-                                        <Link className="nav-link" to="/auth/login">Login</Link>
+                                        <Link className="nav-link" to="/auth/login" data-bs-dismiss="offcanvas">Login</Link>
                                     </li>
                                     <li className="nav-item">
-                                        <Link className="nav-link" to="/auth/signup">Sign Up</Link>
+                                        <Link className="nav-link" to="/auth/signup" data-bs-dismiss="offcanvas">Sign Up</Link>
                                     </li>
                                 </>}
                                 
@@ -62,18 +47,18 @@ function Header() {
                                 {globalState.loggedin && 
                                 <>
                                     <li className="nav-item">
-                                        <Link className="nav-link" to="/">Home</Link>
+                                        <Link className="nav-link" to="/" data-bs-dismiss="offcanvas">Home</Link>
                                     </li>
                                     <li className="nav-item">
-                                        <Link className="nav-link" to="/behandling">Behandling</Link>
+                                        <Link className="nav-link" to="/behandling" data-bs-dismiss="offcanvas">Behandling</Link>
                                     </li>
                                     <li className="nav-item">
-                                        <Link className="nav-link" to="/company">Company</Link>
+                                        {(globalState.role == "admin" || globalState.role == "companyadmin")  && <Link className="nav-link" to="/company" data-bs-dismiss="offcanvas">Company</Link>}
                                     </li>
                                     <li className="nav-item">
-                                        <Link className="nav-link" to="/admin">Admin</Link>
+                                        {globalState.role == "admin" && <Link className="nav-link" to="/admin" data-bs-dismiss="offcanvas">Admin</Link>}
                                     </li>
-                                    <button className="btn btn-danger mt-4 fs-2 p-2" onClick={Logout}>Logout</button>
+                                    <button className="btn btn-danger mt-4 fs-2 p-2" onClick={Logout}  data-bs-dismiss="offcanvas">Logout</button>
                                 </>}
                         </ul>
                     </div>

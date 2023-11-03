@@ -28,7 +28,7 @@ function AddSection() {
     return (
         <>
         
-            <form className="m-2">
+            <form className="m-2 mt-4">
                 <div className="form-floating my-2">
                     <select id="selectFarm" onChange={(event) => {setFarmid(event.target.value)}} className="form-select">
                         {farms.map((farm: {name: string, _id: string}) => 

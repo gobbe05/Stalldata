@@ -6,6 +6,8 @@ import { Link } from "react-router-dom"
 function Signup() {
     const [email, setEmail] = useState<string>("")
     const [username ,setUsername] = useState<string>("")
+    const [firstName, setFirstName] = useState<string>("")
+    const [lastName, setLastName] = useState<string>("")
     const [password ,setPassword] = useState<string>("")
     const [passwordconfirm, setPasswordConfirm] = useState<string>("")
     const [globalState, updateGlobalState] = useGlobalState()
@@ -17,6 +19,8 @@ function Signup() {
             body: JSON.stringify({
                 email: email,
                 username: username,
+                firstName: firstName,
+                lastName: lastName,
                 password: password,
                 confirmpassword: password,
                 companycode: globalState.companycode
@@ -27,7 +31,14 @@ function Signup() {
             credentials: "include"
         })
         const data = await response.json()
-        if(data.message == "success") navigate("/")
+        if(data.message == "success") {
+            updateGlobalState("loggedin", true)
+            navigate("/")
+        }
+    }
+    function Form(event: any) {
+        event.preventDefault()
+        FetchSignup()
     }
 
     useEffect(() => {
@@ -36,7 +47,7 @@ function Signup() {
 
     return (
         <>
-            <form className="my-auto mx-4">
+            <form className="my-auto mx-4" onSubmit={Form}>
                 <div className="form-floating my-2">
                     <input className="form-control" id="enterEmail" onChange={(event) => setEmail(event.target.value)} name="email" />
                     <label htmlFor="enterEmail">Email</label>
@@ -44,6 +55,14 @@ function Signup() {
                 <div className="form-floating my-2">
                     <input className="form-control" id="enterUsername" onChange={(event) => setUsername(event.target.value)} name="username" />
                     <label htmlFor="enterUsername">Username</label>
+                </div>
+                <div className="form-floating my-2">
+                    <input className="form-control" id="firstName" onChange={(event) => setFirstName(event.target.value)} name="username" />
+                    <label htmlFor="firstName">First Name</label>
+                </div>
+                <div className="form-floating my-2">
+                    <input className="form-control" id="lastName" onChange={(event) => setLastName(event.target.value)} name="username" />
+                    <label htmlFor="lastName">Last Name</label>
                 </div>
                 <div className="form-floating my-2">
                     <input className="form-control" id="enterPassword" onChange={(event) => setPassword(event.target.value)} name="password" />
