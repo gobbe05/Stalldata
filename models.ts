@@ -39,6 +39,7 @@ export const Treatment = mongoose.model("Treatment", TreatmentSchema)
 
 const BoxTreatmentSchema = new mongoose.Schema({
     name: String,
+    message: String,
     box: String,
     boxid: String,
     companyname: String,

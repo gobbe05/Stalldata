@@ -14,7 +14,7 @@ function ChooseTreatment() {
         
         const response = await fetch("/api/addtreatmenttobox", {
             method: "POST",
-            body: JSON.stringify({name: name, box: box, boxid: boxid, addedAt: new Date}),
+            body: JSON.stringify({name: name, message: message, box: box, boxid: boxid, addedAt: new Date}),
             headers: {
                 "Content-Type": "application/json",
             },

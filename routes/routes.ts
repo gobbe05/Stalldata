@@ -24,8 +24,12 @@ import deletepersonalboxtreatment from './deletepersonalboxtreatment'
 import deleteboxtreatment from './deleteboxtreatment'
 import getcompanies from './getcompanies'
 import deletecompany from './deletecompany'
+import createcompanyadmin from './createcompanyadmin'
+import createadmin from './createadmin'
+import getusers from './getusers'
 
 export const getauthroute = getauth
+export const getusersroute = getusers
 export const getunacceptedusersroute = getunacceptedusers
 export const gettreatedboxesroute = gettreatedboxes
 export const getprevioustreatmentsroute = getprevioustreatments
@@ -51,3 +55,5 @@ export const addboxroute = addbox
 export const logoutroute = logout
 export const getcompanyusersroute = getcompanyusers
 export const acceptuserroute = acceptuser
+export const createcompanyadminroute = createcompanyadmin
+export const createadminroute = createadmin

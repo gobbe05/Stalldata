@@ -13,7 +13,7 @@ import AddFarm from './company/addfarm.tsx'
 import Company from './company/company.tsx'
 import AddBox from './company/addbox.tsx'
 import AddSection from './company/addsection.tsx'
-import App from './app.tsx'
+import AdminUsers from './admin/users.tsx'
 import Layout from './layout.tsx'
 import CreateTreatmentLayout from './routes/behandling/createtreatmentlayout.tsx'
 import ChooseTreatment from './routes/behandling/choosetreatment.tsx'
@@ -26,6 +26,8 @@ import CreateCompany from './admin/createcompany.tsx'
 import ChooseCompany from './routes/auth/choosecompany.tsx'
 import Users from './company/users.tsx'
 import Companies from './admin/companies.tsx'
+import CreateCompanyAdmin from './admin/createcompanyadmin.tsx'
+import CreateAdmin from './admin/createadmin.tsx'
 
 const router = createBrowserRouter(
   createRoutesFromElements([
@@ -46,6 +48,9 @@ const router = createBrowserRouter(
         <Route path="/admin" element={<Admin />}>
           <Route path="companies" element={<Companies />} />
           <Route path="createcompany" element={<CreateCompany />}/>
+          <Route path="createcompanyadmin" element={<CreateCompanyAdmin />}/>
+          <Route path="createadmin" element={<CreateAdmin />}/>
+          <Route path="users" element={<AdminUsers />} />
         </Route>,
         <Route path="/company" element={<Company />}>
           <Route index element={<TreatedBoxes />}/>

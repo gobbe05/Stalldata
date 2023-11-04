@@ -5,7 +5,7 @@ import { BoxTreatment } from '../models'
 async function addtreatmenttobox(req: express.Request, res: express.Response) {
     try {
         let userid = ""
-        const {name, box, boxid, addedAt} = req.body
+        const {name, message, box, boxid, addedAt} = req.body
         const username = res.locals.user
         const company = res.locals.company
         jwt.verify(req.cookies.token, "secret", (err: any, decoded: any) => {
@@ -14,6 +14,7 @@ async function addtreatmenttobox(req: express.Request, res: express.Response) {
         })
         const boxtreatment = new BoxTreatment({
             name: name,
+            message: message,
             box: box,
             boxid: boxid,
             companyname: company.name,

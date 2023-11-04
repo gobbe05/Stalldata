@@ -2971,6 +2971,8 @@ var _addboxTsx = require("./company/addbox.tsx");
 var _addboxTsxDefault = parcelHelpers.interopDefault(_addboxTsx);
 var _addsectionTsx = require("./company/addsection.tsx");
 var _addsectionTsxDefault = parcelHelpers.interopDefault(_addsectionTsx);
+var _usersTsx = require("./admin/users.tsx");
+var _usersTsxDefault = parcelHelpers.interopDefault(_usersTsx);
 var _layoutTsx = require("./layout.tsx");
 var _layoutTsxDefault = parcelHelpers.interopDefault(_layoutTsx);
 var _createtreatmentlayoutTsx = require("./routes/behandling/createtreatmentlayout.tsx");
@@ -2991,10 +2993,14 @@ var _createcompanyTsx = require("./admin/createcompany.tsx");
 var _createcompanyTsxDefault = parcelHelpers.interopDefault(_createcompanyTsx);
 var _choosecompanyTsx = require("./routes/auth/choosecompany.tsx");
 var _choosecompanyTsxDefault = parcelHelpers.interopDefault(_choosecompanyTsx);
-var _usersTsx = require("./company/users.tsx");
-var _usersTsxDefault = parcelHelpers.interopDefault(_usersTsx);
+var _usersTsx1 = require("./company/users.tsx");
+var _usersTsxDefault1 = parcelHelpers.interopDefault(_usersTsx1);
 var _companiesTsx = require("./admin/companies.tsx");
 var _companiesTsxDefault = parcelHelpers.interopDefault(_companiesTsx);
+var _createcompanyadminTsx = require("./admin/createcompanyadmin.tsx");
+var _createcompanyadminTsxDefault = parcelHelpers.interopDefault(_createcompanyadminTsx);
+var _createadminTsx = require("./admin/createadmin.tsx");
+var _createadminTsxDefault = parcelHelpers.interopDefault(_createadminTsx);
 const router = (0, _reactRouterDom.createBrowserRouter)((0, _reactRouterDom.createRoutesFromElements)([
     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
         path: "/",
@@ -3009,7 +3015,7 @@ const router = (0, _reactRouterDom.createBrowserRouter)((0, _reactRouterDom.crea
                         element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _choosecompanyTsxDefault.default), {}, void 0, false, void 0, void 0)
                     }, void 0, false, {
                         fileName: "client/src/main.tsx",
-                        lineNumber: 34,
+                        lineNumber: 36,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
@@ -3017,7 +3023,7 @@ const router = (0, _reactRouterDom.createBrowserRouter)((0, _reactRouterDom.crea
                         element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _loginTsxDefault.default), {}, void 0, false, void 0, void 0)
                     }, void 0, false, {
                         fileName: "client/src/main.tsx",
-                        lineNumber: 35,
+                        lineNumber: 37,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
@@ -3025,13 +3031,13 @@ const router = (0, _reactRouterDom.createBrowserRouter)((0, _reactRouterDom.crea
                         element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _signupTsxDefault.default), {}, void 0, false, void 0, void 0)
                     }, void 0, false, {
                         fileName: "client/src/main.tsx",
-                        lineNumber: 36,
+                        lineNumber: 38,
                         columnNumber: 9
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "client/src/main.tsx",
-                lineNumber: 33,
+                lineNumber: 35,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
@@ -3039,7 +3045,7 @@ const router = (0, _reactRouterDom.createBrowserRouter)((0, _reactRouterDom.crea
                 element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _behandlingTsxDefault.default), {}, void 0, false, void 0, void 0)
             }, void 0, false, {
                 fileName: "client/src/main.tsx",
-                lineNumber: 38,
+                lineNumber: 40,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
@@ -3051,7 +3057,7 @@ const router = (0, _reactRouterDom.createBrowserRouter)((0, _reactRouterDom.crea
                         element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _choosefarmTsxDefault.default), {}, void 0, false, void 0, void 0)
                     }, void 0, false, {
                         fileName: "client/src/main.tsx",
-                        lineNumber: 40,
+                        lineNumber: 42,
                         columnNumber: 13
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
@@ -3059,7 +3065,7 @@ const router = (0, _reactRouterDom.createBrowserRouter)((0, _reactRouterDom.crea
                         element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _choosesectionTsxDefault.default), {}, void 0, false, void 0, void 0)
                     }, void 0, false, {
                         fileName: "client/src/main.tsx",
-                        lineNumber: 41,
+                        lineNumber: 43,
                         columnNumber: 13
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
@@ -3067,7 +3073,7 @@ const router = (0, _reactRouterDom.createBrowserRouter)((0, _reactRouterDom.crea
                         element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _chooseboxTsxDefault.default), {}, void 0, false, void 0, void 0)
                     }, void 0, false, {
                         fileName: "client/src/main.tsx",
-                        lineNumber: 42,
+                        lineNumber: 44,
                         columnNumber: 13
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
@@ -3075,14 +3081,14 @@ const router = (0, _reactRouterDom.createBrowserRouter)((0, _reactRouterDom.crea
                         element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _choosetreatmentTsxDefault.default), {}, void 0, false, void 0, void 0)
                     }, void 0, false, {
                         fileName: "client/src/main.tsx",
-                        lineNumber: 43,
+                        lineNumber: 45,
                         columnNumber: 13
                     }, undefined),
                     ","
                 ]
             }, void 0, true, {
                 fileName: "client/src/main.tsx",
-                lineNumber: 39,
+                lineNumber: 41,
                 columnNumber: 11
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
@@ -3094,7 +3100,7 @@ const router = (0, _reactRouterDom.createBrowserRouter)((0, _reactRouterDom.crea
                         element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _companiesTsxDefault.default), {}, void 0, false, void 0, void 0)
                     }, void 0, false, {
                         fileName: "client/src/main.tsx",
-                        lineNumber: 47,
+                        lineNumber: 49,
                         columnNumber: 11
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
@@ -3102,13 +3108,37 @@ const router = (0, _reactRouterDom.createBrowserRouter)((0, _reactRouterDom.crea
                         element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _createcompanyTsxDefault.default), {}, void 0, false, void 0, void 0)
                     }, void 0, false, {
                         fileName: "client/src/main.tsx",
-                        lineNumber: 48,
+                        lineNumber: 50,
+                        columnNumber: 11
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
+                        path: "createcompanyadmin",
+                        element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _createcompanyadminTsxDefault.default), {}, void 0, false, void 0, void 0)
+                    }, void 0, false, {
+                        fileName: "client/src/main.tsx",
+                        lineNumber: 51,
+                        columnNumber: 11
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
+                        path: "createadmin",
+                        element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _createadminTsxDefault.default), {}, void 0, false, void 0, void 0)
+                    }, void 0, false, {
+                        fileName: "client/src/main.tsx",
+                        lineNumber: 52,
+                        columnNumber: 11
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
+                        path: "users",
+                        element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _usersTsxDefault.default), {}, void 0, false, void 0, void 0)
+                    }, void 0, false, {
+                        fileName: "client/src/main.tsx",
+                        lineNumber: 53,
                         columnNumber: 11
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "client/src/main.tsx",
-                lineNumber: 46,
+                lineNumber: 48,
                 columnNumber: 9
             }, undefined),
             ",",
@@ -3121,15 +3151,15 @@ const router = (0, _reactRouterDom.createBrowserRouter)((0, _reactRouterDom.crea
                         element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _treatedboxesTsxDefault.default), {}, void 0, false, void 0, void 0)
                     }, void 0, false, {
                         fileName: "client/src/main.tsx",
-                        lineNumber: 51,
+                        lineNumber: 56,
                         columnNumber: 11
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
                         path: "users",
-                        element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _usersTsxDefault.default), {}, void 0, false, void 0, void 0)
+                        element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _usersTsxDefault1.default), {}, void 0, false, void 0, void 0)
                     }, void 0, false, {
                         fileName: "client/src/main.tsx",
-                        lineNumber: 52,
+                        lineNumber: 57,
                         columnNumber: 11
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
@@ -3137,7 +3167,7 @@ const router = (0, _reactRouterDom.createBrowserRouter)((0, _reactRouterDom.crea
                         element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _acceptusersTsxDefault.default), {}, void 0, false, void 0, void 0)
                     }, void 0, false, {
                         fileName: "client/src/main.tsx",
-                        lineNumber: 53,
+                        lineNumber: 58,
                         columnNumber: 11
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
@@ -3145,7 +3175,7 @@ const router = (0, _reactRouterDom.createBrowserRouter)((0, _reactRouterDom.crea
                         element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _addtreatmentTsxDefault.default), {}, void 0, false, void 0, void 0)
                     }, void 0, false, {
                         fileName: "client/src/main.tsx",
-                        lineNumber: 54,
+                        lineNumber: 59,
                         columnNumber: 11
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
@@ -3153,7 +3183,7 @@ const router = (0, _reactRouterDom.createBrowserRouter)((0, _reactRouterDom.crea
                         element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _addfarmTsxDefault.default), {}, void 0, false, void 0, void 0)
                     }, void 0, false, {
                         fileName: "client/src/main.tsx",
-                        lineNumber: 55,
+                        lineNumber: 60,
                         columnNumber: 11
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
@@ -3161,7 +3191,7 @@ const router = (0, _reactRouterDom.createBrowserRouter)((0, _reactRouterDom.crea
                         element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _addsectionTsxDefault.default), {}, void 0, false, void 0, void 0)
                     }, void 0, false, {
                         fileName: "client/src/main.tsx",
-                        lineNumber: 56,
+                        lineNumber: 61,
                         columnNumber: 11
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
@@ -3169,20 +3199,20 @@ const router = (0, _reactRouterDom.createBrowserRouter)((0, _reactRouterDom.crea
                         element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _addboxTsxDefault.default), {}, void 0, false, void 0, void 0)
                     }, void 0, false, {
                         fileName: "client/src/main.tsx",
-                        lineNumber: 57,
+                        lineNumber: 62,
                         columnNumber: 11
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "client/src/main.tsx",
-                lineNumber: 50,
+                lineNumber: 55,
                 columnNumber: 9
             }, undefined),
             ","
         ]
     }, void 0, true, {
         fileName: "client/src/main.tsx",
-        lineNumber: 32,
+        lineNumber: 34,
         columnNumber: 5
     }, undefined)
 ]));
@@ -3192,17 +3222,17 @@ const router = (0, _reactRouterDom.createBrowserRouter)((0, _reactRouterDom.crea
             router: router
         }, void 0, false, {
             fileName: "client/src/main.tsx",
-            lineNumber: 68,
+            lineNumber: 73,
             columnNumber: 7
         }, undefined)
     }, void 0, false, {
         fileName: "client/src/main.tsx",
-        lineNumber: 67,
+        lineNumber: 72,
         columnNumber: 5
     }, undefined)
 }, void 0, false, {
     fileName: "client/src/main.tsx",
-    lineNumber: 66,
+    lineNumber: 71,
     columnNumber: 3
 }, undefined));
 
@@ -3211,7 +3241,7 @@ const router = (0, _reactRouterDom.createBrowserRouter)((0, _reactRouterDom.crea
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"7crfk","react":"l1Q8s","react-dom/client":"jdZCU","react-router-dom":"sYSB5","./routes/auth/login.tsx":"9EZ5E","./routes/auth/signup.tsx":"lA4fp","./routes/behandling/behandling.tsx":"gqq5z","./routes/behandling/choosefarm.tsx":"fRPM1","./routes/behandling/choosesection.tsx":"da8ge","./GlobalState.tsx":"liq8b","./routes/behandling/choosebox.tsx":"iyhIr","./admin/admin.tsx":"leB3c","./layout.tsx":"gzIZb","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./index.css":"b8ft2","./company/addfarm.tsx":"96DHs","./company/company.tsx":"1C7mZ","./company/addbox.tsx":"4Wpuq","./company/addsection.tsx":"6LRrB","./routes/behandling/createtreatmentlayout.tsx":"leGjq","./routes/behandling/choosetreatment.tsx":"f0h4S","./company/addtreatment.tsx":"3qKMb","./company/treatedboxes.tsx":"hUDKz","./company/acceptusers.tsx":"ajBEd","./routes/auth/auth.tsx":"4kAI7","./admin/createcompany.tsx":"kUb6m","./routes/auth/choosecompany.tsx":"994aw","./company/users.tsx":"6eKWg","./admin/companies.tsx":"596yJ"}],"7crfk":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"7crfk","react":"l1Q8s","react-dom/client":"jdZCU","react-router-dom":"sYSB5","./routes/auth/login.tsx":"9EZ5E","./routes/auth/signup.tsx":"lA4fp","./routes/behandling/behandling.tsx":"gqq5z","./routes/behandling/choosefarm.tsx":"fRPM1","./routes/behandling/choosesection.tsx":"da8ge","./GlobalState.tsx":"liq8b","./routes/behandling/choosebox.tsx":"iyhIr","./admin/admin.tsx":"leB3c","./layout.tsx":"gzIZb","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./index.css":"b8ft2","./company/addfarm.tsx":"96DHs","./company/company.tsx":"1C7mZ","./company/addbox.tsx":"4Wpuq","./company/addsection.tsx":"6LRrB","./routes/behandling/createtreatmentlayout.tsx":"leGjq","./routes/behandling/choosetreatment.tsx":"f0h4S","./company/addtreatment.tsx":"3qKMb","./company/treatedboxes.tsx":"hUDKz","./company/acceptusers.tsx":"ajBEd","./routes/auth/auth.tsx":"4kAI7","./admin/createcompany.tsx":"kUb6m","./routes/auth/choosecompany.tsx":"994aw","./company/users.tsx":"6eKWg","./admin/companies.tsx":"596yJ","./admin/createcompanyadmin.tsx":"ajzFF","./admin/createadmin.tsx":"lo1V5","./admin/users.tsx":"ii21k"}],"7crfk":[function(require,module,exports) {
 "use strict";
 module.exports = require("a3f1fe3d2f60911");
 
@@ -34688,7 +34718,9 @@ function Layout() {
             if (data.auth == true) updateGlobalState("loggedin", true);
             if (data.role) updateGlobalState("role", data.role);
         });
-    }, []);
+    }, [
+        globalState.loggedin
+    ]);
     (0, _react.useEffect)(()=>{
         fetch("/api/getcurrentcompany", {
             method: "GET",
@@ -34826,12 +34858,12 @@ function Header() {
                             ]
                         }, void 0, true, {
                             fileName: "client/src/header.tsx",
-                            lineNumber: 25,
+                            lineNumber: 24,
                             columnNumber: 58
                         }, this)
                     }, void 0, false, {
                         fileName: "client/src/header.tsx",
-                        lineNumber: 25,
+                        lineNumber: 24,
                         columnNumber: 17
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
@@ -34845,12 +34877,12 @@ function Header() {
                             className: "navbar-toggler-icon"
                         }, void 0, false, {
                             fileName: "client/src/header.tsx",
-                            lineNumber: 27,
+                            lineNumber: 26,
                             columnNumber: 19
                         }, this)
                     }, void 0, false, {
                         fileName: "client/src/header.tsx",
-                        lineNumber: 26,
+                        lineNumber: 25,
                         columnNumber: 17
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -34866,12 +34898,14 @@ function Header() {
                                         className: "offcanvas-title m-2",
                                         id: "offcanvasNavbarLabel",
                                         children: [
-                                            "Stalldata - ",
+                                            "Stalldata ",
+                                            globalState.companyname && "- ",
+                                            " ",
                                             globalState.companyname
                                         ]
                                     }, void 0, true, {
                                         fileName: "client/src/header.tsx",
-                                        lineNumber: 31,
+                                        lineNumber: 30,
                                         columnNumber: 25
                                     }, this),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
@@ -34881,13 +34915,13 @@ function Header() {
                                         "aria-label": "Close"
                                     }, void 0, false, {
                                         fileName: "client/src/header.tsx",
-                                        lineNumber: 32,
+                                        lineNumber: 31,
                                         columnNumber: 25
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "client/src/header.tsx",
-                                lineNumber: 30,
+                                lineNumber: 29,
                                 columnNumber: 21
                             }, this),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -34902,16 +34936,15 @@ function Header() {
                                                     children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
                                                         className: "nav-link",
                                                         to: "/auth/login",
-                                                        "data-bs-dismiss": "offcanvas",
                                                         children: "Login"
                                                     }, void 0, false, {
                                                         fileName: "client/src/header.tsx",
-                                                        lineNumber: 39,
+                                                        lineNumber: 38,
                                                         columnNumber: 41
                                                     }, this)
                                                 }, void 0, false, {
                                                     fileName: "client/src/header.tsx",
-                                                    lineNumber: 38,
+                                                    lineNumber: 37,
                                                     columnNumber: 37
                                                 }, this),
                                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
@@ -34919,16 +34952,15 @@ function Header() {
                                                     children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
                                                         className: "nav-link",
                                                         to: "/auth/signup",
-                                                        "data-bs-dismiss": "offcanvas",
                                                         children: "Sign Up"
                                                     }, void 0, false, {
                                                         fileName: "client/src/header.tsx",
-                                                        lineNumber: 42,
+                                                        lineNumber: 41,
                                                         columnNumber: 41
                                                     }, this)
                                                 }, void 0, false, {
                                                     fileName: "client/src/header.tsx",
-                                                    lineNumber: 41,
+                                                    lineNumber: 40,
                                                     columnNumber: 37
                                                 }, this)
                                             ]
@@ -34944,12 +34976,12 @@ function Header() {
                                                         children: "Home"
                                                     }, void 0, false, {
                                                         fileName: "client/src/header.tsx",
-                                                        lineNumber: 50,
+                                                        lineNumber: 49,
                                                         columnNumber: 41
                                                     }, this)
                                                 }, void 0, false, {
                                                     fileName: "client/src/header.tsx",
-                                                    lineNumber: 49,
+                                                    lineNumber: 48,
                                                     columnNumber: 37
                                                 }, this),
                                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
@@ -34957,16 +34989,15 @@ function Header() {
                                                     children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
                                                         className: "nav-link",
                                                         to: "/behandling",
-                                                        "data-bs-dismiss": "offcanvas",
                                                         children: "Behandling"
                                                     }, void 0, false, {
                                                         fileName: "client/src/header.tsx",
-                                                        lineNumber: 53,
+                                                        lineNumber: 52,
                                                         columnNumber: 41
                                                     }, this)
                                                 }, void 0, false, {
                                                     fileName: "client/src/header.tsx",
-                                                    lineNumber: 52,
+                                                    lineNumber: 51,
                                                     columnNumber: 37
                                                 }, this),
                                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
@@ -34974,16 +35005,15 @@ function Header() {
                                                     children: (globalState.role == "admin" || globalState.role == "companyadmin") && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
                                                         className: "nav-link",
                                                         to: "/company",
-                                                        "data-bs-dismiss": "offcanvas",
                                                         children: "Company"
                                                     }, void 0, false, {
                                                         fileName: "client/src/header.tsx",
-                                                        lineNumber: 56,
+                                                        lineNumber: 55,
                                                         columnNumber: 114
                                                     }, this)
                                                 }, void 0, false, {
                                                     fileName: "client/src/header.tsx",
-                                                    lineNumber: 55,
+                                                    lineNumber: 54,
                                                     columnNumber: 37
                                                 }, this),
                                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
@@ -34991,16 +35021,15 @@ function Header() {
                                                     children: globalState.role == "admin" && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
                                                         className: "nav-link",
                                                         to: "/admin",
-                                                        "data-bs-dismiss": "offcanvas",
                                                         children: "Admin"
                                                     }, void 0, false, {
                                                         fileName: "client/src/header.tsx",
-                                                        lineNumber: 59,
+                                                        lineNumber: 58,
                                                         columnNumber: 73
                                                     }, this)
                                                 }, void 0, false, {
                                                     fileName: "client/src/header.tsx",
-                                                    lineNumber: 58,
+                                                    lineNumber: 57,
                                                     columnNumber: 37
                                                 }, this),
                                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
@@ -35010,7 +35039,7 @@ function Header() {
                                                     children: "Logout"
                                                 }, void 0, false, {
                                                     fileName: "client/src/header.tsx",
-                                                    lineNumber: 61,
+                                                    lineNumber: 60,
                                                     columnNumber: 37
                                                 }, this)
                                             ]
@@ -35018,29 +35047,29 @@ function Header() {
                                     ]
                                 }, void 0, true, {
                                     fileName: "client/src/header.tsx",
-                                    lineNumber: 35,
+                                    lineNumber: 34,
                                     columnNumber: 25
                                 }, this)
                             }, void 0, false, {
                                 fileName: "client/src/header.tsx",
-                                lineNumber: 34,
+                                lineNumber: 33,
                                 columnNumber: 21
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "client/src/header.tsx",
-                        lineNumber: 29,
+                        lineNumber: 28,
                         columnNumber: 17
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "client/src/header.tsx",
-                lineNumber: 24,
+                lineNumber: 23,
                 columnNumber: 13
             }, this)
         }, void 0, false, {
             fileName: "client/src/header.tsx",
-            lineNumber: 23,
+            lineNumber: 22,
             columnNumber: 9
         }, this)
     }, void 0, false);
@@ -35306,24 +35335,104 @@ function Admin() {
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "d-flex flex-column gap-2 m-2",
+                className: "d-flex m-2",
                 children: [
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
-                        className: "btn bg-dark-subtle w-100",
-                        to: "companies",
-                        children: "Companies"
-                    }, void 0, false, {
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "col",
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                className: "row m-1",
+                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                                    className: "btn bg-dark-subtle p-3",
+                                    to: "createcompany",
+                                    children: "Create Company"
+                                }, void 0, false, {
+                                    fileName: "client/src/admin/admin.tsx",
+                                    lineNumber: 21,
+                                    columnNumber: 25
+                                }, this)
+                            }, void 0, false, {
+                                fileName: "client/src/admin/admin.tsx",
+                                lineNumber: 20,
+                                columnNumber: 21
+                            }, this),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                className: "row m-1",
+                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                                    className: "btn bg-dark-subtle p-3",
+                                    to: "createcompanyadmin",
+                                    children: "Create Company Admin"
+                                }, void 0, false, {
+                                    fileName: "client/src/admin/admin.tsx",
+                                    lineNumber: 24,
+                                    columnNumber: 25
+                                }, this)
+                            }, void 0, false, {
+                                fileName: "client/src/admin/admin.tsx",
+                                lineNumber: 23,
+                                columnNumber: 21
+                            }, this),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                className: "row m-1",
+                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                                    className: "btn bg-dark-subtle p-3",
+                                    to: "createadmin",
+                                    children: "Create Admin"
+                                }, void 0, false, {
+                                    fileName: "client/src/admin/admin.tsx",
+                                    lineNumber: 27,
+                                    columnNumber: 25
+                                }, this)
+                            }, void 0, false, {
+                                fileName: "client/src/admin/admin.tsx",
+                                lineNumber: 26,
+                                columnNumber: 21
+                            }, this)
+                        ]
+                    }, void 0, true, {
                         fileName: "client/src/admin/admin.tsx",
                         lineNumber: 19,
                         columnNumber: 17
                     }, this),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
-                        className: "btn bg-dark-subtle w-100",
-                        to: "createcompany",
-                        children: "Create Company"
-                    }, void 0, false, {
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "col",
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                className: "row m-1",
+                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                                    className: "btn bg-dark-subtle w-100 p-3",
+                                    to: "companies",
+                                    children: "Companies"
+                                }, void 0, false, {
+                                    fileName: "client/src/admin/admin.tsx",
+                                    lineNumber: 32,
+                                    columnNumber: 25
+                                }, this)
+                            }, void 0, false, {
+                                fileName: "client/src/admin/admin.tsx",
+                                lineNumber: 31,
+                                columnNumber: 21
+                            }, this),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                className: "row m-1",
+                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                                    className: "btn bg-dark-subtle w-100 p-3",
+                                    to: "users",
+                                    children: "Users"
+                                }, void 0, false, {
+                                    fileName: "client/src/admin/admin.tsx",
+                                    lineNumber: 35,
+                                    columnNumber: 25
+                                }, this)
+                            }, void 0, false, {
+                                fileName: "client/src/admin/admin.tsx",
+                                lineNumber: 34,
+                                columnNumber: 21
+                            }, this)
+                        ]
+                    }, void 0, true, {
                         fileName: "client/src/admin/admin.tsx",
-                        lineNumber: 20,
+                        lineNumber: 30,
                         columnNumber: 17
                     }, this)
                 ]
@@ -35336,12 +35445,12 @@ function Admin() {
                 className: "m-2",
                 children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouter.Outlet), {}, void 0, false, {
                     fileName: "client/src/admin/admin.tsx",
-                    lineNumber: 23,
+                    lineNumber: 40,
                     columnNumber: 13
                 }, this)
             }, void 0, false, {
                 fileName: "client/src/admin/admin.tsx",
-                lineNumber: 22,
+                lineNumber: 39,
                 columnNumber: 13
             }, this)
         ]
@@ -36148,6 +36257,7 @@ function ChooseTreatment() {
             method: "POST",
             body: JSON.stringify({
                 name: name,
+                message: message,
                 box: box,
                 boxid: boxid,
                 addedAt: new Date
@@ -37312,6 +37422,721 @@ $RefreshReg$(_c, "Companies");
 $RefreshReg$(_c1, "TableItem");
 
   $parcel$ReactRefreshHelpers$2b06.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"7crfk","react":"l1Q8s","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"ajzFF":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$8ebb = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$8ebb.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _layout = require("../layout");
+var _s = $RefreshSig$();
+function CreateCompanyAdmin() {
+    _s();
+    const [email, setEmail] = (0, _react.useState)("");
+    const [username, setUsername] = (0, _react.useState)("");
+    const [firstName, setFirstName] = (0, _react.useState)("");
+    const [lastName, setLastName] = (0, _react.useState)("");
+    const [password, setPassword] = (0, _react.useState)("");
+    const [passwordconfirm, setPasswordConfirm] = (0, _react.useState)("");
+    const [code, setCode] = (0, _react.useState)("");
+    const AddAlert = (0, _react.useContext)((0, _layout.AlertContext));
+    async function FetchSignup() {
+        const response = await fetch("/api/createcompanyadmin", {
+            method: "POST",
+            body: JSON.stringify({
+                email: email,
+                username: username,
+                firstName: firstName,
+                lastName: lastName,
+                password: password,
+                confirmpassword: password,
+                companycode: code
+            }),
+            headers: {
+                "Content-Type": "application/json"
+            },
+            credentials: "include"
+        });
+        const data = await response.json();
+        if (data.message == "success") AddAlert("success", "Admin user added");
+    }
+    function Form(event) {
+        event.preventDefault();
+        FetchSignup();
+    }
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
+        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("form", {
+            className: "my-auto mx-4",
+            onSubmit: Form,
+            children: [
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    className: "form-floating my-5",
+                    children: [
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                            className: "form-control",
+                            id: "enterCode",
+                            onChange: (event)=>setCode(event.target.value),
+                            name: "passwordconfirm"
+                        }, void 0, false, {
+                            fileName: "client/src/admin/createcompanyadmin.tsx",
+                            lineNumber: 46,
+                            columnNumber: 21
+                        }, this),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
+                            htmlFor: "enterCode",
+                            children: "Company Code"
+                        }, void 0, false, {
+                            fileName: "client/src/admin/createcompanyadmin.tsx",
+                            lineNumber: 47,
+                            columnNumber: 21
+                        }, this)
+                    ]
+                }, void 0, true, {
+                    fileName: "client/src/admin/createcompanyadmin.tsx",
+                    lineNumber: 45,
+                    columnNumber: 13
+                }, this),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    className: "form-floating my-2",
+                    children: [
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                            className: "form-control",
+                            id: "enterEmail",
+                            onChange: (event)=>setEmail(event.target.value),
+                            name: "email"
+                        }, void 0, false, {
+                            fileName: "client/src/admin/createcompanyadmin.tsx",
+                            lineNumber: 50,
+                            columnNumber: 21
+                        }, this),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
+                            htmlFor: "enterEmail",
+                            children: "Email"
+                        }, void 0, false, {
+                            fileName: "client/src/admin/createcompanyadmin.tsx",
+                            lineNumber: 51,
+                            columnNumber: 21
+                        }, this)
+                    ]
+                }, void 0, true, {
+                    fileName: "client/src/admin/createcompanyadmin.tsx",
+                    lineNumber: 49,
+                    columnNumber: 17
+                }, this),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    className: "form-floating my-2",
+                    children: [
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                            className: "form-control",
+                            id: "enterUsername",
+                            onChange: (event)=>setUsername(event.target.value),
+                            name: "username"
+                        }, void 0, false, {
+                            fileName: "client/src/admin/createcompanyadmin.tsx",
+                            lineNumber: 54,
+                            columnNumber: 21
+                        }, this),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
+                            htmlFor: "enterUsername",
+                            children: "Username"
+                        }, void 0, false, {
+                            fileName: "client/src/admin/createcompanyadmin.tsx",
+                            lineNumber: 55,
+                            columnNumber: 21
+                        }, this)
+                    ]
+                }, void 0, true, {
+                    fileName: "client/src/admin/createcompanyadmin.tsx",
+                    lineNumber: 53,
+                    columnNumber: 17
+                }, this),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    className: "form-floating my-2",
+                    children: [
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                            className: "form-control",
+                            id: "firstName",
+                            onChange: (event)=>setFirstName(event.target.value),
+                            name: "username"
+                        }, void 0, false, {
+                            fileName: "client/src/admin/createcompanyadmin.tsx",
+                            lineNumber: 58,
+                            columnNumber: 21
+                        }, this),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
+                            htmlFor: "firstName",
+                            children: "First Name"
+                        }, void 0, false, {
+                            fileName: "client/src/admin/createcompanyadmin.tsx",
+                            lineNumber: 59,
+                            columnNumber: 21
+                        }, this)
+                    ]
+                }, void 0, true, {
+                    fileName: "client/src/admin/createcompanyadmin.tsx",
+                    lineNumber: 57,
+                    columnNumber: 17
+                }, this),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    className: "form-floating my-2",
+                    children: [
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                            className: "form-control",
+                            id: "lastName",
+                            onChange: (event)=>setLastName(event.target.value),
+                            name: "username"
+                        }, void 0, false, {
+                            fileName: "client/src/admin/createcompanyadmin.tsx",
+                            lineNumber: 62,
+                            columnNumber: 21
+                        }, this),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
+                            htmlFor: "lastName",
+                            children: "Last Name"
+                        }, void 0, false, {
+                            fileName: "client/src/admin/createcompanyadmin.tsx",
+                            lineNumber: 63,
+                            columnNumber: 21
+                        }, this)
+                    ]
+                }, void 0, true, {
+                    fileName: "client/src/admin/createcompanyadmin.tsx",
+                    lineNumber: 61,
+                    columnNumber: 17
+                }, this),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    className: "form-floating my-2",
+                    children: [
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                            className: "form-control",
+                            id: "enterPassword",
+                            onChange: (event)=>setPassword(event.target.value),
+                            name: "password"
+                        }, void 0, false, {
+                            fileName: "client/src/admin/createcompanyadmin.tsx",
+                            lineNumber: 66,
+                            columnNumber: 21
+                        }, this),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
+                            htmlFor: "enterPassword",
+                            children: "Password"
+                        }, void 0, false, {
+                            fileName: "client/src/admin/createcompanyadmin.tsx",
+                            lineNumber: 67,
+                            columnNumber: 21
+                        }, this)
+                    ]
+                }, void 0, true, {
+                    fileName: "client/src/admin/createcompanyadmin.tsx",
+                    lineNumber: 65,
+                    columnNumber: 17
+                }, this),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    className: "form-floating my-2",
+                    children: [
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                            className: "form-control",
+                            id: "enterConfirmPassword",
+                            onChange: (event)=>setPasswordConfirm(event.target.value),
+                            name: "passwordconfirm"
+                        }, void 0, false, {
+                            fileName: "client/src/admin/createcompanyadmin.tsx",
+                            lineNumber: 70,
+                            columnNumber: 21
+                        }, this),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
+                            htmlFor: "enterConfirmPassword",
+                            children: "Confirm Password"
+                        }, void 0, false, {
+                            fileName: "client/src/admin/createcompanyadmin.tsx",
+                            lineNumber: 71,
+                            columnNumber: 21
+                        }, this)
+                    ]
+                }, void 0, true, {
+                    fileName: "client/src/admin/createcompanyadmin.tsx",
+                    lineNumber: 69,
+                    columnNumber: 17
+                }, this),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                    className: "btn btn-success w-100",
+                    onClick: FetchSignup,
+                    type: "button",
+                    children: "Sign Up"
+                }, void 0, false, {
+                    fileName: "client/src/admin/createcompanyadmin.tsx",
+                    lineNumber: 73,
+                    columnNumber: 17
+                }, this)
+            ]
+        }, void 0, true, {
+            fileName: "client/src/admin/createcompanyadmin.tsx",
+            lineNumber: 44,
+            columnNumber: 9
+        }, this)
+    }, void 0, false);
+}
+_s(CreateCompanyAdmin, "pR/WA9Gz0/tohfLnLJZeXNOPOBA=");
+_c = CreateCompanyAdmin;
+exports.default = CreateCompanyAdmin;
+var _c;
+$RefreshReg$(_c, "CreateCompanyAdmin");
+
+  $parcel$ReactRefreshHelpers$8ebb.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"7crfk","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","react":"l1Q8s","../layout":"gzIZb"}],"lo1V5":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$3751 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$3751.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _layout = require("../layout");
+var _s = $RefreshSig$();
+function CreateAdmin() {
+    _s();
+    const [email, setEmail] = (0, _react.useState)("");
+    const [username, setUsername] = (0, _react.useState)("");
+    const [firstName, setFirstName] = (0, _react.useState)("");
+    const [lastName, setLastName] = (0, _react.useState)("");
+    const [password, setPassword] = (0, _react.useState)("");
+    const [passwordconfirm, setPasswordConfirm] = (0, _react.useState)("");
+    const AddAlert = (0, _react.useContext)((0, _layout.AlertContext));
+    async function FetchSignup() {
+        const response = await fetch("/api/createadmin", {
+            method: "POST",
+            body: JSON.stringify({
+                email: email,
+                username: username,
+                firstName: firstName,
+                lastName: lastName,
+                password: password,
+                confirmpassword: password
+            }),
+            headers: {
+                "Content-Type": "application/json"
+            },
+            credentials: "include"
+        });
+        const data = await response.json();
+        if (data.message == "success") AddAlert("success", "Admin user added");
+    }
+    function Form(event) {
+        event.preventDefault();
+        FetchSignup();
+    }
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
+        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("form", {
+            className: "my-auto mx-4",
+            onSubmit: Form,
+            children: [
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    className: "form-floating my-2",
+                    children: [
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                            className: "form-control",
+                            id: "enterEmail",
+                            onChange: (event)=>setEmail(event.target.value),
+                            name: "email"
+                        }, void 0, false, {
+                            fileName: "client/src/admin/createadmin.tsx",
+                            lineNumber: 42,
+                            columnNumber: 21
+                        }, this),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
+                            htmlFor: "enterEmail",
+                            children: "Email"
+                        }, void 0, false, {
+                            fileName: "client/src/admin/createadmin.tsx",
+                            lineNumber: 43,
+                            columnNumber: 21
+                        }, this)
+                    ]
+                }, void 0, true, {
+                    fileName: "client/src/admin/createadmin.tsx",
+                    lineNumber: 41,
+                    columnNumber: 17
+                }, this),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    className: "form-floating my-2",
+                    children: [
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                            className: "form-control",
+                            id: "enterUsername",
+                            onChange: (event)=>setUsername(event.target.value),
+                            name: "username"
+                        }, void 0, false, {
+                            fileName: "client/src/admin/createadmin.tsx",
+                            lineNumber: 46,
+                            columnNumber: 21
+                        }, this),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
+                            htmlFor: "enterUsername",
+                            children: "Username"
+                        }, void 0, false, {
+                            fileName: "client/src/admin/createadmin.tsx",
+                            lineNumber: 47,
+                            columnNumber: 21
+                        }, this)
+                    ]
+                }, void 0, true, {
+                    fileName: "client/src/admin/createadmin.tsx",
+                    lineNumber: 45,
+                    columnNumber: 17
+                }, this),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    className: "form-floating my-2",
+                    children: [
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                            className: "form-control",
+                            id: "firstName",
+                            onChange: (event)=>setFirstName(event.target.value),
+                            name: "username"
+                        }, void 0, false, {
+                            fileName: "client/src/admin/createadmin.tsx",
+                            lineNumber: 50,
+                            columnNumber: 21
+                        }, this),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
+                            htmlFor: "firstName",
+                            children: "First Name"
+                        }, void 0, false, {
+                            fileName: "client/src/admin/createadmin.tsx",
+                            lineNumber: 51,
+                            columnNumber: 21
+                        }, this)
+                    ]
+                }, void 0, true, {
+                    fileName: "client/src/admin/createadmin.tsx",
+                    lineNumber: 49,
+                    columnNumber: 17
+                }, this),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    className: "form-floating my-2",
+                    children: [
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                            className: "form-control",
+                            id: "lastName",
+                            onChange: (event)=>setLastName(event.target.value),
+                            name: "username"
+                        }, void 0, false, {
+                            fileName: "client/src/admin/createadmin.tsx",
+                            lineNumber: 54,
+                            columnNumber: 21
+                        }, this),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
+                            htmlFor: "lastName",
+                            children: "Last Name"
+                        }, void 0, false, {
+                            fileName: "client/src/admin/createadmin.tsx",
+                            lineNumber: 55,
+                            columnNumber: 21
+                        }, this)
+                    ]
+                }, void 0, true, {
+                    fileName: "client/src/admin/createadmin.tsx",
+                    lineNumber: 53,
+                    columnNumber: 17
+                }, this),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    className: "form-floating my-2",
+                    children: [
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                            className: "form-control",
+                            id: "enterPassword",
+                            onChange: (event)=>setPassword(event.target.value),
+                            name: "password"
+                        }, void 0, false, {
+                            fileName: "client/src/admin/createadmin.tsx",
+                            lineNumber: 58,
+                            columnNumber: 21
+                        }, this),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
+                            htmlFor: "enterPassword",
+                            children: "Password"
+                        }, void 0, false, {
+                            fileName: "client/src/admin/createadmin.tsx",
+                            lineNumber: 59,
+                            columnNumber: 21
+                        }, this)
+                    ]
+                }, void 0, true, {
+                    fileName: "client/src/admin/createadmin.tsx",
+                    lineNumber: 57,
+                    columnNumber: 17
+                }, this),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    className: "form-floating my-2",
+                    children: [
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                            className: "form-control",
+                            id: "enterConfirmPassword",
+                            onChange: (event)=>setPasswordConfirm(event.target.value),
+                            name: "passwordconfirm"
+                        }, void 0, false, {
+                            fileName: "client/src/admin/createadmin.tsx",
+                            lineNumber: 62,
+                            columnNumber: 21
+                        }, this),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
+                            htmlFor: "enterConfirmPassword",
+                            children: "Confirm Password"
+                        }, void 0, false, {
+                            fileName: "client/src/admin/createadmin.tsx",
+                            lineNumber: 63,
+                            columnNumber: 21
+                        }, this)
+                    ]
+                }, void 0, true, {
+                    fileName: "client/src/admin/createadmin.tsx",
+                    lineNumber: 61,
+                    columnNumber: 17
+                }, this),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                    className: "btn btn-success w-100",
+                    onClick: FetchSignup,
+                    type: "button",
+                    children: "Sign Up"
+                }, void 0, false, {
+                    fileName: "client/src/admin/createadmin.tsx",
+                    lineNumber: 65,
+                    columnNumber: 17
+                }, this)
+            ]
+        }, void 0, true, {
+            fileName: "client/src/admin/createadmin.tsx",
+            lineNumber: 40,
+            columnNumber: 9
+        }, this)
+    }, void 0, false);
+}
+_s(CreateAdmin, "uyxPfuJlpYWZxsfd/fRo8aD7C4A=");
+_c = CreateAdmin;
+exports.default = CreateAdmin;
+var _c;
+$RefreshReg$(_c, "CreateAdmin");
+
+  $parcel$ReactRefreshHelpers$3751.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"7crfk","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","react":"l1Q8s","../layout":"gzIZb"}],"ii21k":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$305c = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$305c.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _s = $RefreshSig$();
+function Users() {
+    _s();
+    const [users, setUsers] = (0, _react.useState)([]);
+    (0, _react.useEffect)(()=>{
+        fetch("/api/getusers", {
+            method: "GET",
+            credentials: "include"
+        }).then((response)=>response.json()).then((data)=>setUsers(data.users));
+    }, []);
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
+        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+            className: "overflow-x-scroll",
+            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("table", {
+                className: "table table-borderless table-striped",
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("thead", {
+                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("tr", {
+                            children: [
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("th", {
+                                    children: "#"
+                                }, void 0, false, {
+                                    fileName: "client/src/admin/users.tsx",
+                                    lineNumber: 19,
+                                    columnNumber: 29
+                                }, this),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("th", {
+                                    className: "text-nowrap",
+                                    scope: "col",
+                                    children: "Username"
+                                }, void 0, false, {
+                                    fileName: "client/src/admin/users.tsx",
+                                    lineNumber: 20,
+                                    columnNumber: 29
+                                }, this),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("th", {
+                                    className: "text-nowrap",
+                                    scope: "col",
+                                    children: "First Name"
+                                }, void 0, false, {
+                                    fileName: "client/src/admin/users.tsx",
+                                    lineNumber: 21,
+                                    columnNumber: 29
+                                }, this),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("th", {
+                                    className: "text-nowrap",
+                                    scope: "col",
+                                    children: "Last Name"
+                                }, void 0, false, {
+                                    fileName: "client/src/admin/users.tsx",
+                                    lineNumber: 22,
+                                    columnNumber: 29
+                                }, this),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("th", {
+                                    scope: "col"
+                                }, void 0, false, {
+                                    fileName: "client/src/admin/users.tsx",
+                                    lineNumber: 23,
+                                    columnNumber: 29
+                                }, this),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("th", {
+                                    scope: "col"
+                                }, void 0, false, {
+                                    fileName: "client/src/admin/users.tsx",
+                                    lineNumber: 24,
+                                    columnNumber: 29
+                                }, this)
+                            ]
+                        }, void 0, true, {
+                            fileName: "client/src/admin/users.tsx",
+                            lineNumber: 18,
+                            columnNumber: 25
+                        }, this)
+                    }, void 0, false, {
+                        fileName: "client/src/admin/users.tsx",
+                        lineNumber: 17,
+                        columnNumber: 21
+                    }, this),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("tbody", {
+                        children: users && users.map((item, index)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(TableItem, {
+                                id: item._id,
+                                username: item.username,
+                                firstName: item.firstName,
+                                lastName: item.lastName,
+                                index: index
+                            }, void 0, false, {
+                                fileName: "client/src/admin/users.tsx",
+                                lineNumber: 28,
+                                columnNumber: 140
+                            }, this))
+                    }, void 0, false, {
+                        fileName: "client/src/admin/users.tsx",
+                        lineNumber: 27,
+                        columnNumber: 21
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "client/src/admin/users.tsx",
+                lineNumber: 16,
+                columnNumber: 17
+            }, this)
+        }, void 0, false, {
+            fileName: "client/src/admin/users.tsx",
+            lineNumber: 15,
+            columnNumber: 13
+        }, this)
+    }, void 0, false);
+}
+_s(Users, "JadZszbqna06PpJs9hMo7Hl/LOY=");
+_c = Users;
+function TableItem({ id, username, firstName, lastName, index }) {
+    async function DeleteUser(id) {
+        await fetch("/api/deleteuser", {
+            method: "DELETE",
+            body: JSON.stringify({
+                userid: id
+            }),
+            headers: {
+                "Content-Type": "application/json"
+            },
+            credentials: "include"
+        });
+    }
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("tr", {
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("td", {
+                className: "text-nowrap",
+                children: index
+            }, void 0, false, {
+                fileName: "client/src/admin/users.tsx",
+                lineNumber: 52,
+                columnNumber: 13
+            }, this),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("td", {
+                className: "text-nowrap",
+                children: username
+            }, void 0, false, {
+                fileName: "client/src/admin/users.tsx",
+                lineNumber: 53,
+                columnNumber: 13
+            }, this),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("td", {
+                className: "text-nowrap",
+                children: firstName
+            }, void 0, false, {
+                fileName: "client/src/admin/users.tsx",
+                lineNumber: 54,
+                columnNumber: 13
+            }, this),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("td", {
+                className: "text-nowrap",
+                children: lastName
+            }, void 0, false, {
+                fileName: "client/src/admin/users.tsx",
+                lineNumber: 55,
+                columnNumber: 13
+            }, this),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("td", {
+                className: "text-nowrap",
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                    onClick: ()=>{
+                        DeleteUser(id);
+                    },
+                    className: "btn btn-danger",
+                    children: "Delete"
+                }, void 0, false, {
+                    fileName: "client/src/admin/users.tsx",
+                    lineNumber: 56,
+                    columnNumber: 41
+                }, this)
+            }, void 0, false, {
+                fileName: "client/src/admin/users.tsx",
+                lineNumber: 56,
+                columnNumber: 13
+            }, this)
+        ]
+    }, void 0, true, {
+        fileName: "client/src/admin/users.tsx",
+        lineNumber: 51,
+        columnNumber: 9
+    }, this);
+}
+_c1 = TableItem;
+exports.default = Users;
+var _c, _c1;
+$RefreshReg$(_c, "Users");
+$RefreshReg$(_c1, "TableItem");
+
+  $parcel$ReactRefreshHelpers$305c.postlude(module);
 } finally {
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;

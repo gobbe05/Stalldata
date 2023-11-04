@@ -1,4 +1,3 @@
-import { useEffect, useState } from "react"
 import { Link, useNavigate } from "react-router-dom"
 import { useGlobalState } from "./GlobalState"
 
@@ -28,7 +27,7 @@ function Header() {
                 </button>
                 <div className="offcanvas offcanvas-end" tabIndex={-1} id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
                     <div className="offcanvas-header">
-                        <h3 className="offcanvas-title m-2" id="offcanvasNavbarLabel">Stalldata - {globalState.companyname}</h3>
+                        <h3 className="offcanvas-title m-2" id="offcanvasNavbarLabel">Stalldata {globalState.companyname && "- "} {globalState.companyname}</h3>
                         <button type="button" className="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                     </div>
                     <div className="offcanvas-body">
@@ -36,10 +35,10 @@ function Header() {
                                 {!globalState.loggedin && 
                                 <>
                                     <li className="nav-item">
-                                        <Link className="nav-link" to="/auth/login" data-bs-dismiss="offcanvas">Login</Link>
+                                        <Link className="nav-link" to="/auth/login">Login</Link>
                                     </li>
                                     <li className="nav-item">
-                                        <Link className="nav-link" to="/auth/signup" data-bs-dismiss="offcanvas">Sign Up</Link>
+                                        <Link className="nav-link" to="/auth/signup">Sign Up</Link>
                                     </li>
                                 </>}
                                 
@@ -50,13 +49,13 @@ function Header() {
                                         <Link className="nav-link" to="/" data-bs-dismiss="offcanvas">Home</Link>
                                     </li>
                                     <li className="nav-item">
-                                        <Link className="nav-link" to="/behandling" data-bs-dismiss="offcanvas">Behandling</Link>
+                                        <Link className="nav-link" to="/behandling">Behandling</Link>
                                     </li>
                                     <li className="nav-item">
-                                        {(globalState.role == "admin" || globalState.role == "companyadmin")  && <Link className="nav-link" to="/company" data-bs-dismiss="offcanvas">Company</Link>}
+                                        {(globalState.role == "admin" || globalState.role == "companyadmin")  && <Link className="nav-link" to="/company">Company</Link>}
                                     </li>
                                     <li className="nav-item">
-                                        {globalState.role == "admin" && <Link className="nav-link" to="/admin" data-bs-dismiss="offcanvas">Admin</Link>}
+                                        {globalState.role == "admin" && <Link className="nav-link" to="/admin">Admin</Link>}
                                     </li>
                                     <button className="btn btn-danger mt-4 fs-2 p-2" onClick={Logout}  data-bs-dismiss="offcanvas">Logout</button>
                                 </>}

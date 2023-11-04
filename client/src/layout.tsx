@@ -24,7 +24,7 @@ function Layout() {
             if(data.auth == true) updateGlobalState("loggedin", true)
             if(data.role) updateGlobalState("role", data.role)
         })
-    }, [])
+    }, [globalState.loggedin])
     useEffect(() => {
         fetch("/api/getcurrentcompany", {
             method: "GET",
