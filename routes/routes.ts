@@ -27,6 +27,9 @@ import deletecompany from './deletecompany'
 import createcompanyadmin from './createcompanyadmin'
 import createadmin from './createadmin'
 import getusers from './getusers'
+import adminupdateuser from './adminupdateuser'
+import updatecompany from './updatecompany'
+import companyedituser from './companyedituser'
 
 export const getauthroute = getauth
 export const getusersroute = getusers
@@ -57,3 +60,6 @@ export const getcompanyusersroute = getcompanyusers
 export const acceptuserroute = acceptuser
 export const createcompanyadminroute = createcompanyadmin
 export const createadminroute = createadmin
+export const adminupdateuserroute = adminupdateuser
+export const updatecompanyroute = updatecompany
+export const companyedituserroute = companyedituser

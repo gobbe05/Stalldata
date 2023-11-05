@@ -8,8 +8,10 @@ function GetUser(req: express.Request, res: express.Response, next: express.Next
         if(err) return res.status(401).json({message: "There was an error authenticating", err: err})
         if(!decoded) return res.status(401).json({message: "Token is empty"})
         const user = decoded.username
+        const id = decoded.userid
         if(!user) return res.status(401).json({message: "User was not found"})
         res.locals.user = user
+        res.locals.id = id
         next()
     })
 }

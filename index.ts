@@ -3,11 +3,11 @@ import mongoose from 'mongoose'
 import cors from 'cors'
 import cookieParser from 'cookie-parser'
 import Protected from './middleware/protected'
-import { acceptuserroute, addboxroute, addfarmroute, addsectionroute, addtreatmentroute, addtreatmenttoboxroute, checkcompanycoderoute, createadminroute, createcompanyadminroute, createcompanyroute, deleteaccountroute, deleteboxtreatmentroute, deletecompanyroute, deletepersonalboxtreatmentroute, getauthroute, getboxesroute, getcompaniesroute, getcompanyusersroute, getcurrentcompanyroute, getfarmsroute, getprevioustreatmentsroute, getsectionsroute, gettreatedboxesroute, gettreatmentsroute, getunacceptedusersroute, getusersroute, loginroute, logoutroute, signuproute } from './routes/routes'
+import { acceptuserroute, addboxroute, addfarmroute, addsectionroute, addtreatmentroute, addtreatmenttoboxroute, adminupdateuserroute, checkcompanycoderoute, companyedituserroute, createadminroute, createcompanyadminroute, createcompanyroute, deleteaccountroute, deleteboxtreatmentroute, deletecompanyroute, deletepersonalboxtreatmentroute, getauthroute, getboxesroute, getcompaniesroute, getcompanyusersroute, getcurrentcompanyroute, getfarmsroute, getprevioustreatmentsroute, getsectionsroute, gettreatedboxesroute, gettreatmentsroute, getunacceptedusersroute, getusersroute, loginroute, logoutroute, signuproute, updatecompanyroute } from './routes/routes'
 import GetCompany from './middleware/company'
 import { Parser } from 'json2csv'
 import { BoxTreatment } from './models'
-import GetUser from './middleware/username'
+import GetUser from './middleware/getuser'
 import ProtectedAdmin from './middleware/protectedadmin'
 import ProtectedCompanyAdmin from './middleware/protectedcompanyadmin'
 mongoose.connect("mongodb://127.0.0.1:27017")
@@ -58,6 +58,11 @@ app.use(express.static("dist"))
 /* Delete Personal Treatment */ app.delete("/api/deletepersonalboxtreatment", Protected, GetUser, deletepersonalboxtreatmentroute)
 /* Delete Treatment */          app.delete("/api/deleteboxtreatment", ProtectedCompanyAdmin, deleteboxtreatmentroute)
 /* Delete Company */            app.delete("/api/deletecompany", ProtectedAdmin, deletecompanyroute)
+
+/* PATCH */
+/* Update User From Admin */    app.patch("/api/adminupdateuser", ProtectedAdmin, adminupdateuserroute)
+/* Update User From Company */  app.patch("/api/companyupdateuser", ProtectedCompanyAdmin, GetUser, companyedituserroute)
+/* Update Company */            app.patch("/api/updatecompany", ProtectedAdmin, updatecompanyroute)
 
 app.get("/api/getcsv", async (req: express.Request, res: express.Response) => {
     const fields: Array<{label: string, value: string}> = [{
