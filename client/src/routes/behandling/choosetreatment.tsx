@@ -20,7 +20,10 @@ function ChooseTreatment() {
             },
             credentials: "include"
         })
-        if(response.status == 200) AddAlert("success", "Successfully added a treatment to the box")
+        if(response.status == 200) {
+            AddAlert("success", "Successfully added a treatment to the box")
+            navigate("/")
+        }
         if(response.status == 401) AddAlert("danger", "You are unathorized to access this page")
         if(response.status == 500) AddAlert("danger", "There was an error handling your request")
     }

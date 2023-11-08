@@ -1,12 +1,17 @@
-import { useEffect, useState } from "react"
+import { useContext, useEffect, useState } from "react"
+import { AlertContext } from "../layout"
 
 function Users() {
     const [users, setUsers] = useState([])
     
+    async function GetUsers(){
+        const response = await fetch("/api/getcompanyusers")
+        const data = await response.json()
+        setUsers(data.users)
+    }
+
     useEffect(() => {
-        fetch("/api/getcompanyusers")
-        .then((response) => response.json())
-        .then((data) => setUsers(data.users))
+        GetUsers()
     }, [])
 
     return (
@@ -26,7 +31,7 @@ function Users() {
                     </tr>
                 </thead>
                 <tbody>
-                {users && users.map((user: {_id: string, username: string, firstName: string, lastName: string, email: string, accepted: boolean}) => <User user={user}/>)}
+                {users && users.map((user: {_id: string, username: string, firstName: string, lastName: string, email: string, accepted: boolean}) => <User user={user} GetUsers={GetUsers}/>)}
                 </tbody>
             </table>
         </div>
@@ -35,12 +40,13 @@ function Users() {
     )
 }
 
-function User({user}: {user: {_id: string, username: string, firstName: string, lastName: string, email: string, accepted: boolean}}) {
+function User({user, GetUsers}: {user: {_id: string, username: string, firstName: string, lastName: string, email: string, accepted: boolean}, GetUsers: () => void}) {
     const [editUser, setEditUser] = useState<boolean>(false)
     const [emailInput, setEmailInput] = useState<string>("")
     const [usernameInput, setUsernameInput] = useState<string>(user.username)
     const [firstNameInput, setFirstNameInput] = useState<string>(user.firstName)
     const [lastNameInput, setLastNameInput] = useState<string>(user.lastName)
+    const AddAlert = useContext(AlertContext)
 
     async function AcceptUser(id: string) {
         await fetch("/api/acceptuser", {
@@ -56,7 +62,7 @@ function User({user}: {user: {_id: string, username: string, firstName: string, 
     }
 
     async function EditUser() {
-        await fetch("/api/companyupdateuser", {
+        const response = await fetch("/api/companyupdateuser", {
             method: "PATCH",
             body: JSON.stringify({
                 userid: user._id,
@@ -70,6 +76,11 @@ function User({user}: {user: {_id: string, username: string, firstName: string, 
             },
             credentials: "include"
         })
+        if(response.status == 200) {
+            setEditUser(false)
+            GetUsers()
+            AddAlert("success", "Successfully updated user")
+        }
     }
 
     async function DeleteUser() {
@@ -89,8 +100,8 @@ function User({user}: {user: {_id: string, username: string, firstName: string, 
     if(editUser) {
             return (
                 <tr>
-                    <td className="text-nowrap"><input onChange={(event) => setEmailInput(event.target.value)} defaultValue={user.email}/></td>
-                    <td className="text-nowrap"><input onChange={(event) => setUsernameInput(event.target.value)} defaultValue={user.username}/></td>
+                    <td className="text-nowrap">{user.email}</td>
+                    <td className="text-nowrap">{user.username}</td>
                     <td className="text-nowrap"><input onChange={(event) => setFirstNameInput(event.target.value)} defaultValue={user.firstName}/></td>
                     <td className="text-nowrap"><input onChange={(event) => setLastNameInput(event.target.value)} defaultValue={user.lastName}/></td>
                     <td className="text-nowrap">{user.accepted == false && <button className="btn btn-success" onClick={() => {AcceptUser(user._id)}}>Accept</button>}</td>

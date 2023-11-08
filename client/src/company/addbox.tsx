@@ -4,7 +4,8 @@ import { useGlobalState } from "../GlobalState"
 function AddBox() {
     const [name, setName] = useState<string>("")
     const [farms, setFarms] = useState([])
-    const [sections, setSections] = useState<undefined | Array<any>>(undefined)
+    const [selectedFarmId, setSelectedfarmId] = useState("")  
+    const [sections, setSections] = useState<undefined | Array<any>>([])
     const [section, setSection] = useState<undefined | string>()
 
     function AddNewBox() {
@@ -29,14 +30,23 @@ function AddBox() {
         })
         const data = await response.json()
         setSections(data.sections)
-        setSection(data.sections[0]._id)
+        data.sections[0] && setSection(data.sections[0]._id)
         
     }
 
     useEffect(() => {
+        GetSections(selectedFarmId)
+    }, [farms])
+
+    useEffect(() => {
         fetch("/api/getfarms")
         .then((response) => response.json())
-        .then((data) => {setFarms(data.farms)})
+        .then((data) => {
+            setFarms(data.farms)
+            data.farms[0] && setSelectedfarmId(data.farms[0]._id)
+        }
+            
+            )
     },[])
 
     return (
@@ -53,7 +63,6 @@ function AddBox() {
                     <label htmlFor="selectFarm">Select Farm</label>
                 </div>
 
-                {sections && 
                 <div className="form-floating my-2">
                     <select id="selectSection" className="form-control" onChange={(event) => {setSection(event.target.value)}}>
                         {sections.map((section) => 
@@ -62,7 +71,7 @@ function AddBox() {
                         </option>)}
                     </select>
                     <label htmlFor="selectSection">Select Section</label>
-                </div>}
+                </div>
 
                 <div className="form-floating my-2">
                     <input className="form-control" id="boxName" onChange={(event) => {

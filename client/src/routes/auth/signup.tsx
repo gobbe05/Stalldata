@@ -1,7 +1,8 @@
-import { useEffect, useState } from "react"
+import { useContext, useEffect, useState } from "react"
 import { useNavigate } from "react-router"
 import { useGlobalState } from "../../GlobalState"
 import { Link } from "react-router-dom"
+import { AlertContext } from "../../layout"
 
 function Signup() {
     const [email, setEmail] = useState<string>("")
@@ -12,6 +13,7 @@ function Signup() {
     const [passwordconfirm, setPasswordConfirm] = useState<string>("")
     const [globalState, updateGlobalState] = useGlobalState()
     const navigate = useNavigate()
+    const AddAlert = useContext(AlertContext)
 
     async function FetchSignup() {
         const response = await fetch("/api/signup", {
@@ -34,6 +36,8 @@ function Signup() {
         if(data.message == "success") {
             updateGlobalState("loggedin", true)
             navigate("/")
+        } else {
+            AddAlert("danger", data.message)
         }
     }
     function Form(event: any) {
@@ -49,27 +53,27 @@ function Signup() {
         <>
             <form className="my-auto mx-4" onSubmit={Form}>
                 <div className="form-floating my-2">
-                    <input className="form-control" id="enterEmail" onChange={(event) => setEmail(event.target.value)} name="email" />
+                    <input className="form-control" id="enterEmail" onChange={(event) => setEmail(event.target.value)} name="email" type="email" required/>
                     <label htmlFor="enterEmail">Email</label>
                 </div>
                 <div className="form-floating my-2">
-                    <input className="form-control" id="enterUsername" onChange={(event) => setUsername(event.target.value)} name="username" />
+                    <input className="form-control" id="enterUsername" onChange={(event) => setUsername(event.target.value)} name="username" required/>
                     <label htmlFor="enterUsername">Username</label>
                 </div>
                 <div className="form-floating my-2">
-                    <input className="form-control" id="firstName" onChange={(event) => setFirstName(event.target.value)} name="username" />
+                    <input className="form-control" id="firstName" onChange={(event) => setFirstName(event.target.value)} name="username" required/>
                     <label htmlFor="firstName">First Name</label>
                 </div>
                 <div className="form-floating my-2">
-                    <input className="form-control" id="lastName" onChange={(event) => setLastName(event.target.value)} name="username" />
+                    <input className="form-control" id="lastName" onChange={(event) => setLastName(event.target.value)} name="username" required/>
                     <label htmlFor="lastName">Last Name</label>
                 </div>
                 <div className="form-floating my-2">
-                    <input className="form-control" id="enterPassword" onChange={(event) => setPassword(event.target.value)} name="password" />
+                    <input className="form-control" id="enterPassword" onChange={(event) => setPassword(event.target.value)} name="password" type="password" required/>
                     <label htmlFor="enterPassword">Password</label>
                 </div>
                 <div className="form-floating my-2">
-                    <input className="form-control" id="enterConfirmPassword" onChange={(event) => setPasswordConfirm(event.target.value)} name="passwordconfirm" />
+                    <input className="form-control" id="enterConfirmPassword" onChange={(event) => setPasswordConfirm(event.target.value)} name="passwordconfirm" type="password" />
                     <label htmlFor="enterConfirmPassword">Confirm Password</label>
                 </div>
                 <button className="btn btn-success w-100" onClick={FetchSignup} type="button">Sign Up</button>

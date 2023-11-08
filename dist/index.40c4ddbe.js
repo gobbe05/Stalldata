@@ -34032,6 +34032,7 @@ var _react = require("react");
 var _reactRouter = require("react-router");
 var _globalState = require("../../GlobalState");
 var _reactRouterDom = require("react-router-dom");
+var _layout = require("../../layout");
 var _s = $RefreshSig$();
 function Signup() {
     _s();
@@ -34043,6 +34044,7 @@ function Signup() {
     const [passwordconfirm, setPasswordConfirm] = (0, _react.useState)("");
     const [globalState, updateGlobalState] = (0, _globalState.useGlobalState)();
     const navigate = (0, _reactRouter.useNavigate)();
+    const AddAlert = (0, _react.useContext)((0, _layout.AlertContext));
     async function FetchSignup() {
         const response = await fetch("/api/signup", {
             method: "POST",
@@ -34064,7 +34066,7 @@ function Signup() {
         if (data.message == "success") {
             updateGlobalState("loggedin", true);
             navigate("/");
-        }
+        } else AddAlert("danger", data.message);
     }
     function Form(event) {
         event.preventDefault();
@@ -34085,42 +34087,17 @@ function Signup() {
                             className: "form-control",
                             id: "enterEmail",
                             onChange: (event)=>setEmail(event.target.value),
-                            name: "email"
-                        }, void 0, false, {
-                            fileName: "client/src/routes/auth/signup.tsx",
-                            lineNumber: 52,
-                            columnNumber: 21
-                        }, this),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
-                            htmlFor: "enterEmail",
-                            children: "Email"
-                        }, void 0, false, {
-                            fileName: "client/src/routes/auth/signup.tsx",
-                            lineNumber: 53,
-                            columnNumber: 21
-                        }, this)
-                    ]
-                }, void 0, true, {
-                    fileName: "client/src/routes/auth/signup.tsx",
-                    lineNumber: 51,
-                    columnNumber: 17
-                }, this),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                    className: "form-floating my-2",
-                    children: [
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
-                            className: "form-control",
-                            id: "enterUsername",
-                            onChange: (event)=>setUsername(event.target.value),
-                            name: "username"
+                            name: "email",
+                            type: "email",
+                            required: true
                         }, void 0, false, {
                             fileName: "client/src/routes/auth/signup.tsx",
                             lineNumber: 56,
                             columnNumber: 21
                         }, this),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
-                            htmlFor: "enterUsername",
-                            children: "Username"
+                            htmlFor: "enterEmail",
+                            children: "Email"
                         }, void 0, false, {
                             fileName: "client/src/routes/auth/signup.tsx",
                             lineNumber: 57,
@@ -34137,17 +34114,18 @@ function Signup() {
                     children: [
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
                             className: "form-control",
-                            id: "firstName",
-                            onChange: (event)=>setFirstName(event.target.value),
-                            name: "username"
+                            id: "enterUsername",
+                            onChange: (event)=>setUsername(event.target.value),
+                            name: "username",
+                            required: true
                         }, void 0, false, {
                             fileName: "client/src/routes/auth/signup.tsx",
                             lineNumber: 60,
                             columnNumber: 21
                         }, this),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
-                            htmlFor: "firstName",
-                            children: "First Name"
+                            htmlFor: "enterUsername",
+                            children: "Username"
                         }, void 0, false, {
                             fileName: "client/src/routes/auth/signup.tsx",
                             lineNumber: 61,
@@ -34164,17 +34142,18 @@ function Signup() {
                     children: [
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
                             className: "form-control",
-                            id: "lastName",
-                            onChange: (event)=>setLastName(event.target.value),
-                            name: "username"
+                            id: "firstName",
+                            onChange: (event)=>setFirstName(event.target.value),
+                            name: "username",
+                            required: true
                         }, void 0, false, {
                             fileName: "client/src/routes/auth/signup.tsx",
                             lineNumber: 64,
                             columnNumber: 21
                         }, this),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
-                            htmlFor: "lastName",
-                            children: "Last Name"
+                            htmlFor: "firstName",
+                            children: "First Name"
                         }, void 0, false, {
                             fileName: "client/src/routes/auth/signup.tsx",
                             lineNumber: 65,
@@ -34191,17 +34170,18 @@ function Signup() {
                     children: [
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
                             className: "form-control",
-                            id: "enterPassword",
-                            onChange: (event)=>setPassword(event.target.value),
-                            name: "password"
+                            id: "lastName",
+                            onChange: (event)=>setLastName(event.target.value),
+                            name: "username",
+                            required: true
                         }, void 0, false, {
                             fileName: "client/src/routes/auth/signup.tsx",
                             lineNumber: 68,
                             columnNumber: 21
                         }, this),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
-                            htmlFor: "enterPassword",
-                            children: "Password"
+                            htmlFor: "lastName",
+                            children: "Last Name"
                         }, void 0, false, {
                             fileName: "client/src/routes/auth/signup.tsx",
                             lineNumber: 69,
@@ -34218,17 +34198,19 @@ function Signup() {
                     children: [
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
                             className: "form-control",
-                            id: "enterConfirmPassword",
-                            onChange: (event)=>setPasswordConfirm(event.target.value),
-                            name: "passwordconfirm"
+                            id: "enterPassword",
+                            onChange: (event)=>setPassword(event.target.value),
+                            name: "password",
+                            type: "password",
+                            required: true
                         }, void 0, false, {
                             fileName: "client/src/routes/auth/signup.tsx",
                             lineNumber: 72,
                             columnNumber: 21
                         }, this),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
-                            htmlFor: "enterConfirmPassword",
-                            children: "Confirm Password"
+                            htmlFor: "enterPassword",
+                            children: "Password"
                         }, void 0, false, {
                             fileName: "client/src/routes/auth/signup.tsx",
                             lineNumber: 73,
@@ -34240,6 +34222,34 @@ function Signup() {
                     lineNumber: 71,
                     columnNumber: 17
                 }, this),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    className: "form-floating my-2",
+                    children: [
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                            className: "form-control",
+                            id: "enterConfirmPassword",
+                            onChange: (event)=>setPasswordConfirm(event.target.value),
+                            name: "passwordconfirm",
+                            type: "password"
+                        }, void 0, false, {
+                            fileName: "client/src/routes/auth/signup.tsx",
+                            lineNumber: 76,
+                            columnNumber: 21
+                        }, this),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
+                            htmlFor: "enterConfirmPassword",
+                            children: "Confirm Password"
+                        }, void 0, false, {
+                            fileName: "client/src/routes/auth/signup.tsx",
+                            lineNumber: 77,
+                            columnNumber: 21
+                        }, this)
+                    ]
+                }, void 0, true, {
+                    fileName: "client/src/routes/auth/signup.tsx",
+                    lineNumber: 75,
+                    columnNumber: 17
+                }, this),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
                     className: "btn btn-success w-100",
                     onClick: FetchSignup,
@@ -34247,7 +34257,7 @@ function Signup() {
                     children: "Sign Up"
                 }, void 0, false, {
                     fileName: "client/src/routes/auth/signup.tsx",
-                    lineNumber: 75,
+                    lineNumber: 79,
                     columnNumber: 17
                 }, this),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -34259,24 +34269,24 @@ function Signup() {
                             children: "Login"
                         }, void 0, false, {
                             fileName: "client/src/routes/auth/signup.tsx",
-                            lineNumber: 76,
+                            lineNumber: 80,
                             columnNumber: 62
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "client/src/routes/auth/signup.tsx",
-                    lineNumber: 76,
+                    lineNumber: 80,
                     columnNumber: 17
                 }, this)
             ]
         }, void 0, true, {
             fileName: "client/src/routes/auth/signup.tsx",
-            lineNumber: 50,
+            lineNumber: 54,
             columnNumber: 13
         }, this)
     }, void 0, false);
 }
-_s(Signup, "pTxojlX9cfUeVyeBZbgMi+Adt08=", false, function() {
+_s(Signup, "VDw1zOVBzhCwVA9c6eCNgelDFCo=", false, function() {
     return [
         (0, _globalState.useGlobalState),
         (0, _reactRouter.useNavigate)
@@ -34292,392 +34302,7 @@ $RefreshReg$(_c, "Signup");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"7crfk","react":"l1Q8s","react-router":"99Cqw","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","../../GlobalState":"liq8b","react-router-dom":"sYSB5"}],"gqq5z":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$df57 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
-var prevRefreshReg = window.$RefreshReg$;
-var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$df57.prelude(module);
-
-try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-var _jsxDevRuntime = require("react/jsx-dev-runtime");
-var _react = require("react");
-var _reactRouterDom = require("react-router-dom");
-var _globalState = require("../../GlobalState");
-var _s = $RefreshSig$();
-function Behandling() {
-    _s();
-    const [treatedboxes, setTreatedboxes] = (0, _react.useState)([]);
-    const [globalState, updateGloalState] = (0, _globalState.useGlobalState)();
-    (0, _react.useEffect)(()=>{
-        fetch("/api/getprevioustreatments").then((response)=>response.json()).then((data)=>data.treatments && setTreatedboxes(data.treatments));
-    }, []);
-    async function DeletePersonalBoxTreatment(boxid) {
-        await fetch("/api/deletepersonalboxtreatment", {
-            method: "DELETE",
-            body: JSON.stringify({
-                treatedboxId: boxid
-            }),
-            headers: {
-                "Content-Type": "application/json"
-            },
-            credentials: "include"
-        });
-    }
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
-        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-            className: "m-3",
-            children: [
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                    className: "d-flex my-2",
-                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
-                        className: "btn btn-success rounded w-100 my-2 py-3",
-                        to: "/behandling",
-                        children: "Start treatment"
-                    }, void 0, false, {
-                        fileName: "client/src/routes/behandling/behandling.tsx",
-                        lineNumber: 31,
-                        columnNumber: 15
-                    }, this)
-                }, void 0, false, {
-                    fileName: "client/src/routes/behandling/behandling.tsx",
-                    lineNumber: 30,
-                    columnNumber: 13
-                }, this),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                    className: "overflow-x-scroll rounded m-3",
-                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("table", {
-                        className: "table table-borderless table-striped caption-top ",
-                        children: [
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("caption", {
-                                className: "fs-5",
-                                children: "Your previous treatments"
-                            }, void 0, false, {
-                                fileName: "client/src/routes/behandling/behandling.tsx",
-                                lineNumber: 35,
-                                columnNumber: 21
-                            }, this),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("thead", {
-                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("tr", {
-                                    children: [
-                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("th", {
-                                            scope: "col",
-                                            children: "#"
-                                        }, void 0, false, {
-                                            fileName: "client/src/routes/behandling/behandling.tsx",
-                                            lineNumber: 38,
-                                            columnNumber: 29
-                                        }, this),
-                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("th", {
-                                            scope: "col",
-                                            children: "Name"
-                                        }, void 0, false, {
-                                            fileName: "client/src/routes/behandling/behandling.tsx",
-                                            lineNumber: 39,
-                                            columnNumber: 29
-                                        }, this),
-                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("th", {
-                                            scope: "col",
-                                            children: "Box"
-                                        }, void 0, false, {
-                                            fileName: "client/src/routes/behandling/behandling.tsx",
-                                            lineNumber: 40,
-                                            columnNumber: 29
-                                        }, this),
-                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("th", {
-                                            scope: "col",
-                                            children: "Created At"
-                                        }, void 0, false, {
-                                            fileName: "client/src/routes/behandling/behandling.tsx",
-                                            lineNumber: 41,
-                                            columnNumber: 29
-                                        }, this),
-                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("th", {
-                                            scope: "col"
-                                        }, void 0, false, {
-                                            fileName: "client/src/routes/behandling/behandling.tsx",
-                                            lineNumber: 42,
-                                            columnNumber: 29
-                                        }, this)
-                                    ]
-                                }, void 0, true, {
-                                    fileName: "client/src/routes/behandling/behandling.tsx",
-                                    lineNumber: 37,
-                                    columnNumber: 25
-                                }, this)
-                            }, void 0, false, {
-                                fileName: "client/src/routes/behandling/behandling.tsx",
-                                lineNumber: 36,
-                                columnNumber: 21
-                            }, this),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("tbody", {
-                                children: treatedboxes.map((item, index)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("tr", {
-                                        children: [
-                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("td", {
-                                                className: "text-nowrap",
-                                                scope: "row",
-                                                children: index
-                                            }, void 0, false, {
-                                                fileName: "client/src/routes/behandling/behandling.tsx",
-                                                lineNumber: 48,
-                                                columnNumber: 29
-                                            }, this),
-                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("td", {
-                                                className: "text-nowrap",
-                                                children: item.name
-                                            }, void 0, false, {
-                                                fileName: "client/src/routes/behandling/behandling.tsx",
-                                                lineNumber: 49,
-                                                columnNumber: 29
-                                            }, this),
-                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("td", {
-                                                className: "text-nowrap",
-                                                children: item.box
-                                            }, void 0, false, {
-                                                fileName: "client/src/routes/behandling/behandling.tsx",
-                                                lineNumber: 50,
-                                                columnNumber: 29
-                                            }, this),
-                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("td", {
-                                                className: "text-nowrap",
-                                                children: item.addedAt
-                                            }, void 0, false, {
-                                                fileName: "client/src/routes/behandling/behandling.tsx",
-                                                lineNumber: 51,
-                                                columnNumber: 29
-                                            }, this),
-                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("td", {
-                                                className: "text-nowrap",
-                                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
-                                                    onClick: ()=>{
-                                                        DeletePersonalBoxTreatment(item._id);
-                                                    },
-                                                    className: "btn btn-danger",
-                                                    children: "Delete"
-                                                }, void 0, false, {
-                                                    fileName: "client/src/routes/behandling/behandling.tsx",
-                                                    lineNumber: 52,
-                                                    columnNumber: 57
-                                                }, this)
-                                            }, void 0, false, {
-                                                fileName: "client/src/routes/behandling/behandling.tsx",
-                                                lineNumber: 52,
-                                                columnNumber: 29
-                                            }, this)
-                                        ]
-                                    }, void 0, true, {
-                                        fileName: "client/src/routes/behandling/behandling.tsx",
-                                        lineNumber: 47,
-                                        columnNumber: 25
-                                    }, this))
-                            }, void 0, false, {
-                                fileName: "client/src/routes/behandling/behandling.tsx",
-                                lineNumber: 45,
-                                columnNumber: 21
-                            }, this)
-                        ]
-                    }, void 0, true, {
-                        fileName: "client/src/routes/behandling/behandling.tsx",
-                        lineNumber: 34,
-                        columnNumber: 17
-                    }, this)
-                }, void 0, false, {
-                    fileName: "client/src/routes/behandling/behandling.tsx",
-                    lineNumber: 33,
-                    columnNumber: 15
-                }, this)
-            ]
-        }, void 0, true, {
-            fileName: "client/src/routes/behandling/behandling.tsx",
-            lineNumber: 29,
-            columnNumber: 11
-        }, this)
-    }, void 0, false);
-}
-_s(Behandling, "2FwTwmZUGr+wXPgfjOh4+rEyCio=", false, function() {
-    return [
-        (0, _globalState.useGlobalState)
-    ];
-});
-_c = Behandling;
-exports.default = Behandling;
-var _c;
-$RefreshReg$(_c, "Behandling");
-
-  $parcel$ReactRefreshHelpers$df57.postlude(module);
-} finally {
-  window.$RefreshReg$ = prevRefreshReg;
-  window.$RefreshSig$ = prevRefreshSig;
-}
-},{"react/jsx-dev-runtime":"7crfk","react":"l1Q8s","react-router-dom":"sYSB5","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","../../GlobalState":"liq8b"}],"fRPM1":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$9c7d = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
-var prevRefreshReg = window.$RefreshReg$;
-var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$9c7d.prelude(module);
-
-try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-parcelHelpers.export(exports, "DisabledButton", ()=>DisabledButton);
-var _jsxDevRuntime = require("react/jsx-dev-runtime");
-var _react = require("react");
-var _item = require("./item");
-var _itemDefault = parcelHelpers.interopDefault(_item);
-var _globalState = require("../../GlobalState");
-var _reactRouterDom = require("react-router-dom");
-var _layout = require("../../layout");
-var _s = $RefreshSig$(), _s1 = $RefreshSig$();
-function ChooseFarm() {
-    _s();
-    const [farms, setFarms] = (0, _react.useState)([]);
-    const [globalState, updateGlobalState] = (0, _globalState.useGlobalState)();
-    function Farm(name, id) {
-        updateGlobalState("farm", {
-            name: name,
-            id: id
-        });
-        updateGlobalState("section", null);
-        updateGlobalState("box", null);
-    }
-    (0, _react.useEffect)(()=>{
-        updateGlobalState("behandling", {
-            page: "farm"
-        });
-        fetch("/api/getfarms").then((response)=>response.json()).then((data)=>{
-            data.farms && setFarms(data.farms);
-        });
-    }, []);
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
-        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-            className: "d-flex flex-wrap gap-2 m-4",
-            children: [
-                farms.map((item)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                        className: `w-100`,
-                        onClick: ()=>{
-                            Farm(item.name, item._id);
-                        },
-                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _itemDefault.default), {
-                            name: item.name,
-                            selected: globalState.farm
-                        }, void 0, false, {
-                            fileName: "client/src/routes/behandling/choosefarm.tsx",
-                            lineNumber: 29,
-                            columnNumber: 17
-                        }, this)
-                    }, void 0, false, {
-                        fileName: "client/src/routes/behandling/choosefarm.tsx",
-                        lineNumber: 28,
-                        columnNumber: 13
-                    }, this)),
-                globalState.farm ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
-                    to: "/behandling/choosesection",
-                    className: "btn btn-success w-100",
-                    children: "Next"
-                }, void 0, false, {
-                    fileName: "client/src/routes/behandling/choosefarm.tsx",
-                    lineNumber: 31,
-                    columnNumber: 33
-                }, this) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(DisabledButton, {
-                    type: "danger",
-                    message: "Please choose a farm before continuing"
-                }, void 0, false, {
-                    fileName: "client/src/routes/behandling/choosefarm.tsx",
-                    lineNumber: 31,
-                    columnNumber: 118
-                }, this)
-            ]
-        }, void 0, true, {
-            fileName: "client/src/routes/behandling/choosefarm.tsx",
-            lineNumber: 26,
-            columnNumber: 9
-        }, this)
-    }, void 0, false);
-}
-_s(ChooseFarm, "9/CzLhtejI6VULXIs/DYHfN6KMo=", false, function() {
-    return [
-        (0, _globalState.useGlobalState)
-    ];
-});
-_c = ChooseFarm;
-function DisabledButton({ type, message }) {
-    _s1();
-    const AddAlert = (0, _react.useContext)((0, _layout.AlertContext));
-    function Warning(type, message) {
-        AddAlert(type, message);
-    }
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        className: "w-100",
-        onClick: ()=>{
-            Warning(type, message);
-        },
-        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
-            className: "btn btn-secondary w-100",
-            disabled: true,
-            children: "Next"
-        }, void 0, false, {
-            fileName: "client/src/routes/behandling/choosefarm.tsx",
-            lineNumber: 45,
-            columnNumber: 13
-        }, this)
-    }, void 0, false, {
-        fileName: "client/src/routes/behandling/choosefarm.tsx",
-        lineNumber: 44,
-        columnNumber: 9
-    }, this);
-}
-_s1(DisabledButton, "iJdHiv8YWPeA12gGcJFE9p2WJ6Q=");
-_c1 = DisabledButton;
-exports.default = ChooseFarm;
-var _c, _c1;
-$RefreshReg$(_c, "ChooseFarm");
-$RefreshReg$(_c1, "DisabledButton");
-
-  $parcel$ReactRefreshHelpers$9c7d.postlude(module);
-} finally {
-  window.$RefreshReg$ = prevRefreshReg;
-  window.$RefreshSig$ = prevRefreshSig;
-}
-},{"react/jsx-dev-runtime":"7crfk","react":"l1Q8s","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./item":"aAvfv","../../GlobalState":"liq8b","react-router-dom":"sYSB5","../../layout":"gzIZb"}],"aAvfv":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$dfcb = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
-var prevRefreshReg = window.$RefreshReg$;
-var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$dfcb.prelude(module);
-
-try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-var _jsxDevRuntime = require("react/jsx-dev-runtime");
-function Item({ name, selected }) {
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
-        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-            className: `bg-body-secondary rounded d-flex justify-content-center flex-grow-1 p-3 ${selected && selected.name == name && "border"}  border-2`,
-            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                className: "text-white text-center fs-3",
-                children: name
-            }, void 0, false, {
-                fileName: "client/src/routes/behandling/item.tsx",
-                lineNumber: 6,
-                columnNumber: 17
-            }, this)
-        }, void 0, false, {
-            fileName: "client/src/routes/behandling/item.tsx",
-            lineNumber: 5,
-            columnNumber: 13
-        }, this)
-    }, void 0, false);
-}
-_c = Item;
-exports.default = Item;
-var _c;
-$RefreshReg$(_c, "Item");
-
-  $parcel$ReactRefreshHelpers$dfcb.postlude(module);
-} finally {
-  window.$RefreshReg$ = prevRefreshReg;
-  window.$RefreshSig$ = prevRefreshSig;
-}
-},{"react/jsx-dev-runtime":"7crfk","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"gzIZb":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"7crfk","react":"l1Q8s","react-router":"99Cqw","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","../../GlobalState":"liq8b","react-router-dom":"sYSB5","../../layout":"gzIZb"}],"gzIZb":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$680b = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -35090,7 +34715,392 @@ $RefreshReg$(_c, "Header");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"7crfk","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","react-router-dom":"sYSB5","./GlobalState":"liq8b"}],"da8ge":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"7crfk","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","react-router-dom":"sYSB5","./GlobalState":"liq8b"}],"gqq5z":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$df57 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$df57.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _reactRouterDom = require("react-router-dom");
+var _globalState = require("../../GlobalState");
+var _s = $RefreshSig$();
+function Behandling() {
+    _s();
+    const [treatedboxes, setTreatedboxes] = (0, _react.useState)([]);
+    const [globalState, updateGloalState] = (0, _globalState.useGlobalState)();
+    (0, _react.useEffect)(()=>{
+        fetch("/api/getprevioustreatments").then((response)=>response.json()).then((data)=>data.treatments && setTreatedboxes(data.treatments));
+    }, []);
+    async function DeletePersonalBoxTreatment(boxid) {
+        await fetch("/api/deletepersonalboxtreatment", {
+            method: "DELETE",
+            body: JSON.stringify({
+                treatedboxId: boxid
+            }),
+            headers: {
+                "Content-Type": "application/json"
+            },
+            credentials: "include"
+        });
+    }
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
+        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+            className: "m-3",
+            children: [
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    className: "d-flex my-2",
+                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                        className: "btn btn-success rounded w-100 my-2 py-3",
+                        to: "/behandling",
+                        children: "Start treatment"
+                    }, void 0, false, {
+                        fileName: "client/src/routes/behandling/behandling.tsx",
+                        lineNumber: 31,
+                        columnNumber: 15
+                    }, this)
+                }, void 0, false, {
+                    fileName: "client/src/routes/behandling/behandling.tsx",
+                    lineNumber: 30,
+                    columnNumber: 13
+                }, this),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    className: "overflow-x-scroll rounded m-3",
+                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("table", {
+                        className: "table table-borderless table-striped caption-top ",
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("caption", {
+                                className: "fs-5",
+                                children: "Your previous treatments"
+                            }, void 0, false, {
+                                fileName: "client/src/routes/behandling/behandling.tsx",
+                                lineNumber: 35,
+                                columnNumber: 21
+                            }, this),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("thead", {
+                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("tr", {
+                                    children: [
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("th", {
+                                            scope: "col",
+                                            children: "#"
+                                        }, void 0, false, {
+                                            fileName: "client/src/routes/behandling/behandling.tsx",
+                                            lineNumber: 38,
+                                            columnNumber: 29
+                                        }, this),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("th", {
+                                            scope: "col",
+                                            children: "Name"
+                                        }, void 0, false, {
+                                            fileName: "client/src/routes/behandling/behandling.tsx",
+                                            lineNumber: 39,
+                                            columnNumber: 29
+                                        }, this),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("th", {
+                                            scope: "col",
+                                            children: "Box"
+                                        }, void 0, false, {
+                                            fileName: "client/src/routes/behandling/behandling.tsx",
+                                            lineNumber: 40,
+                                            columnNumber: 29
+                                        }, this),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("th", {
+                                            scope: "col",
+                                            children: "Created At"
+                                        }, void 0, false, {
+                                            fileName: "client/src/routes/behandling/behandling.tsx",
+                                            lineNumber: 41,
+                                            columnNumber: 29
+                                        }, this),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("th", {
+                                            scope: "col"
+                                        }, void 0, false, {
+                                            fileName: "client/src/routes/behandling/behandling.tsx",
+                                            lineNumber: 42,
+                                            columnNumber: 29
+                                        }, this)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "client/src/routes/behandling/behandling.tsx",
+                                    lineNumber: 37,
+                                    columnNumber: 25
+                                }, this)
+                            }, void 0, false, {
+                                fileName: "client/src/routes/behandling/behandling.tsx",
+                                lineNumber: 36,
+                                columnNumber: 21
+                            }, this),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("tbody", {
+                                children: treatedboxes.map((item, index)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("tr", {
+                                        children: [
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("td", {
+                                                className: "text-nowrap",
+                                                scope: "row",
+                                                children: index
+                                            }, void 0, false, {
+                                                fileName: "client/src/routes/behandling/behandling.tsx",
+                                                lineNumber: 48,
+                                                columnNumber: 29
+                                            }, this),
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("td", {
+                                                className: "text-nowrap",
+                                                children: item.name
+                                            }, void 0, false, {
+                                                fileName: "client/src/routes/behandling/behandling.tsx",
+                                                lineNumber: 49,
+                                                columnNumber: 29
+                                            }, this),
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("td", {
+                                                className: "text-nowrap",
+                                                children: item.box
+                                            }, void 0, false, {
+                                                fileName: "client/src/routes/behandling/behandling.tsx",
+                                                lineNumber: 50,
+                                                columnNumber: 29
+                                            }, this),
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("td", {
+                                                className: "text-nowrap",
+                                                children: item.addedAt
+                                            }, void 0, false, {
+                                                fileName: "client/src/routes/behandling/behandling.tsx",
+                                                lineNumber: 51,
+                                                columnNumber: 29
+                                            }, this),
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("td", {
+                                                className: "text-nowrap",
+                                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                                                    onClick: ()=>{
+                                                        DeletePersonalBoxTreatment(item._id);
+                                                    },
+                                                    className: "btn btn-danger",
+                                                    children: "Delete"
+                                                }, void 0, false, {
+                                                    fileName: "client/src/routes/behandling/behandling.tsx",
+                                                    lineNumber: 52,
+                                                    columnNumber: 57
+                                                }, this)
+                                            }, void 0, false, {
+                                                fileName: "client/src/routes/behandling/behandling.tsx",
+                                                lineNumber: 52,
+                                                columnNumber: 29
+                                            }, this)
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "client/src/routes/behandling/behandling.tsx",
+                                        lineNumber: 47,
+                                        columnNumber: 25
+                                    }, this))
+                            }, void 0, false, {
+                                fileName: "client/src/routes/behandling/behandling.tsx",
+                                lineNumber: 45,
+                                columnNumber: 21
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "client/src/routes/behandling/behandling.tsx",
+                        lineNumber: 34,
+                        columnNumber: 17
+                    }, this)
+                }, void 0, false, {
+                    fileName: "client/src/routes/behandling/behandling.tsx",
+                    lineNumber: 33,
+                    columnNumber: 15
+                }, this)
+            ]
+        }, void 0, true, {
+            fileName: "client/src/routes/behandling/behandling.tsx",
+            lineNumber: 29,
+            columnNumber: 11
+        }, this)
+    }, void 0, false);
+}
+_s(Behandling, "2FwTwmZUGr+wXPgfjOh4+rEyCio=", false, function() {
+    return [
+        (0, _globalState.useGlobalState)
+    ];
+});
+_c = Behandling;
+exports.default = Behandling;
+var _c;
+$RefreshReg$(_c, "Behandling");
+
+  $parcel$ReactRefreshHelpers$df57.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"7crfk","react":"l1Q8s","react-router-dom":"sYSB5","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","../../GlobalState":"liq8b"}],"fRPM1":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$9c7d = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$9c7d.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "DisabledButton", ()=>DisabledButton);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _item = require("./item");
+var _itemDefault = parcelHelpers.interopDefault(_item);
+var _globalState = require("../../GlobalState");
+var _reactRouterDom = require("react-router-dom");
+var _layout = require("../../layout");
+var _s = $RefreshSig$(), _s1 = $RefreshSig$();
+function ChooseFarm() {
+    _s();
+    const [farms, setFarms] = (0, _react.useState)([]);
+    const [globalState, updateGlobalState] = (0, _globalState.useGlobalState)();
+    function Farm(name, id) {
+        updateGlobalState("farm", {
+            name: name,
+            id: id
+        });
+        updateGlobalState("section", null);
+        updateGlobalState("box", null);
+    }
+    (0, _react.useEffect)(()=>{
+        updateGlobalState("behandling", {
+            page: "farm"
+        });
+        fetch("/api/getfarms").then((response)=>response.json()).then((data)=>{
+            data.farms && setFarms(data.farms);
+        });
+    }, []);
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
+        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+            className: "d-flex flex-wrap gap-2 m-4",
+            children: [
+                farms.map((item)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: `w-100`,
+                        onClick: ()=>{
+                            Farm(item.name, item._id);
+                        },
+                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _itemDefault.default), {
+                            name: item.name,
+                            selected: globalState.farm
+                        }, void 0, false, {
+                            fileName: "client/src/routes/behandling/choosefarm.tsx",
+                            lineNumber: 29,
+                            columnNumber: 17
+                        }, this)
+                    }, void 0, false, {
+                        fileName: "client/src/routes/behandling/choosefarm.tsx",
+                        lineNumber: 28,
+                        columnNumber: 13
+                    }, this)),
+                globalState.farm ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                    to: "/behandling/choosesection",
+                    className: "btn btn-success w-100",
+                    children: "Next"
+                }, void 0, false, {
+                    fileName: "client/src/routes/behandling/choosefarm.tsx",
+                    lineNumber: 31,
+                    columnNumber: 33
+                }, this) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(DisabledButton, {
+                    type: "danger",
+                    message: "Please choose a farm before continuing"
+                }, void 0, false, {
+                    fileName: "client/src/routes/behandling/choosefarm.tsx",
+                    lineNumber: 31,
+                    columnNumber: 118
+                }, this)
+            ]
+        }, void 0, true, {
+            fileName: "client/src/routes/behandling/choosefarm.tsx",
+            lineNumber: 26,
+            columnNumber: 9
+        }, this)
+    }, void 0, false);
+}
+_s(ChooseFarm, "9/CzLhtejI6VULXIs/DYHfN6KMo=", false, function() {
+    return [
+        (0, _globalState.useGlobalState)
+    ];
+});
+_c = ChooseFarm;
+function DisabledButton({ type, message }) {
+    _s1();
+    const AddAlert = (0, _react.useContext)((0, _layout.AlertContext));
+    function Warning(type, message) {
+        AddAlert(type, message);
+    }
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "w-100",
+        onClick: ()=>{
+            Warning(type, message);
+        },
+        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+            className: "btn btn-secondary w-100",
+            disabled: true,
+            children: "Next"
+        }, void 0, false, {
+            fileName: "client/src/routes/behandling/choosefarm.tsx",
+            lineNumber: 45,
+            columnNumber: 13
+        }, this)
+    }, void 0, false, {
+        fileName: "client/src/routes/behandling/choosefarm.tsx",
+        lineNumber: 44,
+        columnNumber: 9
+    }, this);
+}
+_s1(DisabledButton, "iJdHiv8YWPeA12gGcJFE9p2WJ6Q=");
+_c1 = DisabledButton;
+exports.default = ChooseFarm;
+var _c, _c1;
+$RefreshReg$(_c, "ChooseFarm");
+$RefreshReg$(_c1, "DisabledButton");
+
+  $parcel$ReactRefreshHelpers$9c7d.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"7crfk","react":"l1Q8s","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./item":"aAvfv","../../GlobalState":"liq8b","react-router-dom":"sYSB5","../../layout":"gzIZb"}],"aAvfv":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$dfcb = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$dfcb.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+function Item({ name, selected }) {
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
+        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+            className: `bg-body-secondary rounded d-flex justify-content-center flex-grow-1 p-3 ${selected && selected.name == name && "border"}  border-2`,
+            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                className: "text-white text-center fs-3",
+                children: name
+            }, void 0, false, {
+                fileName: "client/src/routes/behandling/item.tsx",
+                lineNumber: 6,
+                columnNumber: 17
+            }, this)
+        }, void 0, false, {
+            fileName: "client/src/routes/behandling/item.tsx",
+            lineNumber: 5,
+            columnNumber: 13
+        }, this)
+    }, void 0, false);
+}
+_c = Item;
+exports.default = Item;
+var _c;
+$RefreshReg$(_c, "Item");
+
+  $parcel$ReactRefreshHelpers$dfcb.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"7crfk","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"da8ge":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$64ee = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -35782,7 +35792,8 @@ function AddBox() {
     _s();
     const [name, setName] = (0, _react.useState)("");
     const [farms, setFarms] = (0, _react.useState)([]);
-    const [sections, setSections] = (0, _react.useState)(undefined);
+    const [selectedFarmId, setSelectedfarmId] = (0, _react.useState)("");
+    const [sections, setSections] = (0, _react.useState)([]);
     const [section, setSection] = (0, _react.useState)();
     function AddNewBox() {
         fetch("/api/addbox", {
@@ -35810,11 +35821,17 @@ function AddBox() {
         });
         const data = await response.json();
         setSections(data.sections);
-        setSection(data.sections[0]._id);
+        data.sections[0] && setSection(data.sections[0]._id);
     }
+    (0, _react.useEffect)(()=>{
+        GetSections(selectedFarmId);
+    }, [
+        farms
+    ]);
     (0, _react.useEffect)(()=>{
         fetch("/api/getfarms").then((response)=>response.json()).then((data)=>{
             setFarms(data.farms);
+            data.farms[0] && setSelectedfarmId(data.farms[0]._id);
         });
     }, []);
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
@@ -35835,12 +35852,12 @@ function AddBox() {
                                     children: farm.name
                                 }, void 0, false, {
                                     fileName: "client/src/company/addbox.tsx",
-                                    lineNumber: 49,
+                                    lineNumber: 59,
                                     columnNumber: 25
                                 }, this))
                         }, void 0, false, {
                             fileName: "client/src/company/addbox.tsx",
-                            lineNumber: 47,
+                            lineNumber: 57,
                             columnNumber: 21
                         }, this),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
@@ -35848,16 +35865,16 @@ function AddBox() {
                             children: "Select Farm"
                         }, void 0, false, {
                             fileName: "client/src/company/addbox.tsx",
-                            lineNumber: 53,
+                            lineNumber: 63,
                             columnNumber: 21
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "client/src/company/addbox.tsx",
-                    lineNumber: 46,
+                    lineNumber: 56,
                     columnNumber: 17
                 }, this),
-                sections && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                     className: "form-floating my-2",
                     children: [
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("select", {
@@ -35871,12 +35888,12 @@ function AddBox() {
                                     children: section.name
                                 }, void 0, false, {
                                     fileName: "client/src/company/addbox.tsx",
-                                    lineNumber: 60,
+                                    lineNumber: 69,
                                     columnNumber: 25
                                 }, this))
                         }, void 0, false, {
                             fileName: "client/src/company/addbox.tsx",
-                            lineNumber: 58,
+                            lineNumber: 67,
                             columnNumber: 21
                         }, this),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
@@ -35884,13 +35901,13 @@ function AddBox() {
                             children: "Select Section"
                         }, void 0, false, {
                             fileName: "client/src/company/addbox.tsx",
-                            lineNumber: 64,
+                            lineNumber: 73,
                             columnNumber: 21
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "client/src/company/addbox.tsx",
-                    lineNumber: 57,
+                    lineNumber: 66,
                     columnNumber: 17
                 }, this),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -35904,7 +35921,7 @@ function AddBox() {
                             }
                         }, void 0, false, {
                             fileName: "client/src/company/addbox.tsx",
-                            lineNumber: 68,
+                            lineNumber: 77,
                             columnNumber: 21
                         }, this),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
@@ -35912,13 +35929,13 @@ function AddBox() {
                             children: "Box Name"
                         }, void 0, false, {
                             fileName: "client/src/company/addbox.tsx",
-                            lineNumber: 71,
+                            lineNumber: 80,
                             columnNumber: 21
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "client/src/company/addbox.tsx",
-                    lineNumber: 67,
+                    lineNumber: 76,
                     columnNumber: 17
                 }, this),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
@@ -35928,18 +35945,18 @@ function AddBox() {
                     children: "Add"
                 }, void 0, false, {
                     fileName: "client/src/company/addbox.tsx",
-                    lineNumber: 73,
+                    lineNumber: 82,
                     columnNumber: 17
                 }, this)
             ]
         }, void 0, true, {
             fileName: "client/src/company/addbox.tsx",
-            lineNumber: 45,
+            lineNumber: 55,
             columnNumber: 13
         }, this)
     }, void 0, false);
 }
-_s(AddBox, "vAPjJvSP6/7lR4unDZK0QX5QFSk=");
+_s(AddBox, "fXk6wGzhroJauLz3HtrnmomzMBk=");
 _c = AddBox;
 exports.default = AddBox;
 var _c;
@@ -36267,7 +36284,10 @@ function ChooseTreatment() {
             },
             credentials: "include"
         });
-        if (response.status == 200) AddAlert("success", "Successfully added a treatment to the box");
+        if (response.status == 200) {
+            AddAlert("success", "Successfully added a treatment to the box");
+            navigate("/");
+        }
         if (response.status == 401) AddAlert("danger", "You are unathorized to access this page");
         if (response.status == 500) AddAlert("danger", "There was an error handling your request");
     }
@@ -36293,7 +36313,7 @@ function ChooseTreatment() {
                     ]
                 }, void 0, true, {
                     fileName: "client/src/routes/behandling/choosetreatment.tsx",
-                    lineNumber: 41,
+                    lineNumber: 44,
                     columnNumber: 17
                 }, this),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("select", {
@@ -36307,12 +36327,12 @@ function ChooseTreatment() {
                             children: treatment.name
                         }, void 0, false, {
                             fileName: "client/src/routes/behandling/choosetreatment.tsx",
-                            lineNumber: 44,
+                            lineNumber: 47,
                             columnNumber: 21
                         }, this))
                 }, void 0, false, {
                     fileName: "client/src/routes/behandling/choosetreatment.tsx",
-                    lineNumber: 42,
+                    lineNumber: 45,
                     columnNumber: 17
                 }, this),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -36325,7 +36345,7 @@ function ChooseTreatment() {
                             id: "floatingTextarea"
                         }, void 0, false, {
                             fileName: "client/src/routes/behandling/choosetreatment.tsx",
-                            lineNumber: 49,
+                            lineNumber: 52,
                             columnNumber: 21
                         }, this),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
@@ -36334,13 +36354,13 @@ function ChooseTreatment() {
                             children: "Message"
                         }, void 0, false, {
                             fileName: "client/src/routes/behandling/choosetreatment.tsx",
-                            lineNumber: 50,
+                            lineNumber: 53,
                             columnNumber: 21
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "client/src/routes/behandling/choosetreatment.tsx",
-                    lineNumber: 48,
+                    lineNumber: 51,
                     columnNumber: 17
                 }, this),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
@@ -36352,13 +36372,13 @@ function ChooseTreatment() {
                     children: "Add Treatment to box"
                 }, void 0, false, {
                     fileName: "client/src/routes/behandling/choosetreatment.tsx",
-                    lineNumber: 52,
+                    lineNumber: 55,
                     columnNumber: 17
                 }, this)
             ]
         }, void 0, true, {
             fileName: "client/src/routes/behandling/choosetreatment.tsx",
-            lineNumber: 40,
+            lineNumber: 43,
             columnNumber: 13
         }, this)
     }, void 0, false);
@@ -36909,23 +36929,29 @@ var _react = require("react");
 var _globalState = require("../../GlobalState");
 var _reactRouter = require("react-router");
 var _reactRouterDom = require("react-router-dom");
+var _layout = require("../../layout");
 var _s = $RefreshSig$();
 function ChooseCompany() {
     _s();
     const [code, setCode] = (0, _react.useState)("");
     const [globalState, updateGlobalState] = (0, _globalState.useGlobalState)();
     const navigate = (0, _reactRouter.useNavigate)();
+    const AddAlert = (0, _react.useContext)((0, _layout.AlertContext));
     async function checkCode(code) {
         const respone = await fetch("/api/checkcompanycode/", {
             method: "POST",
             body: JSON.stringify({
                 code: code
-            })
+            }),
+            headers: {
+                "Content-Type": "application/json"
+            },
+            credentials: "include"
         });
         if (respone.status == 200) {
             updateGlobalState("companycode", code);
             navigate("/auth/signup");
-        }
+        } else AddAlert("danger", "The company does not exist");
     }
     function Form(event, code) {
         event.preventDefault();
@@ -36941,7 +36967,7 @@ function ChooseCompany() {
                     children: "Enter your company's private signup code"
                 }, void 0, false, {
                     fileName: "client/src/routes/auth/choosecompany.tsx",
-                    lineNumber: 29,
+                    lineNumber: 37,
                     columnNumber: 17
                 }, this),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -36955,7 +36981,7 @@ function ChooseCompany() {
                             }
                         }, void 0, false, {
                             fileName: "client/src/routes/auth/choosecompany.tsx",
-                            lineNumber: 31,
+                            lineNumber: 39,
                             columnNumber: 21
                         }, this),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
@@ -36963,13 +36989,13 @@ function ChooseCompany() {
                             children: "Company Code"
                         }, void 0, false, {
                             fileName: "client/src/routes/auth/choosecompany.tsx",
-                            lineNumber: 32,
+                            lineNumber: 40,
                             columnNumber: 21
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "client/src/routes/auth/choosecompany.tsx",
-                    lineNumber: 30,
+                    lineNumber: 38,
                     columnNumber: 17
                 }, this),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
@@ -36981,7 +37007,7 @@ function ChooseCompany() {
                     children: "Submit"
                 }, void 0, false, {
                     fileName: "client/src/routes/auth/choosecompany.tsx",
-                    lineNumber: 34,
+                    lineNumber: 42,
                     columnNumber: 17
                 }, this),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -36993,24 +37019,24 @@ function ChooseCompany() {
                             children: "Login"
                         }, void 0, false, {
                             fileName: "client/src/routes/auth/choosecompany.tsx",
-                            lineNumber: 35,
+                            lineNumber: 43,
                             columnNumber: 62
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "client/src/routes/auth/choosecompany.tsx",
-                    lineNumber: 35,
+                    lineNumber: 43,
                     columnNumber: 17
                 }, this)
             ]
         }, void 0, true, {
             fileName: "client/src/routes/auth/choosecompany.tsx",
-            lineNumber: 28,
+            lineNumber: 36,
             columnNumber: 13
         }, this)
     }, void 0, false);
 }
-_s(ChooseCompany, "Aqiptv1La0meoHLQzli5K7LKWjo=", false, function() {
+_s(ChooseCompany, "rS1uiyyhuTdjJjuyqJZgrODj/q0=", false, function() {
     return [
         (0, _globalState.useGlobalState),
         (0, _reactRouter.useNavigate)
@@ -37026,7 +37052,7 @@ $RefreshReg$(_c, "ChooseCompany");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"7crfk","react":"l1Q8s","../../GlobalState":"liq8b","react-router":"99Cqw","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","react-router-dom":"sYSB5"}],"6eKWg":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"7crfk","react":"l1Q8s","../../GlobalState":"liq8b","react-router":"99Cqw","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","react-router-dom":"sYSB5","../../layout":"gzIZb"}],"6eKWg":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$8547 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -37037,12 +37063,18 @@ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _react = require("react");
+var _layout = require("../layout");
 var _s = $RefreshSig$(), _s1 = $RefreshSig$();
 function Users() {
     _s();
     const [users, setUsers] = (0, _react.useState)([]);
+    async function GetUsers() {
+        const response = await fetch("/api/getcompanyusers");
+        const data = await response.json();
+        setUsers(data.users);
+    }
     (0, _react.useEffect)(()=>{
-        fetch("/api/getcompanyusers").then((response)=>response.json()).then((data)=>setUsers(data.users));
+        GetUsers();
     }, []);
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -37059,7 +37091,7 @@ function Users() {
                                     children: "Email"
                                 }, void 0, false, {
                                     fileName: "client/src/company/users.tsx",
-                                    lineNumber: 18,
+                                    lineNumber: 23,
                                     columnNumber: 25
                                 }, this),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("th", {
@@ -37068,7 +37100,7 @@ function Users() {
                                     children: "Username"
                                 }, void 0, false, {
                                     fileName: "client/src/company/users.tsx",
-                                    lineNumber: 19,
+                                    lineNumber: 24,
                                     columnNumber: 25
                                 }, this),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("th", {
@@ -37077,7 +37109,7 @@ function Users() {
                                     children: "First Name"
                                 }, void 0, false, {
                                     fileName: "client/src/company/users.tsx",
-                                    lineNumber: 20,
+                                    lineNumber: 25,
                                     columnNumber: 25
                                 }, this),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("th", {
@@ -37086,83 +37118,85 @@ function Users() {
                                     children: "Last Name"
                                 }, void 0, false, {
                                     fileName: "client/src/company/users.tsx",
-                                    lineNumber: 21,
+                                    lineNumber: 26,
                                     columnNumber: 25
                                 }, this),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("th", {
                                     scope: "col"
                                 }, void 0, false, {
                                     fileName: "client/src/company/users.tsx",
-                                    lineNumber: 22,
+                                    lineNumber: 27,
                                     columnNumber: 25
                                 }, this),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("th", {
                                     scope: "col"
                                 }, void 0, false, {
                                     fileName: "client/src/company/users.tsx",
-                                    lineNumber: 23,
+                                    lineNumber: 28,
                                     columnNumber: 25
                                 }, this),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("th", {
                                     scope: "col"
                                 }, void 0, false, {
                                     fileName: "client/src/company/users.tsx",
-                                    lineNumber: 24,
+                                    lineNumber: 29,
                                     columnNumber: 25
                                 }, this),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("th", {
                                     scope: "col"
                                 }, void 0, false, {
                                     fileName: "client/src/company/users.tsx",
-                                    lineNumber: 25,
+                                    lineNumber: 30,
                                     columnNumber: 25
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "client/src/company/users.tsx",
-                            lineNumber: 17,
+                            lineNumber: 22,
                             columnNumber: 21
                         }, this)
                     }, void 0, false, {
                         fileName: "client/src/company/users.tsx",
-                        lineNumber: 16,
+                        lineNumber: 21,
                         columnNumber: 17
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("tbody", {
                         children: users && users.map((user)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(User, {
-                                user: user
+                                user: user,
+                                GetUsers: GetUsers
                             }, void 0, false, {
                                 fileName: "client/src/company/users.tsx",
-                                lineNumber: 29,
+                                lineNumber: 34,
                                 columnNumber: 151
                             }, this))
                     }, void 0, false, {
                         fileName: "client/src/company/users.tsx",
-                        lineNumber: 28,
+                        lineNumber: 33,
                         columnNumber: 17
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "client/src/company/users.tsx",
-                lineNumber: 15,
+                lineNumber: 20,
                 columnNumber: 13
             }, this)
         }, void 0, false, {
             fileName: "client/src/company/users.tsx",
-            lineNumber: 14,
+            lineNumber: 19,
             columnNumber: 9
         }, this)
     }, void 0, false);
 }
 _s(Users, "JadZszbqna06PpJs9hMo7Hl/LOY=");
 _c = Users;
-function User({ user }) {
+function User({ user, GetUsers }) {
     _s1();
     const [editUser, setEditUser] = (0, _react.useState)(false);
     const [emailInput, setEmailInput] = (0, _react.useState)("");
     const [usernameInput, setUsernameInput] = (0, _react.useState)(user.username);
     const [firstNameInput, setFirstNameInput] = (0, _react.useState)(user.firstName);
     const [lastNameInput, setLastNameInput] = (0, _react.useState)(user.lastName);
+    const AddAlert = (0, _react.useContext)((0, _layout.AlertContext));
     async function AcceptUser(id) {
         await fetch("/api/acceptuser", {
             method: "POST",
@@ -37176,7 +37210,7 @@ function User({ user }) {
         });
     }
     async function EditUser() {
-        await fetch("/api/companyupdateuser", {
+        const response = await fetch("/api/companyupdateuser", {
             method: "PATCH",
             body: JSON.stringify({
                 userid: user._id,
@@ -37190,6 +37224,11 @@ function User({ user }) {
             },
             credentials: "include"
         });
+        if (response.status == 200) {
+            setEditUser(false);
+            GetUsers();
+            AddAlert("success", "Successfully updated user");
+        }
     }
     async function DeleteUser() {
         await fetch("/api/deleteaccount", {
@@ -37208,32 +37247,18 @@ function User({ user }) {
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("td", {
                 className: "text-nowrap",
-                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
-                    onChange: (event)=>setEmailInput(event.target.value),
-                    defaultValue: user.email
-                }, void 0, false, {
-                    fileName: "client/src/company/users.tsx",
-                    lineNumber: 92,
-                    columnNumber: 49
-                }, this)
+                children: user.email
             }, void 0, false, {
                 fileName: "client/src/company/users.tsx",
-                lineNumber: 92,
+                lineNumber: 103,
                 columnNumber: 21
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("td", {
                 className: "text-nowrap",
-                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
-                    onChange: (event)=>setUsernameInput(event.target.value),
-                    defaultValue: user.username
-                }, void 0, false, {
-                    fileName: "client/src/company/users.tsx",
-                    lineNumber: 93,
-                    columnNumber: 49
-                }, this)
+                children: user.username
             }, void 0, false, {
                 fileName: "client/src/company/users.tsx",
-                lineNumber: 93,
+                lineNumber: 104,
                 columnNumber: 21
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("td", {
@@ -37243,12 +37268,12 @@ function User({ user }) {
                     defaultValue: user.firstName
                 }, void 0, false, {
                     fileName: "client/src/company/users.tsx",
-                    lineNumber: 94,
+                    lineNumber: 105,
                     columnNumber: 49
                 }, this)
             }, void 0, false, {
                 fileName: "client/src/company/users.tsx",
-                lineNumber: 94,
+                lineNumber: 105,
                 columnNumber: 21
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("td", {
@@ -37258,12 +37283,12 @@ function User({ user }) {
                     defaultValue: user.lastName
                 }, void 0, false, {
                     fileName: "client/src/company/users.tsx",
-                    lineNumber: 95,
+                    lineNumber: 106,
                     columnNumber: 49
                 }, this)
             }, void 0, false, {
                 fileName: "client/src/company/users.tsx",
-                lineNumber: 95,
+                lineNumber: 106,
                 columnNumber: 21
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("td", {
@@ -37276,12 +37301,12 @@ function User({ user }) {
                     children: "Accept"
                 }, void 0, false, {
                     fileName: "client/src/company/users.tsx",
-                    lineNumber: 96,
+                    lineNumber: 107,
                     columnNumber: 76
                 }, this)
             }, void 0, false, {
                 fileName: "client/src/company/users.tsx",
-                lineNumber: 96,
+                lineNumber: 107,
                 columnNumber: 21
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("td", {
@@ -37292,12 +37317,12 @@ function User({ user }) {
                     children: "Submit"
                 }, void 0, false, {
                     fileName: "client/src/company/users.tsx",
-                    lineNumber: 97,
+                    lineNumber: 108,
                     columnNumber: 49
                 }, this)
             }, void 0, false, {
                 fileName: "client/src/company/users.tsx",
-                lineNumber: 97,
+                lineNumber: 108,
                 columnNumber: 21
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("td", {
@@ -37310,12 +37335,12 @@ function User({ user }) {
                     children: "Edit"
                 }, void 0, false, {
                     fileName: "client/src/company/users.tsx",
-                    lineNumber: 98,
+                    lineNumber: 109,
                     columnNumber: 49
                 }, this)
             }, void 0, false, {
                 fileName: "client/src/company/users.tsx",
-                lineNumber: 98,
+                lineNumber: 109,
                 columnNumber: 21
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("td", {
@@ -37326,18 +37351,18 @@ function User({ user }) {
                     children: "Delete"
                 }, void 0, false, {
                     fileName: "client/src/company/users.tsx",
-                    lineNumber: 99,
+                    lineNumber: 110,
                     columnNumber: 49
                 }, this)
             }, void 0, false, {
                 fileName: "client/src/company/users.tsx",
-                lineNumber: 99,
+                lineNumber: 110,
                 columnNumber: 21
             }, this)
         ]
     }, void 0, true, {
         fileName: "client/src/company/users.tsx",
-        lineNumber: 91,
+        lineNumber: 102,
         columnNumber: 17
     }, this);
     else return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("tr", {
@@ -37347,7 +37372,7 @@ function User({ user }) {
                 children: user.email
             }, void 0, false, {
                 fileName: "client/src/company/users.tsx",
-                lineNumber: 105,
+                lineNumber: 116,
                 columnNumber: 17
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("td", {
@@ -37355,7 +37380,7 @@ function User({ user }) {
                 children: user.username
             }, void 0, false, {
                 fileName: "client/src/company/users.tsx",
-                lineNumber: 106,
+                lineNumber: 117,
                 columnNumber: 17
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("td", {
@@ -37363,7 +37388,7 @@ function User({ user }) {
                 children: user.firstName
             }, void 0, false, {
                 fileName: "client/src/company/users.tsx",
-                lineNumber: 107,
+                lineNumber: 118,
                 columnNumber: 17
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("td", {
@@ -37371,7 +37396,7 @@ function User({ user }) {
                 children: user.lastName
             }, void 0, false, {
                 fileName: "client/src/company/users.tsx",
-                lineNumber: 108,
+                lineNumber: 119,
                 columnNumber: 17
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("td", {
@@ -37384,17 +37409,17 @@ function User({ user }) {
                     children: "Accept"
                 }, void 0, false, {
                     fileName: "client/src/company/users.tsx",
-                    lineNumber: 109,
+                    lineNumber: 120,
                     columnNumber: 72
                 }, this)
             }, void 0, false, {
                 fileName: "client/src/company/users.tsx",
-                lineNumber: 109,
+                lineNumber: 120,
                 columnNumber: 17
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("td", {}, void 0, false, {
                 fileName: "client/src/company/users.tsx",
-                lineNumber: 110,
+                lineNumber: 121,
                 columnNumber: 17
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("td", {
@@ -37407,12 +37432,12 @@ function User({ user }) {
                     children: "Edit"
                 }, void 0, false, {
                     fileName: "client/src/company/users.tsx",
-                    lineNumber: 111,
+                    lineNumber: 122,
                     columnNumber: 45
                 }, this)
             }, void 0, false, {
                 fileName: "client/src/company/users.tsx",
-                lineNumber: 111,
+                lineNumber: 122,
                 columnNumber: 17
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("td", {
@@ -37423,22 +37448,22 @@ function User({ user }) {
                     children: "Delete"
                 }, void 0, false, {
                     fileName: "client/src/company/users.tsx",
-                    lineNumber: 112,
+                    lineNumber: 123,
                     columnNumber: 45
                 }, this)
             }, void 0, false, {
                 fileName: "client/src/company/users.tsx",
-                lineNumber: 112,
+                lineNumber: 123,
                 columnNumber: 17
             }, this)
         ]
     }, void 0, true, {
         fileName: "client/src/company/users.tsx",
-        lineNumber: 104,
+        lineNumber: 115,
         columnNumber: 13
     }, this);
 }
-_s1(User, "CU43XVxZuiPPVEMib4Y2xfUOVlU=");
+_s1(User, "mfeVxobdkqpdpEhNZEkLRE8tLGc=");
 _c1 = User;
 exports.default = Users;
 var _c, _c1;
@@ -37450,7 +37475,7 @@ $RefreshReg$(_c1, "User");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"7crfk","react":"l1Q8s","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"ii21k":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"7crfk","react":"l1Q8s","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","../layout":"gzIZb"}],"ii21k":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$305c = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -37874,7 +37899,7 @@ $RefreshReg$(_c1, "TableItem");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"7crfk","react":"l1Q8s","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","../layout":"gzIZb"}],"596yJ":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"7crfk","react":"l1Q8s","../layout":"gzIZb","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"596yJ":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$2b06 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -38236,7 +38261,7 @@ $RefreshReg$(_c1, "TableItem");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"7crfk","react":"l1Q8s","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","../layout":"gzIZb"}],"ajzFF":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"7crfk","react":"l1Q8s","../layout":"gzIZb","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"ajzFF":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$8ebb = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
