@@ -10,6 +10,8 @@ To protect against NoSQL injection MongoDB schemas are made which means that the
 
 To protect against XSS React automaticly escapes HTML which means that it will only be interpreted as a string and not a script tag for example.
 
+The JWT cookies will be stored in a secure HTTP Only cookie and will only be accessed by the server.
+
 ## Application
 
 ### Async
