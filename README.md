@@ -1,5 +1,14 @@
-# Stalldata
 
+
+# Stalldata
+### Table of contents
+- [Stalldata](#Stalldata)
+    - [Abstract](#Abstract)
+    - [Security](#Security)
+    - [Application](#Application)
+    - [Authorization](#Authorization)
+    - [Authentication](#Authentication)
+    - [CRUD](#CRUD)
 ## Abstract
 
 Stalldata is an application made to handle documentation of treatments made to pig pens on different farms. The app is supposed to be simple and intuitive for the user. Diffrent access levels will give you access to different functions. The data should be accessible through an API and in CSV format. An express web application will be used to serve the application and will work on every device that has a web browser.
@@ -26,6 +35,12 @@ For the built React app to be served the _dist_ folder has to be recognized as a
 
 ```ts
 app.use(express.static("dist"));
+```
+Then after all the other routes are handled the global route is added.
+```ts
+app.get("*", (req, res) => {
+    res.sendFile(__dirname + "/dist/index.html")
+})
 ```
 
 ## Authorization
@@ -73,8 +88,18 @@ res.cookie("token", token);
 
 ### Sign Up
 
-The signup route handles the creation of an account. It takes information about the user and then validates it. If everything is validated correctly the inputed password will be encrypted and a new User will be added to the database. After the user has been added to the database a JWT cookie will be sent to the user same as in the login route.
-
+The signup route handles the creation of an account. It takes information about the user and then validates it. If everything is validated correctly the inputed password will be encrypted and a new User will be added to the database. 
+```ts
+const salt = await bcrypt.genSalt(10)
+const hash = await bcrypt.hash(password, salt)
+const user = new User({...})
+await user.save()
+```
+After the user has been added to the database a JWT cookie will be sent to the user same as in the login route.
+```ts
+const token = jwt.sign({username: saveduser.id}, "secret")
+res.cookie("token", token)
+```
 ## CRUD
 
 ### Create
