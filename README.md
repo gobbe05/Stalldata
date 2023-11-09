@@ -1,6 +1,6 @@
 ### Table of contents
--[Abstract](#Abstract)
--[Security](#Security)
+- [Abstract](#Abstract)
+- [Security](#Security)
 -[Application](#Application)
 -[Authorization](#Authorization)
 -[Authentication](#Authentication)
