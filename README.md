@@ -25,6 +25,12 @@ For the built React app to be served the _dist_ folder has to be recognized as a
 ```ts
 app.use(express.static("dist"));
 ```
+Then after all the other routes are handled the global route is added.
+```ts
+app.get("*", (req, res) => {
+    res.sendFile(__dirname + "/dist/index.html")
+})
+```
 
 ## Authorization
 
