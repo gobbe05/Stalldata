@@ -4,13 +4,23 @@
 
 Stalldata is an application made to handle documentation of treatments made to pig pens on different farms. The app is supposed to be simple and intuitive for the user. Diffrent access levels will give you access to different functions. The data should be accessible through an API and in CSV format. An express web application will be used to serve the application and will work on every device that has a web browser.
 
+## Security
+
+To protect against NoSQL injection MongoDB schemas are made which means that the data inputed in to the application can only be interpreted as what it is supposed to be. That means that you can't pass filters to a string field because it will be interpreted as just a string.
+
+To protect against XSS React automaticly escapes HTML which means that it will only be interpreted as a string and not a script tag for example.
+
 ## Application
+
+### Async
+
+Javascript is a syncronous programming language which in turn means that every action has to be run to completion before going to the next one. This means that actions are blocking and slow events will make it so that the application can't continue. To get around this async functions are used. They are not run on the main stack and will be completed on the side. When the async function is completed a callback function will be sent to the main stack to be executed. MongoDB makes use of promises which means that we can use async functions to handle calls to the database.
 
 ### Structure
 
 The application structure is built using a React frontend with a NodeJS Express backend with a NoSQL mongo database. The express backend sends the React application to all unused routes. This makes it possible to use Reacts client side routing.
 
-For the built React app to be served it has to be recognized as a static file. This can be done in Express.
+For the built React app to be served the _dist_ folder has to be recognized as a static folder. This can be done in Express.
 
 ```ts
 app.use(express.static("dist"));
@@ -62,3 +72,73 @@ res.cookie("token", token);
 ### Sign Up
 
 The signup route handles the creation of an account. It takes information about the user and then validates it. If everything is validated correctly the inputed password will be encrypted and a new User will be added to the database. After the user has been added to the database a JWT cookie will be sent to the user same as in the login route.
+
+## CRUD
+
+### Create
+
+To create data, requests are sent and recieved by routes with the HTTP POST method.
+
+```ts
+app.post("/api/createcompany", createcompanyroute);
+```
+
+It includes a body containing json data.
+
+```ts
+const { name, code } = req.body;
+```
+
+The data is then added to a new MongoDB Model and saved.
+
+```ts
+const company = new Company({
+  name: name,
+  code: code,
+});
+
+company.save();
+```
+
+After the item successfully was saved a HTTP 201 Created status gets sent back.
+
+### Read
+
+Reading data is done by recieving HTTP GET requests and sending it to a route.
+
+```ts
+app.get("/api/getcompanies", getcompaniesroute);
+```
+
+Then the route gets the data from the MongoDB database.
+
+```ts
+const companies = await Company.find({});
+```
+
+After that the data is sent back in the response with a HTTP 200 OK status.
+
+```ts
+return res.status(200).json({ companies: companies });
+```
+
+### Update
+
+Updating data is done by sending and recieving HTTP PATCH requests and sending it to a route. After that the object is found in the database and the chosen fields gets updated. A HTTP 200 OK status is then sent.
+
+```ts
+const updatedCompany = await Company.findOneAndUpdate(
+  { _id: companyid },
+  { name: name, code: code }
+);
+```
+
+### Delete
+
+Deleting data is done by sending and recieving HTTP DELETE requests and sending it to a route. The object is then found in the database and removed.
+
+```ts
+await User.findOneAndDelete({ _id: uid });
+```
+
+After the removal of the item a HTTP 204 No Content status is sent back.
