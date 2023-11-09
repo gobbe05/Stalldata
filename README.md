@@ -1,11 +1,11 @@
 ### Table of contents
 - [Stalldata](#Stalldata)
--- [Abstract](#Abstract)
-- [Security](#Security)
-- [Application](#Application)
-- [Authorization](#Authorization)
-- [Authentication](#Authentication)
-- [CRUD](#CRUD)
+    - [Abstract](#Abstract)
+    - [Security](#Security)
+    - [Application](#Application)
+    - [Authorization](#Authorization)
+    - [Authentication](#Authentication)
+    - [CRUD](#CRUD)
 
 # Stalldata
 
