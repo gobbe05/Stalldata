@@ -86,8 +86,18 @@ res.cookie("token", token);
 
 ### Sign Up
 
-The signup route handles the creation of an account. It takes information about the user and then validates it. If everything is validated correctly the inputed password will be encrypted and a new User will be added to the database. After the user has been added to the database a JWT cookie will be sent to the user same as in the login route.
-
+The signup route handles the creation of an account. It takes information about the user and then validates it. If everything is validated correctly the inputed password will be encrypted and a new User will be added to the database. 
+```ts
+const salt = await bcrypt.genSalt(10)
+const hash = await bcrypt.hash(password, salt)
+const user = new User({...})
+await user.save()
+```
+After the user has been added to the database a JWT cookie will be sent to the user same as in the login route.
+```ts
+const token = jwt.sign({username: saveduser.id}, "secret")
+res.cookie("token", token)
+```
 ## CRUD
 
 ### Create
