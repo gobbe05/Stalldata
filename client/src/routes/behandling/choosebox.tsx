@@ -15,7 +15,7 @@ function ChooseBox(){
     }
 
     useEffect(() => {
-        if(!globalState.section) navigate("/behandling/choosefarm")
+        if(!globalState.section) navigate("/behandling")
         updateGlobalState("behandling", {page: "box"})
 
         fetch("/api/getboxes", {
@@ -32,13 +32,13 @@ function ChooseBox(){
     }, [])
     return (
         <>
-            <div className="d-flex flex-wrap gap-2 my-4">
+            <div className="d-flex flex-wrap gap-2 m-4">
                 {boxes.map((item: any) => 
                 <div className="w-100" onClick={() => {Section(item.name, item._id)}}>
                     <Item name={item.name} selected={globalState.box}/>
                 </div>)}
+                {globalState.box ? <Link to="/behandling/choosetreatment" className="btn btn-success  w-100">Next</Link> : <DisabledButton type="danger" message="Please choose a box before continuing"/>}
             </div>
-            {globalState.box ? <Link to="/behandling/choosetreatment" className="btn btn-success  w-100">Next</Link> : <DisabledButton type="danger" message="Please choose a box before continuing"/>}
         </>
     )
 }

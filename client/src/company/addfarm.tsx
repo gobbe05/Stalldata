@@ -18,7 +18,7 @@ function AddFarm() {
     return (
         <>
         
-            <form className="m-2">
+            <form className="m-2 mt-4">
                <div className="form-floating my-2">
                 <input id="floatingInput" className="form-control" onChange={(event) => {
                      setName(event.target.value)

@@ -1,7 +1,7 @@
 import { Outlet, useNavigate } from "react-router"
 import { Link } from "react-router-dom"
 import { useGlobalState } from "../../GlobalState"
-import { useContext, useEffect, useState } from "react"
+import { useContext, useEffect } from "react"
 import { AlertContext } from "../../layout"
 
 function CreateTreatmentLayout() {
@@ -24,7 +24,7 @@ function CreateTreatmentLayout() {
                 ${globalState.farm && "btn-success"}
                 ${globalState.behandling.page == "farm" && "btn-secondary"}
              `} 
-                to="choosefarm">Farm</Link>
+                to="/behandling">Farm</Link>
                 {globalState.farm ? 
                 <Link className={`btn py-4 flex-grow-1 text-white text-center
                 ${globalState.section && " btn-success"}
@@ -36,8 +36,9 @@ function CreateTreatmentLayout() {
                 to="choosebox">Box</Link> : <DisabledLink warning="Please choose a section before trying to choose a box!" link="Box" />}
             </div>
 
-            <Outlet />
+            
         </div>
+        <Outlet />
         </>
     )
 }
@@ -49,7 +50,7 @@ function DisabledLink({link, warning}: {link: string, warning: string}) {
     }
     return (
         <>
-            <div className="d-flex align-items-center justify-content-center flex-grow-1" onClick={Warning}><p className="m-0">{link}</p></div>
+            <div className="btn d-flex align-items-center justify-content-center flex-grow-1" onClick={Warning}><p className="m-0">{link}</p></div>
             
         </>
     )

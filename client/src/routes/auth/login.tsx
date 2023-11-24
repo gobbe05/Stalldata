@@ -1,10 +1,12 @@
 import { useEffect, useState } from "react"
 import { useNavigate } from "react-router"
 import { Link } from "react-router-dom"
+import { useGlobalState } from "../../GlobalState"
 
 function Login() {
     const [username ,setUsername] = useState<string>("")
     const [password ,setPassword] = useState<string>("")
+    const [globalState, updateGlobalState] = useGlobalState()
     const navigate = useNavigate()
 
     async function FetchLogin() {
@@ -21,13 +23,18 @@ function Login() {
         })
         const data = await response.json()
         if(data.message == "success") {
+            updateGlobalState("loggedin", true)
             navigate("/")
         }
+    }
+    function Form(event: any) {
+        event.preventDefault()
+        FetchLogin()
     }
 
     return (
         <>
-            <form className="my-auto mx-4">
+            <form className="my-auto mx-4" onSubmit={Form}>
                 <div className="form-floating my-2">
                     <input className="form-control" id="email" name="username" onChange={(event) => setUsername(event.target.value)} />
                     <label className="form-label" htmlFor="email">Username</label>

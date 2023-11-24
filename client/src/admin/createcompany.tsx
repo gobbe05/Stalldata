@@ -20,16 +20,16 @@ function CreateCompany() {
 
     return (
         <>
-        <form>
-            <div>
-                <input onChange={(event) => setName(event.target.value)} />
-                <label>Company Name</label>
+        <form className="m-2">
+            <div className="form-floating my-2">
+                <input id="companyName" className="form-control" onChange={(event) => setName(event.target.value)} />
+                <label htmlFor="companyName">Company Name</label>
             </div>
-            <div>
-                <input onChange={(event) => setCode(event.target.value)} />
-                <label>Company Code</label>
+            <div className="form-floating my-2">
+                <input id="companyCode" className="form-control" onChange={(event) => setCode(event.target.value)} />
+                <label htmlFor="companyCode">Company Code</label>
             </div>
-            <button onClick={createCompany} type="button">Create Company</button>
+            <button className="btn btn-success w-100" onClick={createCompany} type="button">Create Company</button>
         </form>
         </>
     )

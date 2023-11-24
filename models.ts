@@ -3,9 +3,12 @@ import mongoose from "mongoose"
 const UserSchema = new mongoose.Schema({
     email: String,
     username: String,
+    firstName: String,
+    lastName: String,
     password: String,
     accepted: Boolean,
-    company: String
+    company: String,
+    role: String  
 })
 export const User = mongoose.model("User", UserSchema)
 
@@ -36,6 +39,7 @@ export const Treatment = mongoose.model("Treatment", TreatmentSchema)
 
 const BoxTreatmentSchema = new mongoose.Schema({
     name: String,
+    message: String,
     box: String,
     boxid: String,
     companyname: String,
