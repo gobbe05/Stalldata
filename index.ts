@@ -8,8 +8,9 @@ import GetCompany from './middleware/company'
 import { Parser } from 'json2csv'
 import { BoxTreatment } from './models'
 import GetUser from './middleware/username'
-mongoose.connect("mongodb://127.0.0.1:27017")
-
+const dotenv = require('dotenv');
+dotenv.config();
+mongoose.connect(process.env.DBSTRING)
 const app = express()
 
 /* Middleware */
