@@ -3,7 +3,7 @@ import { useEffect, useState } from "react"
 function AddSection() {
     const [name, setName] = useState<string>("")
     const [farmid, setFarmid] = useState("")
-    const [farms, setFarms] = useState([])
+    const [farms, setFarms] = useState<Array<any> | undefined>()
 
     function AddNewSection() {
         fetch("/api/addsection", {
@@ -20,12 +20,14 @@ function AddSection() {
         fetch("/api/getfarms")
         .then((response) => response.json())
         .then((data) => {
+            if(!data.farms) return
             setFarms(data.farms)
             setFarmid(data.farms[0]._id)
         })
     }, [])
 
-    return (
+    if(!farms) return <h1>No farms found!</h1>
+    else return (
         <>
         
             <form className="m-2 mt-4">

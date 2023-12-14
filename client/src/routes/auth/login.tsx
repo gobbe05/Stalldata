@@ -21,6 +21,7 @@ function Login() {
               },
             credentials: "include"
         })
+        if(response.status != 200) return
         const data = await response.json()
         if(data.message == "success") {
             updateGlobalState("loggedin", true)

@@ -3241,11 +3241,11 @@ const router = (0, _reactRouterDom.createBrowserRouter)((0, _reactRouterDom.crea
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"7crfk","react":"l1Q8s","react-dom/client":"jdZCU","react-router-dom":"sYSB5","./routes/auth/login.tsx":"9EZ5E","./routes/auth/signup.tsx":"lA4fp","./routes/behandling/behandling.tsx":"gqq5z","./routes/behandling/choosefarm.tsx":"fRPM1","./routes/behandling/choosesection.tsx":"da8ge","./GlobalState.tsx":"liq8b","./routes/behandling/choosebox.tsx":"iyhIr","./admin/admin.tsx":"leB3c","./layout.tsx":"gzIZb","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./index.css":"b8ft2","./company/addfarm.tsx":"96DHs","./company/company.tsx":"1C7mZ","./company/addbox.tsx":"4Wpuq","./company/addsection.tsx":"6LRrB","./routes/behandling/createtreatmentlayout.tsx":"leGjq","./routes/behandling/choosetreatment.tsx":"f0h4S","./company/addtreatment.tsx":"3qKMb","./company/treatedboxes.tsx":"hUDKz","./company/acceptusers.tsx":"ajBEd","./routes/auth/auth.tsx":"4kAI7","./admin/createcompany.tsx":"kUb6m","./routes/auth/choosecompany.tsx":"994aw","./company/users.tsx":"6eKWg","./admin/users.tsx":"ii21k","./admin/companies.tsx":"596yJ","./admin/createcompanyadmin.tsx":"ajzFF","./admin/createadmin.tsx":"lo1V5"}],"7crfk":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-dom/client":"lOjBx","./index.css":"b8ft2","react-router-dom":"9xmpe","./routes/auth/login.tsx":"9EZ5E","./routes/auth/signup.tsx":"lA4fp","./routes/behandling/behandling.tsx":"gqq5z","./routes/behandling/choosefarm.tsx":"fRPM1","./routes/behandling/choosesection.tsx":"da8ge","./GlobalState.tsx":"liq8b","./routes/behandling/choosebox.tsx":"iyhIr","./company/addfarm.tsx":"96DHs","./company/company.tsx":"1C7mZ","./company/addbox.tsx":"4Wpuq","./company/addsection.tsx":"6LRrB","./admin/users.tsx":"ii21k","./layout.tsx":"gzIZb","./routes/behandling/createtreatmentlayout.tsx":"leGjq","./routes/behandling/choosetreatment.tsx":"f0h4S","./company/addtreatment.tsx":"3qKMb","./company/treatedboxes.tsx":"hUDKz","./company/acceptusers.tsx":"ajBEd","./routes/auth/auth.tsx":"4kAI7","./admin/admin.tsx":"leB3c","./admin/createcompany.tsx":"kUb6m","./routes/auth/choosecompany.tsx":"994aw","./company/users.tsx":"6eKWg","./admin/companies.tsx":"596yJ","./admin/createcompanyadmin.tsx":"ajzFF","./admin/createadmin.tsx":"lo1V5","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"iTorj":[function(require,module,exports) {
 "use strict";
-module.exports = require("a3f1fe3d2f60911");
+module.exports = require("ee51401569654d91");
 
-},{"a3f1fe3d2f60911":"lNjPj"}],"lNjPj":[function(require,module,exports) {
+},{"ee51401569654d91":"48uCM"}],"48uCM":[function(require,module,exports) {
 /**
  * @license React
  * react-jsx-dev-runtime.development.js
@@ -3257,7 +3257,7 @@ module.exports = require("a3f1fe3d2f60911");
  */ "use strict";
 (function() {
     "use strict";
-    var React = require("2cd6d0f91e1be837");
+    var React = require("58362d9d82be395f");
     // ATTENTION
     // When adding new symbols to this file,
     // Please consider also adding to 'react-devtools-shared/src/backend/ReactSymbols'
@@ -4076,11 +4076,11 @@ module.exports = require("a3f1fe3d2f60911");
     exports.jsxDEV = jsxDEV$1;
 })();
 
-},{"2cd6d0f91e1be837":"l1Q8s"}],"l1Q8s":[function(require,module,exports) {
+},{"58362d9d82be395f":"21dqq"}],"21dqq":[function(require,module,exports) {
 "use strict";
-module.exports = require("23860644aed94a93");
+module.exports = require("a569817e6ea559f6");
 
-},{"23860644aed94a93":"egxX3"}],"egxX3":[function(require,module,exports) {
+},{"a569817e6ea559f6":"6YvXz"}],"6YvXz":[function(require,module,exports) {
 /**
  * @license React
  * react.development.js
@@ -5946,9 +5946,9 @@ module.exports = require("23860644aed94a93");
     /* global __REACT_DEVTOOLS_GLOBAL_HOOK__ */ if (typeof __REACT_DEVTOOLS_GLOBAL_HOOK__ !== "undefined" && typeof __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStop === "function") __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStop(new Error());
 })();
 
-},{}],"jdZCU":[function(require,module,exports) {
+},{}],"lOjBx":[function(require,module,exports) {
 "use strict";
-var m = require("4c3cc17960a64a9");
+var m = require("aaccff5d309d9239");
 var i = m.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED;
 exports.createRoot = function(c, o) {
     i.usingClientEntryPoint = true;
@@ -5967,7 +5967,7 @@ exports.hydrateRoot = function(c, h, o) {
     }
 };
 
-},{"4c3cc17960a64a9":"dDhIu"}],"dDhIu":[function(require,module,exports) {
+},{"aaccff5d309d9239":"j6uA9"}],"j6uA9":[function(require,module,exports) {
 "use strict";
 function checkDCE() {
     /* global __REACT_DEVTOOLS_GLOBAL_HOOK__ */ if (typeof __REACT_DEVTOOLS_GLOBAL_HOOK__ === "undefined" || typeof __REACT_DEVTOOLS_GLOBAL_HOOK__.checkDCE !== "function") return;
@@ -5981,9 +5981,9 @@ function checkDCE() {
     // a false positive.
     throw new Error("^_^");
 }
-module.exports = require("f1274037cb8b4089");
+module.exports = require("b0f0e6b9e8349dac");
 
-},{"f1274037cb8b4089":"hAZ7j"}],"hAZ7j":[function(require,module,exports) {
+},{"b0f0e6b9e8349dac":"3iA9v"}],"3iA9v":[function(require,module,exports) {
 /**
  * @license React
  * react-dom.development.js
@@ -5996,8 +5996,8 @@ module.exports = require("f1274037cb8b4089");
 (function() {
     "use strict";
     /* global __REACT_DEVTOOLS_GLOBAL_HOOK__ */ if (typeof __REACT_DEVTOOLS_GLOBAL_HOOK__ !== "undefined" && typeof __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStart === "function") __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStart(new Error());
-    var React = require("22a1ea217b25c225");
-    var Scheduler = require("c6be0627cfb2c7bb");
+    var React = require("6f0162e9ab224cd4");
+    var Scheduler = require("8ad4ca65319d28a7");
     var ReactSharedInternals = React.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED;
     var suppressWarning = false;
     function setSuppressWarning(newSuppressWarning) {
@@ -26970,11 +26970,11 @@ module.exports = require("f1274037cb8b4089");
     /* global __REACT_DEVTOOLS_GLOBAL_HOOK__ */ if (typeof __REACT_DEVTOOLS_GLOBAL_HOOK__ !== "undefined" && typeof __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStop === "function") __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStop(new Error());
 })();
 
-},{"22a1ea217b25c225":"l1Q8s","c6be0627cfb2c7bb":"6epMO"}],"6epMO":[function(require,module,exports) {
+},{"6f0162e9ab224cd4":"21dqq","8ad4ca65319d28a7":"juvHo"}],"juvHo":[function(require,module,exports) {
 "use strict";
-module.exports = require("c7a59e9a3459165c");
+module.exports = require("ef03b89c8fe2794e");
 
-},{"c7a59e9a3459165c":"7Al3R"}],"7Al3R":[function(require,module,exports) {
+},{"ef03b89c8fe2794e":"RqdIf"}],"RqdIf":[function(require,module,exports) {
 /**
  * @license React
  * scheduler.development.js
@@ -27428,7 +27428,7 @@ module.exports = require("c7a59e9a3459165c");
     /* global __REACT_DEVTOOLS_GLOBAL_HOOK__ */ if (typeof __REACT_DEVTOOLS_GLOBAL_HOOK__ !== "undefined" && typeof __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStop === "function") __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStop(new Error());
 })();
 
-},{}],"sYSB5":[function(require,module,exports) {
+},{}],"b8ft2":[function() {},{}],"9xmpe":[function(require,module,exports) {
 /**
  * React Router DOM v6.17.0
  *
@@ -28742,7 +28742,7 @@ let savedScrollPositions = {};
     return (0, _router.matchPath)(path.pathname, nextPath) != null || (0, _router.matchPath)(path.pathname, currentPath) != null;
 }
 
-},{"react":"l1Q8s","react-router":"99Cqw","@remix-run/router":"fhPfL","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"99Cqw":[function(require,module,exports) {
+},{"react":"21dqq","react-router":"dbWyW","@remix-run/router":"5ncDG","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"dbWyW":[function(require,module,exports) {
 /**
  * React Router v6.17.0
  *
@@ -29926,7 +29926,7 @@ function createMemoryRouter(routes, opts) {
     }).initialize();
 }
 
-},{"react":"l1Q8s","@remix-run/router":"fhPfL","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"fhPfL":[function(require,module,exports) {
+},{"react":"21dqq","@remix-run/router":"5ncDG","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"5ncDG":[function(require,module,exports) {
 /**
  * @remix-run/router v1.10.0
  *
@@ -33626,7 +33626,7 @@ exports.defineInteropFlag = function(a) {
 };
 exports.exportAll = function(source, dest) {
     Object.keys(source).forEach(function(key) {
-        if (key === "default" || key === "__esModule" || dest.hasOwnProperty(key)) return;
+        if (key === "default" || key === "__esModule" || Object.prototype.hasOwnProperty.call(dest, key)) return;
         Object.defineProperty(dest, key, {
             enumerable: true,
             get: function() {
@@ -33676,6 +33676,7 @@ function Login() {
             },
             credentials: "include"
         });
+        if (response.status != 200) return;
         const data = await response.json();
         if (data.message == "success") {
             updateGlobalState("loggedin", true);
@@ -33701,7 +33702,7 @@ function Login() {
                             onChange: (event)=>setUsername(event.target.value)
                         }, void 0, false, {
                             fileName: "client/src/routes/auth/login.tsx",
-                            lineNumber: 39,
+                            lineNumber: 40,
                             columnNumber: 21
                         }, this),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
@@ -33710,13 +33711,13 @@ function Login() {
                             children: "Username"
                         }, void 0, false, {
                             fileName: "client/src/routes/auth/login.tsx",
-                            lineNumber: 40,
+                            lineNumber: 41,
                             columnNumber: 21
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "client/src/routes/auth/login.tsx",
-                    lineNumber: 38,
+                    lineNumber: 39,
                     columnNumber: 17
                 }, this),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -33730,7 +33731,7 @@ function Login() {
                             onChange: (event)=>setPassword(event.target.value)
                         }, void 0, false, {
                             fileName: "client/src/routes/auth/login.tsx",
-                            lineNumber: 43,
+                            lineNumber: 44,
                             columnNumber: 21
                         }, this),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
@@ -33739,13 +33740,13 @@ function Login() {
                             children: "Password"
                         }, void 0, false, {
                             fileName: "client/src/routes/auth/login.tsx",
-                            lineNumber: 44,
+                            lineNumber: 45,
                             columnNumber: 21
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "client/src/routes/auth/login.tsx",
-                    lineNumber: 42,
+                    lineNumber: 43,
                     columnNumber: 17
                 }, this),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
@@ -33755,7 +33756,7 @@ function Login() {
                     children: "Login"
                 }, void 0, false, {
                     fileName: "client/src/routes/auth/login.tsx",
-                    lineNumber: 46,
+                    lineNumber: 47,
                     columnNumber: 17
                 }, this),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -33767,19 +33768,19 @@ function Login() {
                             children: "Sign up"
                         }, void 0, false, {
                             fileName: "client/src/routes/auth/login.tsx",
-                            lineNumber: 47,
+                            lineNumber: 48,
                             columnNumber: 60
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "client/src/routes/auth/login.tsx",
-                    lineNumber: 47,
+                    lineNumber: 48,
                     columnNumber: 17
                 }, this)
             ]
         }, void 0, true, {
             fileName: "client/src/routes/auth/login.tsx",
-            lineNumber: 37,
+            lineNumber: 38,
             columnNumber: 13
         }, this)
     }, void 0, false);
@@ -33800,7 +33801,87 @@ $RefreshReg$(_c, "Login");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"7crfk","react":"l1Q8s","react-router":"99Cqw","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","react-router-dom":"sYSB5","../../GlobalState":"liq8b"}],"km3Ru":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-router":"dbWyW","react-router-dom":"9xmpe","../../GlobalState":"liq8b","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"liq8b":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$4407 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$4407.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "GlobalState", ()=>GlobalState);
+parcelHelpers.export(exports, "useGlobalState", ()=>useGlobalState);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _s = $RefreshSig$(), _s1 = $RefreshSig$();
+const GlobalContext = /*#__PURE__*/ (0, _react.createContext)([
+    null,
+    null
+]);
+const GlobalState = (props)=>{
+    _s();
+    // Declare global the GlobalState
+    const [globalState, setGlobalState] = (0, _react.useState)({
+        alerts: [
+            {
+                type: "error",
+                message: "Alert"
+            },
+            {
+                type: "error",
+                message: "Alert"
+            }
+        ],
+        farm: null,
+        section: null,
+        box: null,
+        behandling: {
+            page: ""
+        },
+        loggedin: false,
+        companycode: undefined
+    });
+    // create a function that'll make it easy to update one state property at a time
+    const updateGlobalState = (key, newValue)=>{
+        setGlobalState((oldState)=>{
+            if (oldState[key] !== newValue) {
+                const newState = {
+                    ...oldState
+                };
+                newState[key] = newValue;
+                return newState;
+            } else return oldState;
+        });
+    };
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(GlobalContext.Provider, {
+        value: [
+            globalState,
+            updateGlobalState
+        ],
+        children: props.children
+    }, void 0, false, {
+        fileName: "client/src/GlobalState.tsx",
+        lineNumber: 23,
+        columnNumber: 9
+    }, undefined);
+};
+_s(GlobalState, "6VLpQdx9O3+BQIovFnGwKGyJk3Y=");
+_c = GlobalState;
+const useGlobalState = ()=>{
+    _s1();
+    return (0, _react.useContext)(GlobalContext);
+};
+_s1(useGlobalState, "gDsCjeeItUuvgOWf1v4qoK9RF6k=");
+var _c;
+$RefreshReg$(_c, "GlobalState");
+
+  $parcel$ReactRefreshHelpers$4407.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"km3Ru":[function(require,module,exports) {
 "use strict";
 var Refresh = require("7422ead32dcc1e6b");
 function debounce(func, delay) {
@@ -33938,87 +34019,7 @@ function registerExportsForReactRefresh(module1) {
     }
 }
 
-},{"7422ead32dcc1e6b":"786KC"}],"liq8b":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$4407 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
-var prevRefreshReg = window.$RefreshReg$;
-var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$4407.prelude(module);
-
-try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-parcelHelpers.export(exports, "GlobalState", ()=>GlobalState);
-parcelHelpers.export(exports, "useGlobalState", ()=>useGlobalState);
-var _jsxDevRuntime = require("react/jsx-dev-runtime");
-var _react = require("react");
-var _s = $RefreshSig$(), _s1 = $RefreshSig$();
-const GlobalContext = /*#__PURE__*/ (0, _react.createContext)([
-    null,
-    null
-]);
-const GlobalState = (props)=>{
-    _s();
-    // Declare global the GlobalState
-    const [globalState, setGlobalState] = (0, _react.useState)({
-        alerts: [
-            {
-                type: "error",
-                message: "Alert"
-            },
-            {
-                type: "error",
-                message: "Alert"
-            }
-        ],
-        farm: null,
-        section: null,
-        box: null,
-        behandling: {
-            page: ""
-        },
-        loggedin: false,
-        companycode: undefined
-    });
-    // create a function that'll make it easy to update one state property at a time
-    const updateGlobalState = (key, newValue)=>{
-        setGlobalState((oldState)=>{
-            if (oldState[key] !== newValue) {
-                const newState = {
-                    ...oldState
-                };
-                newState[key] = newValue;
-                return newState;
-            } else return oldState;
-        });
-    };
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(GlobalContext.Provider, {
-        value: [
-            globalState,
-            updateGlobalState
-        ],
-        children: props.children
-    }, void 0, false, {
-        fileName: "client/src/GlobalState.tsx",
-        lineNumber: 23,
-        columnNumber: 9
-    }, undefined);
-};
-_s(GlobalState, "6VLpQdx9O3+BQIovFnGwKGyJk3Y=");
-_c = GlobalState;
-const useGlobalState = ()=>{
-    _s1();
-    return (0, _react.useContext)(GlobalContext);
-};
-_s1(useGlobalState, "gDsCjeeItUuvgOWf1v4qoK9RF6k=");
-var _c;
-$RefreshReg$(_c, "GlobalState");
-
-  $parcel$ReactRefreshHelpers$4407.postlude(module);
-} finally {
-  window.$RefreshReg$ = prevRefreshReg;
-  window.$RefreshSig$ = prevRefreshSig;
-}
-},{"react/jsx-dev-runtime":"7crfk","react":"l1Q8s","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"lA4fp":[function(require,module,exports) {
+},{"7422ead32dcc1e6b":"786KC"}],"lA4fp":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$c6fe = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -34302,7 +34303,7 @@ $RefreshReg$(_c, "Signup");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"7crfk","react":"l1Q8s","react-router":"99Cqw","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","../../GlobalState":"liq8b","react-router-dom":"sYSB5","../../layout":"gzIZb"}],"gzIZb":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-router":"dbWyW","../../GlobalState":"liq8b","react-router-dom":"9xmpe","../../layout":"gzIZb","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"gzIZb":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$680b = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -34437,7 +34438,7 @@ $RefreshReg$(_c1, "Alerter");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"7crfk","react-router":"99Cqw","./header":"fkILo","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","react":"l1Q8s","./GlobalState":"liq8b"}],"fkILo":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react-router":"dbWyW","./header":"fkILo","react":"21dqq","./GlobalState":"liq8b","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"fkILo":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$0411 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -34597,7 +34598,6 @@ function Header() {
                                                     children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
                                                         className: "nav-link",
                                                         to: "/",
-                                                        "data-bs-dismiss": "offcanvas",
                                                         children: "Home"
                                                     }, void 0, false, {
                                                         fileName: "client/src/header.tsx",
@@ -34715,7 +34715,7 @@ $RefreshReg$(_c, "Header");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"7crfk","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","react-router-dom":"sYSB5","./GlobalState":"liq8b"}],"gqq5z":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react-router-dom":"9xmpe","./GlobalState":"liq8b","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"gqq5z":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$df57 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -34933,7 +34933,7 @@ $RefreshReg$(_c, "Behandling");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"7crfk","react":"l1Q8s","react-router-dom":"sYSB5","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","../../GlobalState":"liq8b"}],"fRPM1":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-router-dom":"9xmpe","../../GlobalState":"liq8b","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"fRPM1":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$9c7d = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -35061,7 +35061,7 @@ $RefreshReg$(_c1, "DisabledButton");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"7crfk","react":"l1Q8s","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./item":"aAvfv","../../GlobalState":"liq8b","react-router-dom":"sYSB5","../../layout":"gzIZb"}],"aAvfv":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./item":"aAvfv","../../GlobalState":"liq8b","react-router-dom":"9xmpe","../../layout":"gzIZb","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"aAvfv":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$dfcb = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -35100,7 +35100,7 @@ $RefreshReg$(_c, "Item");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"7crfk","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"da8ge":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"da8ge":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$64ee = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -35209,7 +35209,7 @@ $RefreshReg$(_c, "ChooseSection");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"7crfk","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","react":"l1Q8s","./item":"aAvfv","react-router":"99Cqw","../../GlobalState":"liq8b","react-router-dom":"sYSB5","./choosefarm":"fRPM1"}],"iyhIr":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./item":"aAvfv","react-router":"dbWyW","../../GlobalState":"liq8b","react-router-dom":"9xmpe","./choosefarm":"fRPM1","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"iyhIr":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$ef91 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -35317,171 +35317,7 @@ $RefreshReg$(_c, "ChooseBox");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"7crfk","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","react":"l1Q8s","react-router":"99Cqw","../../GlobalState":"liq8b","./item":"aAvfv","react-router-dom":"sYSB5","./choosefarm":"fRPM1"}],"leB3c":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$abe4 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
-var prevRefreshReg = window.$RefreshReg$;
-var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$abe4.prelude(module);
-
-try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-var _jsxDevRuntime = require("react/jsx-dev-runtime");
-var _react = require("react");
-var _reactRouter = require("react-router");
-var _reactRouterDom = require("react-router-dom");
-var _s = $RefreshSig$();
-function Admin() {
-    _s();
-    const navigate = (0, _reactRouter.useNavigate)();
-    (0, _react.useEffect)(()=>{
-        fetch("/api/getauth", {
-            method: "GET",
-            credentials: "include"
-        }).then((response)=>response.json()).then((data)=>{
-            if (data.role != "admin") navigate("/");
-        });
-    }, []);
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
-        children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "d-flex m-2",
-                children: [
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                        className: "col",
-                        children: [
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "row m-1",
-                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
-                                    className: "btn bg-dark-subtle p-3",
-                                    to: "createcompany",
-                                    children: "Create Company"
-                                }, void 0, false, {
-                                    fileName: "client/src/admin/admin.tsx",
-                                    lineNumber: 21,
-                                    columnNumber: 25
-                                }, this)
-                            }, void 0, false, {
-                                fileName: "client/src/admin/admin.tsx",
-                                lineNumber: 20,
-                                columnNumber: 21
-                            }, this),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "row m-1",
-                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
-                                    className: "btn bg-dark-subtle p-3",
-                                    to: "createcompanyadmin",
-                                    children: "Create Company Admin"
-                                }, void 0, false, {
-                                    fileName: "client/src/admin/admin.tsx",
-                                    lineNumber: 24,
-                                    columnNumber: 25
-                                }, this)
-                            }, void 0, false, {
-                                fileName: "client/src/admin/admin.tsx",
-                                lineNumber: 23,
-                                columnNumber: 21
-                            }, this),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "row m-1",
-                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
-                                    className: "btn bg-dark-subtle p-3",
-                                    to: "createadmin",
-                                    children: "Create Admin"
-                                }, void 0, false, {
-                                    fileName: "client/src/admin/admin.tsx",
-                                    lineNumber: 27,
-                                    columnNumber: 25
-                                }, this)
-                            }, void 0, false, {
-                                fileName: "client/src/admin/admin.tsx",
-                                lineNumber: 26,
-                                columnNumber: 21
-                            }, this)
-                        ]
-                    }, void 0, true, {
-                        fileName: "client/src/admin/admin.tsx",
-                        lineNumber: 19,
-                        columnNumber: 17
-                    }, this),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                        className: "col",
-                        children: [
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "row m-1",
-                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
-                                    className: "btn bg-dark-subtle w-100 p-3",
-                                    to: "companies",
-                                    children: "Companies"
-                                }, void 0, false, {
-                                    fileName: "client/src/admin/admin.tsx",
-                                    lineNumber: 32,
-                                    columnNumber: 25
-                                }, this)
-                            }, void 0, false, {
-                                fileName: "client/src/admin/admin.tsx",
-                                lineNumber: 31,
-                                columnNumber: 21
-                            }, this),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "row m-1",
-                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
-                                    className: "btn bg-dark-subtle w-100 p-3",
-                                    to: "users",
-                                    children: "Users"
-                                }, void 0, false, {
-                                    fileName: "client/src/admin/admin.tsx",
-                                    lineNumber: 35,
-                                    columnNumber: 25
-                                }, this)
-                            }, void 0, false, {
-                                fileName: "client/src/admin/admin.tsx",
-                                lineNumber: 34,
-                                columnNumber: 21
-                            }, this)
-                        ]
-                    }, void 0, true, {
-                        fileName: "client/src/admin/admin.tsx",
-                        lineNumber: 30,
-                        columnNumber: 17
-                    }, this)
-                ]
-            }, void 0, true, {
-                fileName: "client/src/admin/admin.tsx",
-                lineNumber: 18,
-                columnNumber: 13
-            }, this),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "m-2",
-                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouter.Outlet), {}, void 0, false, {
-                    fileName: "client/src/admin/admin.tsx",
-                    lineNumber: 40,
-                    columnNumber: 13
-                }, this)
-            }, void 0, false, {
-                fileName: "client/src/admin/admin.tsx",
-                lineNumber: 39,
-                columnNumber: 13
-            }, this)
-        ]
-    }, void 0, true);
-}
-_s(Admin, "0pNeyzXk/ByIxyERsdaIrG6js9s=", false, function() {
-    return [
-        (0, _reactRouter.useNavigate)
-    ];
-});
-_c = Admin;
-exports.default = Admin;
-var _c;
-$RefreshReg$(_c, "Admin");
-
-  $parcel$ReactRefreshHelpers$abe4.postlude(module);
-} finally {
-  window.$RefreshReg$ = prevRefreshReg;
-  window.$RefreshSig$ = prevRefreshSig;
-}
-},{"react/jsx-dev-runtime":"7crfk","react-router-dom":"sYSB5","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","react-router":"99Cqw","react":"l1Q8s"}],"b8ft2":[function() {},{}],"96DHs":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-router":"dbWyW","../../GlobalState":"liq8b","./item":"aAvfv","react-router-dom":"9xmpe","./choosefarm":"fRPM1","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"96DHs":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$985a = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -35598,7 +35434,7 @@ $RefreshReg$(_c, "AddFarm");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"7crfk","react":"l1Q8s","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"1C7mZ":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"1C7mZ":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$c8fb = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -35776,7 +35612,7 @@ $RefreshReg$(_c, "Admin");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"7crfk","react-router-dom":"sYSB5","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","react":"l1Q8s"}],"4Wpuq":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-router-dom":"9xmpe","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"4Wpuq":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$88ad = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -35791,7 +35627,7 @@ var _s = $RefreshSig$();
 function AddBox() {
     _s();
     const [name, setName] = (0, _react.useState)("");
-    const [farms, setFarms] = (0, _react.useState)([]);
+    const [farms, setFarms] = (0, _react.useState)();
     const [selectedFarmId, setSelectedfarmId] = (0, _react.useState)("");
     const [sections, setSections] = (0, _react.useState)([]);
     const [section, setSection] = (0, _react.useState)();
@@ -35820,6 +35656,7 @@ function AddBox() {
             credentials: "include"
         });
         const data = await response.json();
+        if (!data.sections) return;
         setSections(data.sections);
         data.sections[0] && setSection(data.sections[0]._id);
     }
@@ -35830,11 +35667,19 @@ function AddBox() {
     ]);
     (0, _react.useEffect)(()=>{
         fetch("/api/getfarms").then((response)=>response.json()).then((data)=>{
+            if (!data.farms) return;
             setFarms(data.farms);
             data.farms[0] && setSelectedfarmId(data.farms[0]._id);
         });
     }, []);
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
+    if (!farms) return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+        children: "No farms found!"
+    }, void 0, false, {
+        fileName: "client/src/company/addbox.tsx",
+        lineNumber: 54,
+        columnNumber: 23
+    }, this);
+    else return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("form", {
             className: "m-2 mt-4",
             children: [
@@ -35852,12 +35697,12 @@ function AddBox() {
                                     children: farm.name
                                 }, void 0, false, {
                                     fileName: "client/src/company/addbox.tsx",
-                                    lineNumber: 59,
+                                    lineNumber: 62,
                                     columnNumber: 25
                                 }, this))
                         }, void 0, false, {
                             fileName: "client/src/company/addbox.tsx",
-                            lineNumber: 57,
+                            lineNumber: 60,
                             columnNumber: 21
                         }, this),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
@@ -35865,13 +35710,13 @@ function AddBox() {
                             children: "Select Farm"
                         }, void 0, false, {
                             fileName: "client/src/company/addbox.tsx",
-                            lineNumber: 63,
+                            lineNumber: 66,
                             columnNumber: 21
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "client/src/company/addbox.tsx",
-                    lineNumber: 56,
+                    lineNumber: 59,
                     columnNumber: 17
                 }, this),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -35883,17 +35728,17 @@ function AddBox() {
                             onChange: (event)=>{
                                 setSection(event.target.value);
                             },
-                            children: sections.map((section)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("option", {
+                            children: sections && sections.map((section)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("option", {
                                     value: section._id,
                                     children: section.name
                                 }, void 0, false, {
                                     fileName: "client/src/company/addbox.tsx",
-                                    lineNumber: 69,
+                                    lineNumber: 72,
                                     columnNumber: 25
                                 }, this))
                         }, void 0, false, {
                             fileName: "client/src/company/addbox.tsx",
-                            lineNumber: 67,
+                            lineNumber: 70,
                             columnNumber: 21
                         }, this),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
@@ -35901,13 +35746,13 @@ function AddBox() {
                             children: "Select Section"
                         }, void 0, false, {
                             fileName: "client/src/company/addbox.tsx",
-                            lineNumber: 73,
+                            lineNumber: 76,
                             columnNumber: 21
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "client/src/company/addbox.tsx",
-                    lineNumber: 66,
+                    lineNumber: 69,
                     columnNumber: 17
                 }, this),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -35921,7 +35766,7 @@ function AddBox() {
                             }
                         }, void 0, false, {
                             fileName: "client/src/company/addbox.tsx",
-                            lineNumber: 77,
+                            lineNumber: 80,
                             columnNumber: 21
                         }, this),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
@@ -35929,13 +35774,13 @@ function AddBox() {
                             children: "Box Name"
                         }, void 0, false, {
                             fileName: "client/src/company/addbox.tsx",
-                            lineNumber: 80,
+                            lineNumber: 83,
                             columnNumber: 21
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "client/src/company/addbox.tsx",
-                    lineNumber: 76,
+                    lineNumber: 79,
                     columnNumber: 17
                 }, this),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
@@ -35945,18 +35790,18 @@ function AddBox() {
                     children: "Add"
                 }, void 0, false, {
                     fileName: "client/src/company/addbox.tsx",
-                    lineNumber: 82,
+                    lineNumber: 85,
                     columnNumber: 17
                 }, this)
             ]
         }, void 0, true, {
             fileName: "client/src/company/addbox.tsx",
-            lineNumber: 55,
+            lineNumber: 58,
             columnNumber: 13
         }, this)
     }, void 0, false);
 }
-_s(AddBox, "fXk6wGzhroJauLz3HtrnmomzMBk=");
+_s(AddBox, "P8AkVeyNIuGgx3B7MHrBnhDMEYY=");
 _c = AddBox;
 exports.default = AddBox;
 var _c;
@@ -35967,7 +35812,7 @@ $RefreshReg$(_c, "AddBox");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"7crfk","react":"l1Q8s","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"6LRrB":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"6LRrB":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$199a = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -35983,7 +35828,7 @@ function AddSection() {
     _s();
     const [name, setName] = (0, _react.useState)("");
     const [farmid, setFarmid] = (0, _react.useState)("");
-    const [farms, setFarms] = (0, _react.useState)([]);
+    const [farms, setFarms] = (0, _react.useState)();
     function AddNewSection() {
         fetch("/api/addsection", {
             method: "POST",
@@ -35999,11 +35844,19 @@ function AddSection() {
     }
     (0, _react.useEffect)(()=>{
         fetch("/api/getfarms").then((response)=>response.json()).then((data)=>{
+            if (!data.farms) return;
             setFarms(data.farms);
             setFarmid(data.farms[0]._id);
         });
     }, []);
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
+    if (!farms) return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+        children: "No farms found!"
+    }, void 0, false, {
+        fileName: "client/src/company/addsection.tsx",
+        lineNumber: 29,
+        columnNumber: 23
+    }, this);
+    else return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("form", {
             className: "m-2 mt-4",
             children: [
@@ -36021,12 +35874,12 @@ function AddSection() {
                                     children: farm.name
                                 }, void 0, false, {
                                     fileName: "client/src/company/addsection.tsx",
-                                    lineNumber: 35,
+                                    lineNumber: 37,
                                     columnNumber: 29
                                 }, this))
                         }, void 0, false, {
                             fileName: "client/src/company/addsection.tsx",
-                            lineNumber: 33,
+                            lineNumber: 35,
                             columnNumber: 21
                         }, this),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
@@ -36034,13 +35887,13 @@ function AddSection() {
                             children: "Select Farm"
                         }, void 0, false, {
                             fileName: "client/src/company/addsection.tsx",
-                            lineNumber: 40,
+                            lineNumber: 42,
                             columnNumber: 21
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "client/src/company/addsection.tsx",
-                    lineNumber: 32,
+                    lineNumber: 34,
                     columnNumber: 17
                 }, this),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -36054,7 +35907,7 @@ function AddSection() {
                             }
                         }, void 0, false, {
                             fileName: "client/src/company/addsection.tsx",
-                            lineNumber: 43,
+                            lineNumber: 45,
                             columnNumber: 21
                         }, this),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
@@ -36062,13 +35915,13 @@ function AddSection() {
                             children: "Section Name"
                         }, void 0, false, {
                             fileName: "client/src/company/addsection.tsx",
-                            lineNumber: 46,
+                            lineNumber: 48,
                             columnNumber: 21
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "client/src/company/addsection.tsx",
-                    lineNumber: 42,
+                    lineNumber: 44,
                     columnNumber: 17
                 }, this),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
@@ -36078,18 +35931,18 @@ function AddSection() {
                     children: "Add"
                 }, void 0, false, {
                     fileName: "client/src/company/addsection.tsx",
-                    lineNumber: 48,
+                    lineNumber: 50,
                     columnNumber: 17
                 }, this)
             ]
         }, void 0, true, {
             fileName: "client/src/company/addsection.tsx",
-            lineNumber: 31,
+            lineNumber: 33,
             columnNumber: 13
         }, this)
     }, void 0, false);
 }
-_s(AddSection, "8DG6C8JTxZybjl+n42Ylhh3DhTI=");
+_s(AddSection, "sp78ppfuHO3+K6x6819on+2w7ig=");
 _c = AddSection;
 exports.default = AddSection;
 var _c;
@@ -36100,1382 +35953,7 @@ $RefreshReg$(_c, "AddSection");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"7crfk","react":"l1Q8s","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"leGjq":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$f121 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
-var prevRefreshReg = window.$RefreshReg$;
-var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$f121.prelude(module);
-
-try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-var _jsxDevRuntime = require("react/jsx-dev-runtime");
-var _reactRouter = require("react-router");
-var _reactRouterDom = require("react-router-dom");
-var _globalState = require("../../GlobalState");
-var _react = require("react");
-var _layout = require("../../layout");
-var _s = $RefreshSig$(), _s1 = $RefreshSig$();
-function CreateTreatmentLayout() {
-    _s();
-    const [globalState] = (0, _globalState.useGlobalState)();
-    const navigate = (0, _reactRouter.useNavigate)();
-    (0, _react.useEffect)(()=>{
-        fetch("/api/getauth", {
-            method: "GET"
-        }).then((data)=>data.json()).then((data)=>{
-            if (data.auth != true) navigate("/login");
-        });
-    }, []);
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
-        children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "m-4",
-                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                    className: "d-flex btn-group",
-                    role: "group",
-                    children: [
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
-                            className: `btn py-4 flex-grow-1 text-white text-center
-                ${globalState.farm && "btn-success"}
-                ${globalState.behandling.page == "farm" && "btn-secondary"}
-             `,
-                            to: "/behandling",
-                            children: "Farm"
-                        }, void 0, false, {
-                            fileName: "client/src/routes/behandling/createtreatmentlayout.tsx",
-                            lineNumber: 23,
-                            columnNumber: 17
-                        }, this),
-                        globalState.farm ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
-                            className: `btn py-4 flex-grow-1 text-white text-center
-                ${globalState.section && " btn-success"}
-                ${globalState.behandling.page == "section" && "btn-secondary"}`,
-                            to: "choosesection",
-                            children: "Section"
-                        }, void 0, false, {
-                            fileName: "client/src/routes/behandling/createtreatmentlayout.tsx",
-                            lineNumber: 29,
-                            columnNumber: 17
-                        }, this) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(DisabledLink, {
-                            warning: "Please choose a farm before trying to choose a section!",
-                            link: "Section"
-                        }, void 0, false, {
-                            fileName: "client/src/routes/behandling/createtreatmentlayout.tsx",
-                            lineNumber: 31,
-                            columnNumber: 118
-                        }, this),
-                        globalState.section ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
-                            className: `btn py-4 flex-grow-1 text-white text-center
-                ${globalState.box && "btn-success"}
-                ${globalState.behandling.page == "box" && "btn-secondary"}`,
-                            to: "choosebox",
-                            children: "Box"
-                        }, void 0, false, {
-                            fileName: "client/src/routes/behandling/createtreatmentlayout.tsx",
-                            lineNumber: 33,
-                            columnNumber: 17
-                        }, this) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(DisabledLink, {
-                            warning: "Please choose a section before trying to choose a box!",
-                            link: "Box"
-                        }, void 0, false, {
-                            fileName: "client/src/routes/behandling/createtreatmentlayout.tsx",
-                            lineNumber: 36,
-                            columnNumber: 45
-                        }, this)
-                    ]
-                }, void 0, true, {
-                    fileName: "client/src/routes/behandling/createtreatmentlayout.tsx",
-                    lineNumber: 21,
-                    columnNumber: 13
-                }, this)
-            }, void 0, false, {
-                fileName: "client/src/routes/behandling/createtreatmentlayout.tsx",
-                lineNumber: 20,
-                columnNumber: 9
-            }, this),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouter.Outlet), {}, void 0, false, {
-                fileName: "client/src/routes/behandling/createtreatmentlayout.tsx",
-                lineNumber: 41,
-                columnNumber: 9
-            }, this)
-        ]
-    }, void 0, true);
-}
-_s(CreateTreatmentLayout, "SJIiH5ogzBW3MN1g9eyUFExTwC0=", false, function() {
-    return [
-        (0, _globalState.useGlobalState),
-        (0, _reactRouter.useNavigate)
-    ];
-});
-_c = CreateTreatmentLayout;
-function DisabledLink({ link, warning }) {
-    _s1();
-    const AddAlert = (0, _react.useContext)((0, _layout.AlertContext));
-    function Warning() {
-        AddAlert("danger", warning);
-    }
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
-        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-            className: "btn d-flex align-items-center justify-content-center flex-grow-1",
-            onClick: Warning,
-            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                className: "m-0",
-                children: link
-            }, void 0, false, {
-                fileName: "client/src/routes/behandling/createtreatmentlayout.tsx",
-                lineNumber: 53,
-                columnNumber: 113
-            }, this)
-        }, void 0, false, {
-            fileName: "client/src/routes/behandling/createtreatmentlayout.tsx",
-            lineNumber: 53,
-            columnNumber: 13
-        }, this)
-    }, void 0, false);
-}
-_s1(DisabledLink, "iJdHiv8YWPeA12gGcJFE9p2WJ6Q=");
-_c1 = DisabledLink;
-exports.default = CreateTreatmentLayout;
-var _c, _c1;
-$RefreshReg$(_c, "CreateTreatmentLayout");
-$RefreshReg$(_c1, "DisabledLink");
-
-  $parcel$ReactRefreshHelpers$f121.postlude(module);
-} finally {
-  window.$RefreshReg$ = prevRefreshReg;
-  window.$RefreshSig$ = prevRefreshSig;
-}
-},{"react/jsx-dev-runtime":"7crfk","react-router":"99Cqw","react-router-dom":"sYSB5","../../GlobalState":"liq8b","react":"l1Q8s","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","../../layout":"gzIZb"}],"f0h4S":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$2f68 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
-var prevRefreshReg = window.$RefreshReg$;
-var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$2f68.prelude(module);
-
-try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-var _jsxDevRuntime = require("react/jsx-dev-runtime");
-var _react = require("react");
-var _globalState = require("../../GlobalState");
-var _reactRouter = require("react-router");
-var _layout = require("../../layout");
-var _s = $RefreshSig$();
-function ChooseTreatment() {
-    _s();
-    const [name, setName] = (0, _react.useState)("");
-    const [message, setMessage] = (0, _react.useState)("");
-    const [globalState, updateGlobalState] = (0, _globalState.useGlobalState)();
-    const [treatments, setTreatments] = (0, _react.useState)([]);
-    const navigate = (0, _reactRouter.useNavigate)();
-    const AddAlert = (0, _react.useContext)((0, _layout.AlertContext));
-    async function AddTreatmentToBox(name, box, boxid) {
-        const response = await fetch("/api/addtreatmenttobox", {
-            method: "POST",
-            body: JSON.stringify({
-                name: name,
-                message: message,
-                box: box,
-                boxid: boxid,
-                addedAt: new Date
-            }),
-            headers: {
-                "Content-Type": "application/json"
-            },
-            credentials: "include"
-        });
-        if (response.status == 200) {
-            AddAlert("success", "Successfully added a treatment to the box");
-            navigate("/");
-        }
-        if (response.status == 401) AddAlert("danger", "You are unathorized to access this page");
-        if (response.status == 500) AddAlert("danger", "There was an error handling your request");
-    }
-    (0, _react.useEffect)(()=>{
-        if (!globalState.farm || !globalState.section || !globalState.box) navigate("/behandling");
-        fetch("/api/gettreatments").then((response)=>response.json()).then((data)=>{
-            setTreatments(data.treatments);
-            setName(data.treatments[0].name);
-        });
-    }, []);
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
-        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("form", {
-            className: "m-4",
-            children: [
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                    className: "text-white",
-                    children: [
-                        globalState.farm && globalState.farm.name,
-                        "\\",
-                        globalState.section && globalState.section.name,
-                        "\\",
-                        globalState.box && globalState.box.name
-                    ]
-                }, void 0, true, {
-                    fileName: "client/src/routes/behandling/choosetreatment.tsx",
-                    lineNumber: 44,
-                    columnNumber: 17
-                }, this),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("select", {
-                    onChange: (event)=>{
-                        setName(event.target.value);
-                    },
-                    className: "form-select",
-                    children: treatments.map((treatment)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("option", {
-                            className: "text-white",
-                            value: treatment.name,
-                            children: treatment.name
-                        }, void 0, false, {
-                            fileName: "client/src/routes/behandling/choosetreatment.tsx",
-                            lineNumber: 47,
-                            columnNumber: 21
-                        }, this))
-                }, void 0, false, {
-                    fileName: "client/src/routes/behandling/choosetreatment.tsx",
-                    lineNumber: 45,
-                    columnNumber: 17
-                }, this),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                    className: "form-floating my-2",
-                    children: [
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("textarea", {
-                            onChange: (event)=>setMessage(event.target.value),
-                            className: "form-control",
-                            placeholder: "Leave a comment here",
-                            id: "floatingTextarea"
-                        }, void 0, false, {
-                            fileName: "client/src/routes/behandling/choosetreatment.tsx",
-                            lineNumber: 52,
-                            columnNumber: 21
-                        }, this),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
-                            htmlFor: "floatingTextarea",
-                            className: "text-white",
-                            children: "Message"
-                        }, void 0, false, {
-                            fileName: "client/src/routes/behandling/choosetreatment.tsx",
-                            lineNumber: 53,
-                            columnNumber: 21
-                        }, this)
-                    ]
-                }, void 0, true, {
-                    fileName: "client/src/routes/behandling/choosetreatment.tsx",
-                    lineNumber: 51,
-                    columnNumber: 17
-                }, this),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
-                    className: "btn btn-success w-100 my-2",
-                    onClick: ()=>{
-                        AddTreatmentToBox(name, globalState.box.name, globalState.box.id);
-                    },
-                    type: "button",
-                    children: "Add Treatment to box"
-                }, void 0, false, {
-                    fileName: "client/src/routes/behandling/choosetreatment.tsx",
-                    lineNumber: 55,
-                    columnNumber: 17
-                }, this)
-            ]
-        }, void 0, true, {
-            fileName: "client/src/routes/behandling/choosetreatment.tsx",
-            lineNumber: 43,
-            columnNumber: 13
-        }, this)
-    }, void 0, false);
-}
-_s(ChooseTreatment, "70ovRxlv9bcpRdZfaWBP8GXJmUc=", false, function() {
-    return [
-        (0, _globalState.useGlobalState),
-        (0, _reactRouter.useNavigate)
-    ];
-});
-_c = ChooseTreatment;
-exports.default = ChooseTreatment;
-var _c;
-$RefreshReg$(_c, "ChooseTreatment");
-
-  $parcel$ReactRefreshHelpers$2f68.postlude(module);
-} finally {
-  window.$RefreshReg$ = prevRefreshReg;
-  window.$RefreshSig$ = prevRefreshSig;
-}
-},{"react/jsx-dev-runtime":"7crfk","react":"l1Q8s","../../GlobalState":"liq8b","react-router":"99Cqw","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","../../layout":"gzIZb"}],"3qKMb":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$11d9 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
-var prevRefreshReg = window.$RefreshReg$;
-var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$11d9.prelude(module);
-
-try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-var _jsxDevRuntime = require("react/jsx-dev-runtime");
-var _react = require("react");
-var _s = $RefreshSig$();
-function AddTreatment() {
-    _s();
-    const [name, setName] = (0, _react.useState)("");
-    function AddNewSection() {
-        fetch("/api/addtreatment", {
-            method: "POST",
-            body: JSON.stringify({
-                name: name
-            }),
-            headers: {
-                "Content-Type": "application/json"
-            },
-            credentials: "include"
-        });
-    }
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
-        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("form", {
-            className: "m-2 mt-4",
-            children: [
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                    className: "form-floating",
-                    children: [
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
-                            className: "form-control",
-                            id: "treatmentName",
-                            onChange: (event)=>{
-                                setName(event.target.value);
-                            }
-                        }, void 0, false, {
-                            fileName: "client/src/company/addtreatment.tsx",
-                            lineNumber: 20,
-                            columnNumber: 21
-                        }, this),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
-                            htmlFor: "treatmentName",
-                            children: "Treatment Name"
-                        }, void 0, false, {
-                            fileName: "client/src/company/addtreatment.tsx",
-                            lineNumber: 23,
-                            columnNumber: 21
-                        }, this)
-                    ]
-                }, void 0, true, {
-                    fileName: "client/src/company/addtreatment.tsx",
-                    lineNumber: 19,
-                    columnNumber: 17
-                }, this),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
-                    className: "btn btn-success my-2 w-100",
-                    onClick: AddNewSection,
-                    type: "button",
-                    children: "Add"
-                }, void 0, false, {
-                    fileName: "client/src/company/addtreatment.tsx",
-                    lineNumber: 25,
-                    columnNumber: 17
-                }, this)
-            ]
-        }, void 0, true, {
-            fileName: "client/src/company/addtreatment.tsx",
-            lineNumber: 18,
-            columnNumber: 13
-        }, this)
-    }, void 0, false);
-}
-_s(AddTreatment, "gFPpQ6rgfiGkmgRsh4q2nIO1W+Q=");
-_c = AddTreatment;
-exports.default = AddTreatment;
-var _c;
-$RefreshReg$(_c, "AddTreatment");
-
-  $parcel$ReactRefreshHelpers$11d9.postlude(module);
-} finally {
-  window.$RefreshReg$ = prevRefreshReg;
-  window.$RefreshSig$ = prevRefreshSig;
-}
-},{"react/jsx-dev-runtime":"7crfk","react":"l1Q8s","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"hUDKz":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$01b1 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
-var prevRefreshReg = window.$RefreshReg$;
-var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$01b1.prelude(module);
-
-try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-var _jsxDevRuntime = require("react/jsx-dev-runtime");
-var _react = require("react");
-var _s = $RefreshSig$();
-function TreatedBoxes() {
-    _s();
-    const [treatedboxes, setTreatedboxes] = (0, _react.useState)([]);
-    (0, _react.useEffect)(()=>{
-        fetch("/api/gettreatedboxes").then((response)=>response.json()).then((data)=>{
-            setTreatedboxes(data.boxtreatments);
-        });
-    }, []);
-    async function DeleteBoxTreatment(boxid) {
-        await fetch("/api/deleteboxtreatment", {
-            method: "DELETE",
-            body: JSON.stringify({
-                treatedboxId: boxid
-            }),
-            headers: {
-                "Content-Type": "application/json"
-            },
-            credentials: "include"
-        });
-    }
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
-        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-            className: "overflow-x-scroll m-4",
-            children: [
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("table", {
-                    className: "table table-borderless table-striped text-white",
-                    children: [
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("thead", {
-                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("tr", {
-                                children: [
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("th", {
-                                        scope: "col",
-                                        children: "#"
-                                    }, void 0, false, {
-                                        fileName: "client/src/company/treatedboxes.tsx",
-                                        lineNumber: 30,
-                                        columnNumber: 29
-                                    }, this),
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("th", {
-                                        scope: "col",
-                                        children: "Name"
-                                    }, void 0, false, {
-                                        fileName: "client/src/company/treatedboxes.tsx",
-                                        lineNumber: 31,
-                                        columnNumber: 29
-                                    }, this),
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("th", {
-                                        scope: "col",
-                                        children: "Box"
-                                    }, void 0, false, {
-                                        fileName: "client/src/company/treatedboxes.tsx",
-                                        lineNumber: 32,
-                                        columnNumber: 29
-                                    }, this),
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("th", {
-                                        scope: "col",
-                                        children: "Created At"
-                                    }, void 0, false, {
-                                        fileName: "client/src/company/treatedboxes.tsx",
-                                        lineNumber: 33,
-                                        columnNumber: 29
-                                    }, this),
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("th", {
-                                        scope: "col"
-                                    }, void 0, false, {
-                                        fileName: "client/src/company/treatedboxes.tsx",
-                                        lineNumber: 34,
-                                        columnNumber: 29
-                                    }, this)
-                                ]
-                            }, void 0, true, {
-                                fileName: "client/src/company/treatedboxes.tsx",
-                                lineNumber: 29,
-                                columnNumber: 25
-                            }, this)
-                        }, void 0, false, {
-                            fileName: "client/src/company/treatedboxes.tsx",
-                            lineNumber: 28,
-                            columnNumber: 21
-                        }, this),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("tbody", {
-                            children: treatedboxes.map((item, index)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("tr", {
-                                    children: [
-                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("td", {
-                                            className: "text-nowrap",
-                                            scope: "row",
-                                            children: index
-                                        }, void 0, false, {
-                                            fileName: "client/src/company/treatedboxes.tsx",
-                                            lineNumber: 40,
-                                            columnNumber: 29
-                                        }, this),
-                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("td", {
-                                            className: "text-nowrap",
-                                            children: item.name
-                                        }, void 0, false, {
-                                            fileName: "client/src/company/treatedboxes.tsx",
-                                            lineNumber: 41,
-                                            columnNumber: 29
-                                        }, this),
-                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("td", {
-                                            className: "text-nowrap",
-                                            children: item.box
-                                        }, void 0, false, {
-                                            fileName: "client/src/company/treatedboxes.tsx",
-                                            lineNumber: 42,
-                                            columnNumber: 29
-                                        }, this),
-                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("td", {
-                                            className: "text-nowrap",
-                                            children: item.addedAt
-                                        }, void 0, false, {
-                                            fileName: "client/src/company/treatedboxes.tsx",
-                                            lineNumber: 43,
-                                            columnNumber: 29
-                                        }, this),
-                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("td", {
-                                            className: "text-nowrap",
-                                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
-                                                onClick: ()=>{
-                                                    console.log(item);
-                                                    DeleteBoxTreatment(item._id);
-                                                },
-                                                className: "btn btn-danger",
-                                                children: "Delete"
-                                            }, void 0, false, {
-                                                fileName: "client/src/company/treatedboxes.tsx",
-                                                lineNumber: 44,
-                                                columnNumber: 57
-                                            }, this)
-                                        }, void 0, false, {
-                                            fileName: "client/src/company/treatedboxes.tsx",
-                                            lineNumber: 44,
-                                            columnNumber: 29
-                                        }, this)
-                                    ]
-                                }, void 0, true, {
-                                    fileName: "client/src/company/treatedboxes.tsx",
-                                    lineNumber: 39,
-                                    columnNumber: 25
-                                }, this))
-                        }, void 0, false, {
-                            fileName: "client/src/company/treatedboxes.tsx",
-                            lineNumber: 37,
-                            columnNumber: 21
-                        }, this)
-                    ]
-                }, void 0, true, {
-                    fileName: "client/src/company/treatedboxes.tsx",
-                    lineNumber: 27,
-                    columnNumber: 17
-                }, this),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-                    href: "/api/getcsv",
-                    target: "_blank",
-                    rel: "noopener noreferrer",
-                    children: "Get CSV"
-                }, void 0, false, {
-                    fileName: "client/src/company/treatedboxes.tsx",
-                    lineNumber: 49,
-                    columnNumber: 17
-                }, this)
-            ]
-        }, void 0, true, {
-            fileName: "client/src/company/treatedboxes.tsx",
-            lineNumber: 26,
-            columnNumber: 13
-        }, this)
-    }, void 0, false);
-}
-_s(TreatedBoxes, "4r6Q+9+sQpAf8Ou1Qr88RvkTosQ=");
-_c = TreatedBoxes;
-exports.default = TreatedBoxes;
-var _c;
-$RefreshReg$(_c, "TreatedBoxes");
-
-  $parcel$ReactRefreshHelpers$01b1.postlude(module);
-} finally {
-  window.$RefreshReg$ = prevRefreshReg;
-  window.$RefreshSig$ = prevRefreshSig;
-}
-},{"react/jsx-dev-runtime":"7crfk","react":"l1Q8s","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"ajBEd":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$1062 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
-var prevRefreshReg = window.$RefreshReg$;
-var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$1062.prelude(module);
-
-try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-var _jsxDevRuntime = require("react/jsx-dev-runtime");
-var _react = require("react");
-var _s = $RefreshSig$();
-function AcceptUsers() {
-    _s();
-    const [users, setUsers] = (0, _react.useState)([]);
-    (0, _react.useEffect)(()=>{
-        fetch("/api/getunacceptedusers").then((response)=>response.json()).then((data)=>setUsers(data.users));
-    }, []);
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
-        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-            children: users.map((user)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                    className: "text-white",
-                    children: [
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                            children: [
-                                "Username : ",
-                                user.username
-                            ]
-                        }, void 0, true, {
-                            fileName: "client/src/company/acceptusers.tsx",
-                            lineNumber: 15,
-                            columnNumber: 21
-                        }, this),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                            children: [
-                                "Email : ",
-                                user.email
-                            ]
-                        }, void 0, true, {
-                            fileName: "client/src/company/acceptusers.tsx",
-                            lineNumber: 16,
-                            columnNumber: 21
-                        }, this),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
-                            className: "btn btn-success",
-                            children: "Accept"
-                        }, void 0, false, {
-                            fileName: "client/src/company/acceptusers.tsx",
-                            lineNumber: 17,
-                            columnNumber: 21
-                        }, this)
-                    ]
-                }, void 0, true, {
-                    fileName: "client/src/company/acceptusers.tsx",
-                    lineNumber: 14,
-                    columnNumber: 17
-                }, this))
-        }, void 0, false, {
-            fileName: "client/src/company/acceptusers.tsx",
-            lineNumber: 12,
-            columnNumber: 13
-        }, this)
-    }, void 0, false);
-}
-_s(AcceptUsers, "JadZszbqna06PpJs9hMo7Hl/LOY=");
-_c = AcceptUsers;
-exports.default = AcceptUsers;
-var _c;
-$RefreshReg$(_c, "AcceptUsers");
-
-  $parcel$ReactRefreshHelpers$1062.postlude(module);
-} finally {
-  window.$RefreshReg$ = prevRefreshReg;
-  window.$RefreshSig$ = prevRefreshSig;
-}
-},{"react/jsx-dev-runtime":"7crfk","react":"l1Q8s","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"4kAI7":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$6887 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
-var prevRefreshReg = window.$RefreshReg$;
-var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$6887.prelude(module);
-
-try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-var _jsxDevRuntime = require("react/jsx-dev-runtime");
-var _reactRouterDom = require("react-router-dom");
-var _react = require("react");
-var _s = $RefreshSig$();
-function Auth() {
-    _s();
-    const navigate = (0, _reactRouterDom.useNavigate)();
-    (0, _react.useEffect)(()=>{
-        fetch("/api/getauth", {
-            method: "GET"
-        }).then((data)=>data.json()).then((data)=>{
-            if (data.auth == true) navigate("/");
-        });
-    }, []);
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
-        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Outlet), {}, void 0, false, {
-            fileName: "client/src/routes/auth/auth.tsx",
-            lineNumber: 16,
-            columnNumber: 7
-        }, this)
-    }, void 0, false);
-}
-_s(Auth, "0pNeyzXk/ByIxyERsdaIrG6js9s=", false, function() {
-    return [
-        (0, _reactRouterDom.useNavigate)
-    ];
-});
-_c = Auth;
-exports.default = Auth;
-var _c;
-$RefreshReg$(_c, "Auth");
-
-  $parcel$ReactRefreshHelpers$6887.postlude(module);
-} finally {
-  window.$RefreshReg$ = prevRefreshReg;
-  window.$RefreshSig$ = prevRefreshSig;
-}
-},{"react/jsx-dev-runtime":"7crfk","react-router-dom":"sYSB5","react":"l1Q8s","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"kUb6m":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$aa2a = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
-var prevRefreshReg = window.$RefreshReg$;
-var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$aa2a.prelude(module);
-
-try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-var _jsxDevRuntime = require("react/jsx-dev-runtime");
-var _react = require("react");
-var _s = $RefreshSig$();
-function CreateCompany() {
-    _s();
-    const [name, setName] = (0, _react.useState)("");
-    const [code, setCode] = (0, _react.useState)("");
-    async function createCompany() {
-        await fetch("/api/createcompany", {
-            method: "POST",
-            body: JSON.stringify({
-                name: name,
-                code: code
-            }),
-            headers: {
-                "Content-Type": "application/json"
-            },
-            credentials: "include"
-        });
-    }
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
-        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("form", {
-            className: "m-2",
-            children: [
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                    className: "form-floating my-2",
-                    children: [
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
-                            id: "companyName",
-                            className: "form-control",
-                            onChange: (event)=>setName(event.target.value)
-                        }, void 0, false, {
-                            fileName: "client/src/admin/createcompany.tsx",
-                            lineNumber: 25,
-                            columnNumber: 17
-                        }, this),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
-                            htmlFor: "companyName",
-                            children: "Company Name"
-                        }, void 0, false, {
-                            fileName: "client/src/admin/createcompany.tsx",
-                            lineNumber: 26,
-                            columnNumber: 17
-                        }, this)
-                    ]
-                }, void 0, true, {
-                    fileName: "client/src/admin/createcompany.tsx",
-                    lineNumber: 24,
-                    columnNumber: 13
-                }, this),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                    className: "form-floating my-2",
-                    children: [
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
-                            id: "companyCode",
-                            className: "form-control",
-                            onChange: (event)=>setCode(event.target.value)
-                        }, void 0, false, {
-                            fileName: "client/src/admin/createcompany.tsx",
-                            lineNumber: 29,
-                            columnNumber: 17
-                        }, this),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
-                            htmlFor: "companyCode",
-                            children: "Company Code"
-                        }, void 0, false, {
-                            fileName: "client/src/admin/createcompany.tsx",
-                            lineNumber: 30,
-                            columnNumber: 17
-                        }, this)
-                    ]
-                }, void 0, true, {
-                    fileName: "client/src/admin/createcompany.tsx",
-                    lineNumber: 28,
-                    columnNumber: 13
-                }, this),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
-                    className: "btn btn-success w-100",
-                    onClick: createCompany,
-                    type: "button",
-                    children: "Create Company"
-                }, void 0, false, {
-                    fileName: "client/src/admin/createcompany.tsx",
-                    lineNumber: 32,
-                    columnNumber: 13
-                }, this)
-            ]
-        }, void 0, true, {
-            fileName: "client/src/admin/createcompany.tsx",
-            lineNumber: 23,
-            columnNumber: 9
-        }, this)
-    }, void 0, false);
-}
-_s(CreateCompany, "jsFob4NGBarc5/LmqT2F8BVA6N0=");
-_c = CreateCompany;
-exports.default = CreateCompany;
-var _c;
-$RefreshReg$(_c, "CreateCompany");
-
-  $parcel$ReactRefreshHelpers$aa2a.postlude(module);
-} finally {
-  window.$RefreshReg$ = prevRefreshReg;
-  window.$RefreshSig$ = prevRefreshSig;
-}
-},{"react/jsx-dev-runtime":"7crfk","react":"l1Q8s","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"994aw":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$50f5 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
-var prevRefreshReg = window.$RefreshReg$;
-var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$50f5.prelude(module);
-
-try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-var _jsxDevRuntime = require("react/jsx-dev-runtime");
-var _react = require("react");
-var _globalState = require("../../GlobalState");
-var _reactRouter = require("react-router");
-var _reactRouterDom = require("react-router-dom");
-var _layout = require("../../layout");
-var _s = $RefreshSig$();
-function ChooseCompany() {
-    _s();
-    const [code, setCode] = (0, _react.useState)("");
-    const [globalState, updateGlobalState] = (0, _globalState.useGlobalState)();
-    const navigate = (0, _reactRouter.useNavigate)();
-    const AddAlert = (0, _react.useContext)((0, _layout.AlertContext));
-    async function checkCode(code) {
-        const respone = await fetch("/api/checkcompanycode/", {
-            method: "POST",
-            body: JSON.stringify({
-                code: code
-            }),
-            headers: {
-                "Content-Type": "application/json"
-            },
-            credentials: "include"
-        });
-        if (respone.status == 200) {
-            updateGlobalState("companycode", code);
-            navigate("/auth/signup");
-        } else AddAlert("danger", "The company does not exist");
-    }
-    function Form(event, code) {
-        event.preventDefault();
-        checkCode(code);
-    }
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
-        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("form", {
-            className: "my-auto mx-4",
-            onSubmit: (event)=>Form(event, code),
-            children: [
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                    className: "mb-4",
-                    children: "Enter your company's private signup code"
-                }, void 0, false, {
-                    fileName: "client/src/routes/auth/choosecompany.tsx",
-                    lineNumber: 37,
-                    columnNumber: 17
-                }, this),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                    className: "form-floating my-2",
-                    children: [
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
-                            className: "form-control",
-                            id: "companycode",
-                            onChange: (event)=>{
-                                setCode(event.target.value);
-                            }
-                        }, void 0, false, {
-                            fileName: "client/src/routes/auth/choosecompany.tsx",
-                            lineNumber: 39,
-                            columnNumber: 21
-                        }, this),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
-                            htmlFor: "companycode",
-                            children: "Company Code"
-                        }, void 0, false, {
-                            fileName: "client/src/routes/auth/choosecompany.tsx",
-                            lineNumber: 40,
-                            columnNumber: 21
-                        }, this)
-                    ]
-                }, void 0, true, {
-                    fileName: "client/src/routes/auth/choosecompany.tsx",
-                    lineNumber: 38,
-                    columnNumber: 17
-                }, this),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
-                    className: "btn btn-success w-100",
-                    type: "button",
-                    onClick: ()=>{
-                        checkCode(code);
-                    },
-                    children: "Submit"
-                }, void 0, false, {
-                    fileName: "client/src/routes/auth/choosecompany.tsx",
-                    lineNumber: 42,
-                    columnNumber: 17
-                }, this),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                    className: "mt-2",
-                    children: [
-                        "Already have an account? ",
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
-                            to: "/auth/login",
-                            children: "Login"
-                        }, void 0, false, {
-                            fileName: "client/src/routes/auth/choosecompany.tsx",
-                            lineNumber: 43,
-                            columnNumber: 62
-                        }, this)
-                    ]
-                }, void 0, true, {
-                    fileName: "client/src/routes/auth/choosecompany.tsx",
-                    lineNumber: 43,
-                    columnNumber: 17
-                }, this)
-            ]
-        }, void 0, true, {
-            fileName: "client/src/routes/auth/choosecompany.tsx",
-            lineNumber: 36,
-            columnNumber: 13
-        }, this)
-    }, void 0, false);
-}
-_s(ChooseCompany, "rS1uiyyhuTdjJjuyqJZgrODj/q0=", false, function() {
-    return [
-        (0, _globalState.useGlobalState),
-        (0, _reactRouter.useNavigate)
-    ];
-});
-_c = ChooseCompany;
-exports.default = ChooseCompany;
-var _c;
-$RefreshReg$(_c, "ChooseCompany");
-
-  $parcel$ReactRefreshHelpers$50f5.postlude(module);
-} finally {
-  window.$RefreshReg$ = prevRefreshReg;
-  window.$RefreshSig$ = prevRefreshSig;
-}
-},{"react/jsx-dev-runtime":"7crfk","react":"l1Q8s","../../GlobalState":"liq8b","react-router":"99Cqw","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","react-router-dom":"sYSB5","../../layout":"gzIZb"}],"6eKWg":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$8547 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
-var prevRefreshReg = window.$RefreshReg$;
-var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$8547.prelude(module);
-
-try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-var _jsxDevRuntime = require("react/jsx-dev-runtime");
-var _react = require("react");
-var _layout = require("../layout");
-var _s = $RefreshSig$(), _s1 = $RefreshSig$();
-function Users() {
-    _s();
-    const [users, setUsers] = (0, _react.useState)([]);
-    async function GetUsers() {
-        const response = await fetch("/api/getcompanyusers");
-        const data = await response.json();
-        setUsers(data.users);
-    }
-    (0, _react.useEffect)(()=>{
-        GetUsers();
-    }, []);
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
-        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-            className: "overflow-x-scroll m-2",
-            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("table", {
-                className: "table table-borderless table-striped",
-                children: [
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("thead", {
-                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("tr", {
-                            children: [
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("th", {
-                                    className: "text-nowrap",
-                                    scope: "col",
-                                    children: "Email"
-                                }, void 0, false, {
-                                    fileName: "client/src/company/users.tsx",
-                                    lineNumber: 23,
-                                    columnNumber: 25
-                                }, this),
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("th", {
-                                    className: "text-nowrap",
-                                    scope: "col",
-                                    children: "Username"
-                                }, void 0, false, {
-                                    fileName: "client/src/company/users.tsx",
-                                    lineNumber: 24,
-                                    columnNumber: 25
-                                }, this),
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("th", {
-                                    className: "text-nowrap",
-                                    scope: "col",
-                                    children: "First Name"
-                                }, void 0, false, {
-                                    fileName: "client/src/company/users.tsx",
-                                    lineNumber: 25,
-                                    columnNumber: 25
-                                }, this),
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("th", {
-                                    className: "text-nowrap",
-                                    scope: "col",
-                                    children: "Last Name"
-                                }, void 0, false, {
-                                    fileName: "client/src/company/users.tsx",
-                                    lineNumber: 26,
-                                    columnNumber: 25
-                                }, this),
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("th", {
-                                    scope: "col"
-                                }, void 0, false, {
-                                    fileName: "client/src/company/users.tsx",
-                                    lineNumber: 27,
-                                    columnNumber: 25
-                                }, this),
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("th", {
-                                    scope: "col"
-                                }, void 0, false, {
-                                    fileName: "client/src/company/users.tsx",
-                                    lineNumber: 28,
-                                    columnNumber: 25
-                                }, this),
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("th", {
-                                    scope: "col"
-                                }, void 0, false, {
-                                    fileName: "client/src/company/users.tsx",
-                                    lineNumber: 29,
-                                    columnNumber: 25
-                                }, this),
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("th", {
-                                    scope: "col"
-                                }, void 0, false, {
-                                    fileName: "client/src/company/users.tsx",
-                                    lineNumber: 30,
-                                    columnNumber: 25
-                                }, this)
-                            ]
-                        }, void 0, true, {
-                            fileName: "client/src/company/users.tsx",
-                            lineNumber: 22,
-                            columnNumber: 21
-                        }, this)
-                    }, void 0, false, {
-                        fileName: "client/src/company/users.tsx",
-                        lineNumber: 21,
-                        columnNumber: 17
-                    }, this),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("tbody", {
-                        children: users && users.map((user)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(User, {
-                                user: user,
-                                GetUsers: GetUsers
-                            }, void 0, false, {
-                                fileName: "client/src/company/users.tsx",
-                                lineNumber: 34,
-                                columnNumber: 151
-                            }, this))
-                    }, void 0, false, {
-                        fileName: "client/src/company/users.tsx",
-                        lineNumber: 33,
-                        columnNumber: 17
-                    }, this)
-                ]
-            }, void 0, true, {
-                fileName: "client/src/company/users.tsx",
-                lineNumber: 20,
-                columnNumber: 13
-            }, this)
-        }, void 0, false, {
-            fileName: "client/src/company/users.tsx",
-            lineNumber: 19,
-            columnNumber: 9
-        }, this)
-    }, void 0, false);
-}
-_s(Users, "JadZszbqna06PpJs9hMo7Hl/LOY=");
-_c = Users;
-function User({ user, GetUsers }) {
-    _s1();
-    const [editUser, setEditUser] = (0, _react.useState)(false);
-    const [emailInput, setEmailInput] = (0, _react.useState)("");
-    const [usernameInput, setUsernameInput] = (0, _react.useState)(user.username);
-    const [firstNameInput, setFirstNameInput] = (0, _react.useState)(user.firstName);
-    const [lastNameInput, setLastNameInput] = (0, _react.useState)(user.lastName);
-    const AddAlert = (0, _react.useContext)((0, _layout.AlertContext));
-    async function AcceptUser(id) {
-        await fetch("/api/acceptuser", {
-            method: "POST",
-            body: JSON.stringify({
-                id: id
-            }),
-            headers: {
-                "Content-Type": "application/json"
-            },
-            credentials: "include"
-        });
-    }
-    async function EditUser() {
-        const response = await fetch("/api/companyupdateuser", {
-            method: "PATCH",
-            body: JSON.stringify({
-                userid: user._id,
-                email: emailInput,
-                username: usernameInput,
-                firstName: firstNameInput,
-                lastName: lastNameInput
-            }),
-            headers: {
-                "Content-Type": "application/json"
-            },
-            credentials: "include"
-        });
-        if (response.status == 200) {
-            setEditUser(false);
-            GetUsers();
-            AddAlert("success", "Successfully updated user");
-        }
-    }
-    async function DeleteUser() {
-        await fetch("/api/deleteaccount", {
-            method: "DELETE",
-            body: JSON.stringify({
-                uid: user._id,
-                username: user.username
-            }),
-            headers: {
-                "Content-Type": "application/json"
-            },
-            credentials: "include"
-        });
-    }
-    if (editUser) return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("tr", {
-        children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("td", {
-                className: "text-nowrap",
-                children: user.email
-            }, void 0, false, {
-                fileName: "client/src/company/users.tsx",
-                lineNumber: 103,
-                columnNumber: 21
-            }, this),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("td", {
-                className: "text-nowrap",
-                children: user.username
-            }, void 0, false, {
-                fileName: "client/src/company/users.tsx",
-                lineNumber: 104,
-                columnNumber: 21
-            }, this),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("td", {
-                className: "text-nowrap",
-                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
-                    onChange: (event)=>setFirstNameInput(event.target.value),
-                    defaultValue: user.firstName
-                }, void 0, false, {
-                    fileName: "client/src/company/users.tsx",
-                    lineNumber: 105,
-                    columnNumber: 49
-                }, this)
-            }, void 0, false, {
-                fileName: "client/src/company/users.tsx",
-                lineNumber: 105,
-                columnNumber: 21
-            }, this),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("td", {
-                className: "text-nowrap",
-                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
-                    onChange: (event)=>setLastNameInput(event.target.value),
-                    defaultValue: user.lastName
-                }, void 0, false, {
-                    fileName: "client/src/company/users.tsx",
-                    lineNumber: 106,
-                    columnNumber: 49
-                }, this)
-            }, void 0, false, {
-                fileName: "client/src/company/users.tsx",
-                lineNumber: 106,
-                columnNumber: 21
-            }, this),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("td", {
-                className: "text-nowrap",
-                children: user.accepted == false && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
-                    className: "btn btn-success",
-                    onClick: ()=>{
-                        AcceptUser(user._id);
-                    },
-                    children: "Accept"
-                }, void 0, false, {
-                    fileName: "client/src/company/users.tsx",
-                    lineNumber: 107,
-                    columnNumber: 76
-                }, this)
-            }, void 0, false, {
-                fileName: "client/src/company/users.tsx",
-                lineNumber: 107,
-                columnNumber: 21
-            }, this),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("td", {
-                className: "text-nowrap",
-                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
-                    onClick: EditUser,
-                    className: "btn btn-success",
-                    children: "Submit"
-                }, void 0, false, {
-                    fileName: "client/src/company/users.tsx",
-                    lineNumber: 108,
-                    columnNumber: 49
-                }, this)
-            }, void 0, false, {
-                fileName: "client/src/company/users.tsx",
-                lineNumber: 108,
-                columnNumber: 21
-            }, this),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("td", {
-                className: "text-nowrap",
-                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
-                    onClick: ()=>{
-                        setEditUser((prev)=>!prev);
-                    },
-                    className: "btn btn-warning",
-                    children: "Edit"
-                }, void 0, false, {
-                    fileName: "client/src/company/users.tsx",
-                    lineNumber: 109,
-                    columnNumber: 49
-                }, this)
-            }, void 0, false, {
-                fileName: "client/src/company/users.tsx",
-                lineNumber: 109,
-                columnNumber: 21
-            }, this),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("td", {
-                className: "text-nowrap",
-                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
-                    onClick: DeleteUser,
-                    className: "btn btn-danger",
-                    children: "Delete"
-                }, void 0, false, {
-                    fileName: "client/src/company/users.tsx",
-                    lineNumber: 110,
-                    columnNumber: 49
-                }, this)
-            }, void 0, false, {
-                fileName: "client/src/company/users.tsx",
-                lineNumber: 110,
-                columnNumber: 21
-            }, this)
-        ]
-    }, void 0, true, {
-        fileName: "client/src/company/users.tsx",
-        lineNumber: 102,
-        columnNumber: 17
-    }, this);
-    else return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("tr", {
-        children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("td", {
-                className: "text-nowrap",
-                children: user.email
-            }, void 0, false, {
-                fileName: "client/src/company/users.tsx",
-                lineNumber: 116,
-                columnNumber: 17
-            }, this),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("td", {
-                className: "text-nowrap",
-                children: user.username
-            }, void 0, false, {
-                fileName: "client/src/company/users.tsx",
-                lineNumber: 117,
-                columnNumber: 17
-            }, this),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("td", {
-                className: "text-nowrap",
-                children: user.firstName
-            }, void 0, false, {
-                fileName: "client/src/company/users.tsx",
-                lineNumber: 118,
-                columnNumber: 17
-            }, this),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("td", {
-                className: "text-nowrap",
-                children: user.lastName
-            }, void 0, false, {
-                fileName: "client/src/company/users.tsx",
-                lineNumber: 119,
-                columnNumber: 17
-            }, this),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("td", {
-                className: "text-nowrap",
-                children: user.accepted == false && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
-                    className: "btn btn-success",
-                    onClick: ()=>{
-                        AcceptUser(user._id);
-                    },
-                    children: "Accept"
-                }, void 0, false, {
-                    fileName: "client/src/company/users.tsx",
-                    lineNumber: 120,
-                    columnNumber: 72
-                }, this)
-            }, void 0, false, {
-                fileName: "client/src/company/users.tsx",
-                lineNumber: 120,
-                columnNumber: 17
-            }, this),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("td", {}, void 0, false, {
-                fileName: "client/src/company/users.tsx",
-                lineNumber: 121,
-                columnNumber: 17
-            }, this),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("td", {
-                className: "text-nowrap",
-                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
-                    onClick: ()=>{
-                        setEditUser((prev)=>!prev);
-                    },
-                    className: "btn btn-warning",
-                    children: "Edit"
-                }, void 0, false, {
-                    fileName: "client/src/company/users.tsx",
-                    lineNumber: 122,
-                    columnNumber: 45
-                }, this)
-            }, void 0, false, {
-                fileName: "client/src/company/users.tsx",
-                lineNumber: 122,
-                columnNumber: 17
-            }, this),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("td", {
-                className: "text-nowrap",
-                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
-                    onClick: DeleteUser,
-                    className: "btn btn-danger",
-                    children: "Delete"
-                }, void 0, false, {
-                    fileName: "client/src/company/users.tsx",
-                    lineNumber: 123,
-                    columnNumber: 45
-                }, this)
-            }, void 0, false, {
-                fileName: "client/src/company/users.tsx",
-                lineNumber: 123,
-                columnNumber: 17
-            }, this)
-        ]
-    }, void 0, true, {
-        fileName: "client/src/company/users.tsx",
-        lineNumber: 115,
-        columnNumber: 13
-    }, this);
-}
-_s1(User, "mfeVxobdkqpdpEhNZEkLRE8tLGc=");
-_c1 = User;
-exports.default = Users;
-var _c, _c1;
-$RefreshReg$(_c, "Users");
-$RefreshReg$(_c1, "User");
-
-  $parcel$ReactRefreshHelpers$8547.postlude(module);
-} finally {
-  window.$RefreshReg$ = prevRefreshReg;
-  window.$RefreshSig$ = prevRefreshSig;
-}
-},{"react/jsx-dev-runtime":"7crfk","react":"l1Q8s","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","../layout":"gzIZb"}],"ii21k":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"ii21k":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$305c = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -37899,7 +36377,1549 @@ $RefreshReg$(_c1, "TableItem");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"7crfk","react":"l1Q8s","../layout":"gzIZb","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"596yJ":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","../layout":"gzIZb","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"leGjq":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$f121 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$f121.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _reactRouter = require("react-router");
+var _reactRouterDom = require("react-router-dom");
+var _globalState = require("../../GlobalState");
+var _react = require("react");
+var _layout = require("../../layout");
+var _s = $RefreshSig$(), _s1 = $RefreshSig$();
+function CreateTreatmentLayout() {
+    _s();
+    const [globalState] = (0, _globalState.useGlobalState)();
+    const navigate = (0, _reactRouter.useNavigate)();
+    (0, _react.useEffect)(()=>{
+        fetch("/api/getauth", {
+            method: "GET"
+        }).then((data)=>data.json()).then((data)=>{
+            if (data.auth != true) navigate("/login");
+        });
+    }, []);
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "m-4",
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    className: "d-flex btn-group",
+                    role: "group",
+                    children: [
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                            className: `btn py-4 flex-grow-1 text-white text-center
+                ${globalState.farm && "btn-success"}
+                ${globalState.behandling.page == "farm" && "btn-secondary"}
+             `,
+                            to: "/behandling",
+                            children: "Farm"
+                        }, void 0, false, {
+                            fileName: "client/src/routes/behandling/createtreatmentlayout.tsx",
+                            lineNumber: 23,
+                            columnNumber: 17
+                        }, this),
+                        globalState.farm ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                            className: `btn py-4 flex-grow-1 text-white text-center
+                ${globalState.section && " btn-success"}
+                ${globalState.behandling.page == "section" && "btn-secondary"}`,
+                            to: "choosesection",
+                            children: "Section"
+                        }, void 0, false, {
+                            fileName: "client/src/routes/behandling/createtreatmentlayout.tsx",
+                            lineNumber: 29,
+                            columnNumber: 17
+                        }, this) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(DisabledLink, {
+                            warning: "Please choose a farm before trying to choose a section!",
+                            link: "Section"
+                        }, void 0, false, {
+                            fileName: "client/src/routes/behandling/createtreatmentlayout.tsx",
+                            lineNumber: 31,
+                            columnNumber: 118
+                        }, this),
+                        globalState.section ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                            className: `btn py-4 flex-grow-1 text-white text-center
+                ${globalState.box && "btn-success"}
+                ${globalState.behandling.page == "box" && "btn-secondary"}`,
+                            to: "choosebox",
+                            children: "Box"
+                        }, void 0, false, {
+                            fileName: "client/src/routes/behandling/createtreatmentlayout.tsx",
+                            lineNumber: 33,
+                            columnNumber: 17
+                        }, this) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(DisabledLink, {
+                            warning: "Please choose a section before trying to choose a box!",
+                            link: "Box"
+                        }, void 0, false, {
+                            fileName: "client/src/routes/behandling/createtreatmentlayout.tsx",
+                            lineNumber: 36,
+                            columnNumber: 45
+                        }, this)
+                    ]
+                }, void 0, true, {
+                    fileName: "client/src/routes/behandling/createtreatmentlayout.tsx",
+                    lineNumber: 21,
+                    columnNumber: 13
+                }, this)
+            }, void 0, false, {
+                fileName: "client/src/routes/behandling/createtreatmentlayout.tsx",
+                lineNumber: 20,
+                columnNumber: 9
+            }, this),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouter.Outlet), {}, void 0, false, {
+                fileName: "client/src/routes/behandling/createtreatmentlayout.tsx",
+                lineNumber: 41,
+                columnNumber: 9
+            }, this)
+        ]
+    }, void 0, true);
+}
+_s(CreateTreatmentLayout, "SJIiH5ogzBW3MN1g9eyUFExTwC0=", false, function() {
+    return [
+        (0, _globalState.useGlobalState),
+        (0, _reactRouter.useNavigate)
+    ];
+});
+_c = CreateTreatmentLayout;
+function DisabledLink({ link, warning }) {
+    _s1();
+    const AddAlert = (0, _react.useContext)((0, _layout.AlertContext));
+    function Warning() {
+        AddAlert("danger", warning);
+    }
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
+        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+            className: "btn d-flex align-items-center justify-content-center flex-grow-1",
+            onClick: Warning,
+            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                className: "m-0",
+                children: link
+            }, void 0, false, {
+                fileName: "client/src/routes/behandling/createtreatmentlayout.tsx",
+                lineNumber: 53,
+                columnNumber: 113
+            }, this)
+        }, void 0, false, {
+            fileName: "client/src/routes/behandling/createtreatmentlayout.tsx",
+            lineNumber: 53,
+            columnNumber: 13
+        }, this)
+    }, void 0, false);
+}
+_s1(DisabledLink, "iJdHiv8YWPeA12gGcJFE9p2WJ6Q=");
+_c1 = DisabledLink;
+exports.default = CreateTreatmentLayout;
+var _c, _c1;
+$RefreshReg$(_c, "CreateTreatmentLayout");
+$RefreshReg$(_c1, "DisabledLink");
+
+  $parcel$ReactRefreshHelpers$f121.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","react-router":"dbWyW","react-router-dom":"9xmpe","../../GlobalState":"liq8b","react":"21dqq","../../layout":"gzIZb","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"f0h4S":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$2f68 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$2f68.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _globalState = require("../../GlobalState");
+var _reactRouter = require("react-router");
+var _layout = require("../../layout");
+var _s = $RefreshSig$();
+function ChooseTreatment() {
+    _s();
+    const [name, setName] = (0, _react.useState)("");
+    const [message, setMessage] = (0, _react.useState)("");
+    const [globalState, updateGlobalState] = (0, _globalState.useGlobalState)();
+    const [treatments, setTreatments] = (0, _react.useState)([]);
+    const navigate = (0, _reactRouter.useNavigate)();
+    const AddAlert = (0, _react.useContext)((0, _layout.AlertContext));
+    async function AddTreatmentToBox(name, box, boxid) {
+        const response = await fetch("/api/addtreatmenttobox", {
+            method: "POST",
+            body: JSON.stringify({
+                name: name,
+                message: message,
+                box: box,
+                boxid: boxid,
+                addedAt: new Date
+            }),
+            headers: {
+                "Content-Type": "application/json"
+            },
+            credentials: "include"
+        });
+        if (response.status == 200) {
+            AddAlert("success", "Successfully added a treatment to the box");
+            navigate("/");
+        }
+        if (response.status == 401) AddAlert("danger", "You are unathorized to access this page");
+        if (response.status == 500) AddAlert("danger", "There was an error handling your request");
+    }
+    (0, _react.useEffect)(()=>{
+        if (!globalState.farm || !globalState.section || !globalState.box) navigate("/behandling");
+        fetch("/api/gettreatments").then((response)=>response.json()).then((data)=>{
+            if (data.treatments.length == 0) return;
+            setTreatments(data.treatments);
+            setName(data.treatments[0].name);
+        });
+    }, []);
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
+        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("form", {
+            className: "m-4",
+            children: [
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                    className: "text-white",
+                    children: [
+                        globalState.farm && globalState.farm.name,
+                        "\\",
+                        globalState.section && globalState.section.name,
+                        "\\",
+                        globalState.box && globalState.box.name
+                    ]
+                }, void 0, true, {
+                    fileName: "client/src/routes/behandling/choosetreatment.tsx",
+                    lineNumber: 45,
+                    columnNumber: 17
+                }, this),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("select", {
+                    onChange: (event)=>{
+                        setName(event.target.value);
+                    },
+                    className: "form-select",
+                    children: treatments.map((treatment)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("option", {
+                            className: "text-white",
+                            value: treatment.name,
+                            children: treatment.name
+                        }, void 0, false, {
+                            fileName: "client/src/routes/behandling/choosetreatment.tsx",
+                            lineNumber: 48,
+                            columnNumber: 21
+                        }, this))
+                }, void 0, false, {
+                    fileName: "client/src/routes/behandling/choosetreatment.tsx",
+                    lineNumber: 46,
+                    columnNumber: 17
+                }, this),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    className: "form-floating my-2",
+                    children: [
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("textarea", {
+                            onChange: (event)=>setMessage(event.target.value),
+                            className: "form-control",
+                            placeholder: "Leave a comment here",
+                            id: "floatingTextarea"
+                        }, void 0, false, {
+                            fileName: "client/src/routes/behandling/choosetreatment.tsx",
+                            lineNumber: 53,
+                            columnNumber: 21
+                        }, this),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
+                            htmlFor: "floatingTextarea",
+                            className: "text-white",
+                            children: "Message"
+                        }, void 0, false, {
+                            fileName: "client/src/routes/behandling/choosetreatment.tsx",
+                            lineNumber: 54,
+                            columnNumber: 21
+                        }, this)
+                    ]
+                }, void 0, true, {
+                    fileName: "client/src/routes/behandling/choosetreatment.tsx",
+                    lineNumber: 52,
+                    columnNumber: 17
+                }, this),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                    className: "btn btn-success w-100 my-2",
+                    onClick: ()=>{
+                        AddTreatmentToBox(name, globalState.box.name, globalState.box.id);
+                    },
+                    type: "button",
+                    children: "Add Treatment to box"
+                }, void 0, false, {
+                    fileName: "client/src/routes/behandling/choosetreatment.tsx",
+                    lineNumber: 56,
+                    columnNumber: 17
+                }, this)
+            ]
+        }, void 0, true, {
+            fileName: "client/src/routes/behandling/choosetreatment.tsx",
+            lineNumber: 44,
+            columnNumber: 13
+        }, this)
+    }, void 0, false);
+}
+_s(ChooseTreatment, "70ovRxlv9bcpRdZfaWBP8GXJmUc=", false, function() {
+    return [
+        (0, _globalState.useGlobalState),
+        (0, _reactRouter.useNavigate)
+    ];
+});
+_c = ChooseTreatment;
+exports.default = ChooseTreatment;
+var _c;
+$RefreshReg$(_c, "ChooseTreatment");
+
+  $parcel$ReactRefreshHelpers$2f68.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","../../GlobalState":"liq8b","react-router":"dbWyW","../../layout":"gzIZb","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"3qKMb":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$11d9 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$11d9.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _s = $RefreshSig$();
+function AddTreatment() {
+    _s();
+    const [name, setName] = (0, _react.useState)("");
+    function AddNewSection() {
+        fetch("/api/addtreatment", {
+            method: "POST",
+            body: JSON.stringify({
+                name: name
+            }),
+            headers: {
+                "Content-Type": "application/json"
+            },
+            credentials: "include"
+        });
+    }
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
+        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("form", {
+            className: "m-2 mt-4",
+            children: [
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    className: "form-floating",
+                    children: [
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                            className: "form-control",
+                            id: "treatmentName",
+                            onChange: (event)=>{
+                                setName(event.target.value);
+                            }
+                        }, void 0, false, {
+                            fileName: "client/src/company/addtreatment.tsx",
+                            lineNumber: 20,
+                            columnNumber: 21
+                        }, this),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
+                            htmlFor: "treatmentName",
+                            children: "Treatment Name"
+                        }, void 0, false, {
+                            fileName: "client/src/company/addtreatment.tsx",
+                            lineNumber: 23,
+                            columnNumber: 21
+                        }, this)
+                    ]
+                }, void 0, true, {
+                    fileName: "client/src/company/addtreatment.tsx",
+                    lineNumber: 19,
+                    columnNumber: 17
+                }, this),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                    className: "btn btn-success my-2 w-100",
+                    onClick: AddNewSection,
+                    type: "button",
+                    children: "Add"
+                }, void 0, false, {
+                    fileName: "client/src/company/addtreatment.tsx",
+                    lineNumber: 25,
+                    columnNumber: 17
+                }, this)
+            ]
+        }, void 0, true, {
+            fileName: "client/src/company/addtreatment.tsx",
+            lineNumber: 18,
+            columnNumber: 13
+        }, this)
+    }, void 0, false);
+}
+_s(AddTreatment, "gFPpQ6rgfiGkmgRsh4q2nIO1W+Q=");
+_c = AddTreatment;
+exports.default = AddTreatment;
+var _c;
+$RefreshReg$(_c, "AddTreatment");
+
+  $parcel$ReactRefreshHelpers$11d9.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"hUDKz":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$01b1 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$01b1.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _s = $RefreshSig$();
+function TreatedBoxes() {
+    _s();
+    const [treatedboxes, setTreatedboxes] = (0, _react.useState)([]);
+    (0, _react.useEffect)(()=>{
+        fetch("/api/gettreatedboxes").then((response)=>response.json()).then((data)=>{
+            setTreatedboxes(data.boxtreatments);
+        });
+    }, []);
+    async function DeleteBoxTreatment(boxid) {
+        await fetch("/api/deleteboxtreatment", {
+            method: "DELETE",
+            body: JSON.stringify({
+                treatedboxId: boxid
+            }),
+            headers: {
+                "Content-Type": "application/json"
+            },
+            credentials: "include"
+        });
+    }
+    if (!treatedboxes) return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {}, void 0, false);
+    else return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
+        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+            className: "overflow-x-scroll m-4",
+            children: [
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("table", {
+                    className: "table table-borderless table-striped text-white",
+                    children: [
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("thead", {
+                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("tr", {
+                                children: [
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("th", {
+                                        scope: "col",
+                                        children: "#"
+                                    }, void 0, false, {
+                                        fileName: "client/src/company/treatedboxes.tsx",
+                                        lineNumber: 31,
+                                        columnNumber: 29
+                                    }, this),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("th", {
+                                        scope: "col",
+                                        children: "Name"
+                                    }, void 0, false, {
+                                        fileName: "client/src/company/treatedboxes.tsx",
+                                        lineNumber: 32,
+                                        columnNumber: 29
+                                    }, this),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("th", {
+                                        scope: "col",
+                                        children: "Box"
+                                    }, void 0, false, {
+                                        fileName: "client/src/company/treatedboxes.tsx",
+                                        lineNumber: 33,
+                                        columnNumber: 29
+                                    }, this),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("th", {
+                                        scope: "col",
+                                        children: "Created At"
+                                    }, void 0, false, {
+                                        fileName: "client/src/company/treatedboxes.tsx",
+                                        lineNumber: 34,
+                                        columnNumber: 29
+                                    }, this),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("th", {
+                                        scope: "col"
+                                    }, void 0, false, {
+                                        fileName: "client/src/company/treatedboxes.tsx",
+                                        lineNumber: 35,
+                                        columnNumber: 29
+                                    }, this)
+                                ]
+                            }, void 0, true, {
+                                fileName: "client/src/company/treatedboxes.tsx",
+                                lineNumber: 30,
+                                columnNumber: 25
+                            }, this)
+                        }, void 0, false, {
+                            fileName: "client/src/company/treatedboxes.tsx",
+                            lineNumber: 29,
+                            columnNumber: 21
+                        }, this),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("tbody", {
+                            children: treatedboxes.map((item, index)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("tr", {
+                                    children: [
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("td", {
+                                            className: "text-nowrap",
+                                            scope: "row",
+                                            children: index
+                                        }, void 0, false, {
+                                            fileName: "client/src/company/treatedboxes.tsx",
+                                            lineNumber: 41,
+                                            columnNumber: 29
+                                        }, this),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("td", {
+                                            className: "text-nowrap",
+                                            children: item.name
+                                        }, void 0, false, {
+                                            fileName: "client/src/company/treatedboxes.tsx",
+                                            lineNumber: 42,
+                                            columnNumber: 29
+                                        }, this),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("td", {
+                                            className: "text-nowrap",
+                                            children: item.box
+                                        }, void 0, false, {
+                                            fileName: "client/src/company/treatedboxes.tsx",
+                                            lineNumber: 43,
+                                            columnNumber: 29
+                                        }, this),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("td", {
+                                            className: "text-nowrap",
+                                            children: item.addedAt
+                                        }, void 0, false, {
+                                            fileName: "client/src/company/treatedboxes.tsx",
+                                            lineNumber: 44,
+                                            columnNumber: 29
+                                        }, this),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("td", {
+                                            className: "text-nowrap",
+                                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                                                onClick: ()=>{
+                                                    console.log(item);
+                                                    DeleteBoxTreatment(item._id);
+                                                },
+                                                className: "btn btn-danger",
+                                                children: "Delete"
+                                            }, void 0, false, {
+                                                fileName: "client/src/company/treatedboxes.tsx",
+                                                lineNumber: 45,
+                                                columnNumber: 57
+                                            }, this)
+                                        }, void 0, false, {
+                                            fileName: "client/src/company/treatedboxes.tsx",
+                                            lineNumber: 45,
+                                            columnNumber: 29
+                                        }, this)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "client/src/company/treatedboxes.tsx",
+                                    lineNumber: 40,
+                                    columnNumber: 25
+                                }, this))
+                        }, void 0, false, {
+                            fileName: "client/src/company/treatedboxes.tsx",
+                            lineNumber: 38,
+                            columnNumber: 21
+                        }, this)
+                    ]
+                }, void 0, true, {
+                    fileName: "client/src/company/treatedboxes.tsx",
+                    lineNumber: 28,
+                    columnNumber: 17
+                }, this),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                    href: "/api/getcsv",
+                    target: "_blank",
+                    rel: "noopener noreferrer",
+                    children: "Get CSV"
+                }, void 0, false, {
+                    fileName: "client/src/company/treatedboxes.tsx",
+                    lineNumber: 50,
+                    columnNumber: 17
+                }, this)
+            ]
+        }, void 0, true, {
+            fileName: "client/src/company/treatedboxes.tsx",
+            lineNumber: 27,
+            columnNumber: 13
+        }, this)
+    }, void 0, false);
+}
+_s(TreatedBoxes, "4r6Q+9+sQpAf8Ou1Qr88RvkTosQ=");
+_c = TreatedBoxes;
+exports.default = TreatedBoxes;
+var _c;
+$RefreshReg$(_c, "TreatedBoxes");
+
+  $parcel$ReactRefreshHelpers$01b1.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"ajBEd":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$1062 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$1062.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _s = $RefreshSig$();
+function AcceptUsers() {
+    _s();
+    const [users, setUsers] = (0, _react.useState)([]);
+    (0, _react.useEffect)(()=>{
+        fetch("/api/getunacceptedusers").then((response)=>response.json()).then((data)=>setUsers(data.users));
+    }, []);
+    if (!users) return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {}, void 0, false);
+    else return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
+        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+            children: users.map((user)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    className: "text-white",
+                    children: [
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                            children: [
+                                "Username : ",
+                                user.username
+                            ]
+                        }, void 0, true, {
+                            fileName: "client/src/company/acceptusers.tsx",
+                            lineNumber: 16,
+                            columnNumber: 21
+                        }, this),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                            children: [
+                                "Email : ",
+                                user.email
+                            ]
+                        }, void 0, true, {
+                            fileName: "client/src/company/acceptusers.tsx",
+                            lineNumber: 17,
+                            columnNumber: 21
+                        }, this),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                            className: "btn btn-success",
+                            children: "Accept"
+                        }, void 0, false, {
+                            fileName: "client/src/company/acceptusers.tsx",
+                            lineNumber: 18,
+                            columnNumber: 21
+                        }, this)
+                    ]
+                }, void 0, true, {
+                    fileName: "client/src/company/acceptusers.tsx",
+                    lineNumber: 15,
+                    columnNumber: 17
+                }, this))
+        }, void 0, false, {
+            fileName: "client/src/company/acceptusers.tsx",
+            lineNumber: 13,
+            columnNumber: 13
+        }, this)
+    }, void 0, false);
+}
+_s(AcceptUsers, "JadZszbqna06PpJs9hMo7Hl/LOY=");
+_c = AcceptUsers;
+exports.default = AcceptUsers;
+var _c;
+$RefreshReg$(_c, "AcceptUsers");
+
+  $parcel$ReactRefreshHelpers$1062.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"4kAI7":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$6887 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$6887.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _reactRouterDom = require("react-router-dom");
+var _react = require("react");
+var _s = $RefreshSig$();
+function Auth() {
+    _s();
+    const navigate = (0, _reactRouterDom.useNavigate)();
+    (0, _react.useEffect)(()=>{
+        fetch("/api/getauth", {
+            method: "GET"
+        }).then((data)=>data.json()).then((data)=>{
+            if (data.auth == true) navigate("/");
+        });
+    }, []);
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
+        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Outlet), {}, void 0, false, {
+            fileName: "client/src/routes/auth/auth.tsx",
+            lineNumber: 16,
+            columnNumber: 7
+        }, this)
+    }, void 0, false);
+}
+_s(Auth, "0pNeyzXk/ByIxyERsdaIrG6js9s=", false, function() {
+    return [
+        (0, _reactRouterDom.useNavigate)
+    ];
+});
+_c = Auth;
+exports.default = Auth;
+var _c;
+$RefreshReg$(_c, "Auth");
+
+  $parcel$ReactRefreshHelpers$6887.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","react-router-dom":"9xmpe","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"leB3c":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$abe4 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$abe4.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _reactRouter = require("react-router");
+var _reactRouterDom = require("react-router-dom");
+var _s = $RefreshSig$();
+function Admin() {
+    _s();
+    const navigate = (0, _reactRouter.useNavigate)();
+    (0, _react.useEffect)(()=>{
+        fetch("/api/getauth", {
+            method: "GET",
+            credentials: "include"
+        }).then((response)=>response.json()).then((data)=>{
+            if (data.role != "admin") navigate("/");
+        });
+    }, []);
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "d-flex m-2",
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "col",
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                className: "row m-1",
+                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                                    className: "btn bg-dark-subtle p-3",
+                                    to: "createcompany",
+                                    children: "Create Company"
+                                }, void 0, false, {
+                                    fileName: "client/src/admin/admin.tsx",
+                                    lineNumber: 21,
+                                    columnNumber: 25
+                                }, this)
+                            }, void 0, false, {
+                                fileName: "client/src/admin/admin.tsx",
+                                lineNumber: 20,
+                                columnNumber: 21
+                            }, this),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                className: "row m-1",
+                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                                    className: "btn bg-dark-subtle p-3",
+                                    to: "createcompanyadmin",
+                                    children: "Create Company Admin"
+                                }, void 0, false, {
+                                    fileName: "client/src/admin/admin.tsx",
+                                    lineNumber: 24,
+                                    columnNumber: 25
+                                }, this)
+                            }, void 0, false, {
+                                fileName: "client/src/admin/admin.tsx",
+                                lineNumber: 23,
+                                columnNumber: 21
+                            }, this),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                className: "row m-1",
+                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                                    className: "btn bg-dark-subtle p-3",
+                                    to: "createadmin",
+                                    children: "Create Admin"
+                                }, void 0, false, {
+                                    fileName: "client/src/admin/admin.tsx",
+                                    lineNumber: 27,
+                                    columnNumber: 25
+                                }, this)
+                            }, void 0, false, {
+                                fileName: "client/src/admin/admin.tsx",
+                                lineNumber: 26,
+                                columnNumber: 21
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "client/src/admin/admin.tsx",
+                        lineNumber: 19,
+                        columnNumber: 17
+                    }, this),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "col",
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                className: "row m-1",
+                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                                    className: "btn bg-dark-subtle w-100 p-3",
+                                    to: "companies",
+                                    children: "Companies"
+                                }, void 0, false, {
+                                    fileName: "client/src/admin/admin.tsx",
+                                    lineNumber: 32,
+                                    columnNumber: 25
+                                }, this)
+                            }, void 0, false, {
+                                fileName: "client/src/admin/admin.tsx",
+                                lineNumber: 31,
+                                columnNumber: 21
+                            }, this),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                className: "row m-1",
+                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                                    className: "btn bg-dark-subtle w-100 p-3",
+                                    to: "users",
+                                    children: "Users"
+                                }, void 0, false, {
+                                    fileName: "client/src/admin/admin.tsx",
+                                    lineNumber: 35,
+                                    columnNumber: 25
+                                }, this)
+                            }, void 0, false, {
+                                fileName: "client/src/admin/admin.tsx",
+                                lineNumber: 34,
+                                columnNumber: 21
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "client/src/admin/admin.tsx",
+                        lineNumber: 30,
+                        columnNumber: 17
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "client/src/admin/admin.tsx",
+                lineNumber: 18,
+                columnNumber: 13
+            }, this),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "m-2",
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouter.Outlet), {}, void 0, false, {
+                    fileName: "client/src/admin/admin.tsx",
+                    lineNumber: 40,
+                    columnNumber: 13
+                }, this)
+            }, void 0, false, {
+                fileName: "client/src/admin/admin.tsx",
+                lineNumber: 39,
+                columnNumber: 13
+            }, this)
+        ]
+    }, void 0, true);
+}
+_s(Admin, "0pNeyzXk/ByIxyERsdaIrG6js9s=", false, function() {
+    return [
+        (0, _reactRouter.useNavigate)
+    ];
+});
+_c = Admin;
+exports.default = Admin;
+var _c;
+$RefreshReg$(_c, "Admin");
+
+  $parcel$ReactRefreshHelpers$abe4.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-router":"dbWyW","react-router-dom":"9xmpe","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"kUb6m":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$aa2a = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$aa2a.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _s = $RefreshSig$();
+function CreateCompany() {
+    _s();
+    const [name, setName] = (0, _react.useState)("");
+    const [code, setCode] = (0, _react.useState)("");
+    async function createCompany() {
+        await fetch("/api/createcompany", {
+            method: "POST",
+            body: JSON.stringify({
+                name: name,
+                code: code
+            }),
+            headers: {
+                "Content-Type": "application/json"
+            },
+            credentials: "include"
+        });
+    }
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
+        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("form", {
+            className: "m-2",
+            children: [
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    className: "form-floating my-2",
+                    children: [
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                            id: "companyName",
+                            className: "form-control",
+                            onChange: (event)=>setName(event.target.value)
+                        }, void 0, false, {
+                            fileName: "client/src/admin/createcompany.tsx",
+                            lineNumber: 25,
+                            columnNumber: 17
+                        }, this),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
+                            htmlFor: "companyName",
+                            children: "Company Name"
+                        }, void 0, false, {
+                            fileName: "client/src/admin/createcompany.tsx",
+                            lineNumber: 26,
+                            columnNumber: 17
+                        }, this)
+                    ]
+                }, void 0, true, {
+                    fileName: "client/src/admin/createcompany.tsx",
+                    lineNumber: 24,
+                    columnNumber: 13
+                }, this),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    className: "form-floating my-2",
+                    children: [
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                            id: "companyCode",
+                            className: "form-control",
+                            onChange: (event)=>setCode(event.target.value)
+                        }, void 0, false, {
+                            fileName: "client/src/admin/createcompany.tsx",
+                            lineNumber: 29,
+                            columnNumber: 17
+                        }, this),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
+                            htmlFor: "companyCode",
+                            children: "Company Code"
+                        }, void 0, false, {
+                            fileName: "client/src/admin/createcompany.tsx",
+                            lineNumber: 30,
+                            columnNumber: 17
+                        }, this)
+                    ]
+                }, void 0, true, {
+                    fileName: "client/src/admin/createcompany.tsx",
+                    lineNumber: 28,
+                    columnNumber: 13
+                }, this),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                    className: "btn btn-success w-100",
+                    onClick: createCompany,
+                    type: "button",
+                    children: "Create Company"
+                }, void 0, false, {
+                    fileName: "client/src/admin/createcompany.tsx",
+                    lineNumber: 32,
+                    columnNumber: 13
+                }, this)
+            ]
+        }, void 0, true, {
+            fileName: "client/src/admin/createcompany.tsx",
+            lineNumber: 23,
+            columnNumber: 9
+        }, this)
+    }, void 0, false);
+}
+_s(CreateCompany, "jsFob4NGBarc5/LmqT2F8BVA6N0=");
+_c = CreateCompany;
+exports.default = CreateCompany;
+var _c;
+$RefreshReg$(_c, "CreateCompany");
+
+  $parcel$ReactRefreshHelpers$aa2a.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"994aw":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$50f5 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$50f5.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _globalState = require("../../GlobalState");
+var _reactRouter = require("react-router");
+var _reactRouterDom = require("react-router-dom");
+var _layout = require("../../layout");
+var _s = $RefreshSig$();
+function ChooseCompany() {
+    _s();
+    const [code, setCode] = (0, _react.useState)("");
+    const [globalState, updateGlobalState] = (0, _globalState.useGlobalState)();
+    const navigate = (0, _reactRouter.useNavigate)();
+    const AddAlert = (0, _react.useContext)((0, _layout.AlertContext));
+    async function checkCode(code) {
+        const respone = await fetch("/api/checkcompanycode/", {
+            method: "POST",
+            body: JSON.stringify({
+                code: code
+            }),
+            headers: {
+                "Content-Type": "application/json"
+            },
+            credentials: "include"
+        });
+        if (respone.status == 200) {
+            updateGlobalState("companycode", code);
+            navigate("/auth/signup");
+        } else AddAlert("danger", "The company does not exist");
+    }
+    function Form(event, code) {
+        event.preventDefault();
+        checkCode(code);
+    }
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
+        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("form", {
+            className: "my-auto mx-4",
+            onSubmit: (event)=>Form(event, code),
+            children: [
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                    className: "mb-4",
+                    children: "Enter your company's private signup code"
+                }, void 0, false, {
+                    fileName: "client/src/routes/auth/choosecompany.tsx",
+                    lineNumber: 37,
+                    columnNumber: 17
+                }, this),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    className: "form-floating my-2",
+                    children: [
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                            className: "form-control",
+                            id: "companycode",
+                            onChange: (event)=>{
+                                setCode(event.target.value);
+                            }
+                        }, void 0, false, {
+                            fileName: "client/src/routes/auth/choosecompany.tsx",
+                            lineNumber: 39,
+                            columnNumber: 21
+                        }, this),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
+                            htmlFor: "companycode",
+                            children: "Company Code"
+                        }, void 0, false, {
+                            fileName: "client/src/routes/auth/choosecompany.tsx",
+                            lineNumber: 40,
+                            columnNumber: 21
+                        }, this)
+                    ]
+                }, void 0, true, {
+                    fileName: "client/src/routes/auth/choosecompany.tsx",
+                    lineNumber: 38,
+                    columnNumber: 17
+                }, this),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                    className: "btn btn-success w-100",
+                    type: "button",
+                    onClick: ()=>{
+                        checkCode(code);
+                    },
+                    children: "Submit"
+                }, void 0, false, {
+                    fileName: "client/src/routes/auth/choosecompany.tsx",
+                    lineNumber: 42,
+                    columnNumber: 17
+                }, this),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                    className: "mt-2",
+                    children: [
+                        "Already have an account? ",
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                            to: "/auth/login",
+                            children: "Login"
+                        }, void 0, false, {
+                            fileName: "client/src/routes/auth/choosecompany.tsx",
+                            lineNumber: 43,
+                            columnNumber: 62
+                        }, this)
+                    ]
+                }, void 0, true, {
+                    fileName: "client/src/routes/auth/choosecompany.tsx",
+                    lineNumber: 43,
+                    columnNumber: 17
+                }, this)
+            ]
+        }, void 0, true, {
+            fileName: "client/src/routes/auth/choosecompany.tsx",
+            lineNumber: 36,
+            columnNumber: 13
+        }, this)
+    }, void 0, false);
+}
+_s(ChooseCompany, "rS1uiyyhuTdjJjuyqJZgrODj/q0=", false, function() {
+    return [
+        (0, _globalState.useGlobalState),
+        (0, _reactRouter.useNavigate)
+    ];
+});
+_c = ChooseCompany;
+exports.default = ChooseCompany;
+var _c;
+$RefreshReg$(_c, "ChooseCompany");
+
+  $parcel$ReactRefreshHelpers$50f5.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","../../GlobalState":"liq8b","react-router":"dbWyW","react-router-dom":"9xmpe","../../layout":"gzIZb","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"6eKWg":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$8547 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$8547.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _layout = require("../layout");
+var _s = $RefreshSig$(), _s1 = $RefreshSig$();
+function Users() {
+    _s();
+    const [users, setUsers] = (0, _react.useState)([]);
+    async function GetUsers() {
+        const response = await fetch("/api/getcompanyusers");
+        const data = await response.json();
+        setUsers(data.users);
+    }
+    (0, _react.useEffect)(()=>{
+        GetUsers();
+    }, []);
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
+        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+            className: "overflow-x-scroll m-2",
+            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("table", {
+                className: "table table-borderless table-striped",
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("thead", {
+                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("tr", {
+                            children: [
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("th", {
+                                    className: "text-nowrap",
+                                    scope: "col",
+                                    children: "Email"
+                                }, void 0, false, {
+                                    fileName: "client/src/company/users.tsx",
+                                    lineNumber: 23,
+                                    columnNumber: 25
+                                }, this),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("th", {
+                                    className: "text-nowrap",
+                                    scope: "col",
+                                    children: "Username"
+                                }, void 0, false, {
+                                    fileName: "client/src/company/users.tsx",
+                                    lineNumber: 24,
+                                    columnNumber: 25
+                                }, this),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("th", {
+                                    className: "text-nowrap",
+                                    scope: "col",
+                                    children: "First Name"
+                                }, void 0, false, {
+                                    fileName: "client/src/company/users.tsx",
+                                    lineNumber: 25,
+                                    columnNumber: 25
+                                }, this),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("th", {
+                                    className: "text-nowrap",
+                                    scope: "col",
+                                    children: "Last Name"
+                                }, void 0, false, {
+                                    fileName: "client/src/company/users.tsx",
+                                    lineNumber: 26,
+                                    columnNumber: 25
+                                }, this),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("th", {
+                                    scope: "col"
+                                }, void 0, false, {
+                                    fileName: "client/src/company/users.tsx",
+                                    lineNumber: 27,
+                                    columnNumber: 25
+                                }, this),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("th", {
+                                    scope: "col"
+                                }, void 0, false, {
+                                    fileName: "client/src/company/users.tsx",
+                                    lineNumber: 28,
+                                    columnNumber: 25
+                                }, this),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("th", {
+                                    scope: "col"
+                                }, void 0, false, {
+                                    fileName: "client/src/company/users.tsx",
+                                    lineNumber: 29,
+                                    columnNumber: 25
+                                }, this),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("th", {
+                                    scope: "col"
+                                }, void 0, false, {
+                                    fileName: "client/src/company/users.tsx",
+                                    lineNumber: 30,
+                                    columnNumber: 25
+                                }, this)
+                            ]
+                        }, void 0, true, {
+                            fileName: "client/src/company/users.tsx",
+                            lineNumber: 22,
+                            columnNumber: 21
+                        }, this)
+                    }, void 0, false, {
+                        fileName: "client/src/company/users.tsx",
+                        lineNumber: 21,
+                        columnNumber: 17
+                    }, this),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("tbody", {
+                        children: users && users.map((user)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(User, {
+                                user: user,
+                                GetUsers: GetUsers
+                            }, void 0, false, {
+                                fileName: "client/src/company/users.tsx",
+                                lineNumber: 34,
+                                columnNumber: 151
+                            }, this))
+                    }, void 0, false, {
+                        fileName: "client/src/company/users.tsx",
+                        lineNumber: 33,
+                        columnNumber: 17
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "client/src/company/users.tsx",
+                lineNumber: 20,
+                columnNumber: 13
+            }, this)
+        }, void 0, false, {
+            fileName: "client/src/company/users.tsx",
+            lineNumber: 19,
+            columnNumber: 9
+        }, this)
+    }, void 0, false);
+}
+_s(Users, "JadZszbqna06PpJs9hMo7Hl/LOY=");
+_c = Users;
+function User({ user, GetUsers }) {
+    _s1();
+    const [editUser, setEditUser] = (0, _react.useState)(false);
+    const [emailInput, setEmailInput] = (0, _react.useState)("");
+    const [usernameInput, setUsernameInput] = (0, _react.useState)(user.username);
+    const [firstNameInput, setFirstNameInput] = (0, _react.useState)(user.firstName);
+    const [lastNameInput, setLastNameInput] = (0, _react.useState)(user.lastName);
+    const AddAlert = (0, _react.useContext)((0, _layout.AlertContext));
+    async function AcceptUser(id) {
+        await fetch("/api/acceptuser", {
+            method: "POST",
+            body: JSON.stringify({
+                id: id
+            }),
+            headers: {
+                "Content-Type": "application/json"
+            },
+            credentials: "include"
+        });
+    }
+    async function EditUser() {
+        const response = await fetch("/api/companyupdateuser", {
+            method: "PATCH",
+            body: JSON.stringify({
+                userid: user._id,
+                email: emailInput,
+                username: usernameInput,
+                firstName: firstNameInput,
+                lastName: lastNameInput
+            }),
+            headers: {
+                "Content-Type": "application/json"
+            },
+            credentials: "include"
+        });
+        if (response.status == 200) {
+            setEditUser(false);
+            GetUsers();
+            AddAlert("success", "Successfully updated user");
+        }
+    }
+    async function DeleteUser() {
+        await fetch("/api/deleteaccount", {
+            method: "DELETE",
+            body: JSON.stringify({
+                uid: user._id,
+                username: user.username
+            }),
+            headers: {
+                "Content-Type": "application/json"
+            },
+            credentials: "include"
+        });
+    }
+    if (editUser) return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("tr", {
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("td", {
+                className: "text-nowrap",
+                children: user.email
+            }, void 0, false, {
+                fileName: "client/src/company/users.tsx",
+                lineNumber: 103,
+                columnNumber: 21
+            }, this),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("td", {
+                className: "text-nowrap",
+                children: user.username
+            }, void 0, false, {
+                fileName: "client/src/company/users.tsx",
+                lineNumber: 104,
+                columnNumber: 21
+            }, this),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("td", {
+                className: "text-nowrap",
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                    onChange: (event)=>setFirstNameInput(event.target.value),
+                    defaultValue: user.firstName
+                }, void 0, false, {
+                    fileName: "client/src/company/users.tsx",
+                    lineNumber: 105,
+                    columnNumber: 49
+                }, this)
+            }, void 0, false, {
+                fileName: "client/src/company/users.tsx",
+                lineNumber: 105,
+                columnNumber: 21
+            }, this),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("td", {
+                className: "text-nowrap",
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                    onChange: (event)=>setLastNameInput(event.target.value),
+                    defaultValue: user.lastName
+                }, void 0, false, {
+                    fileName: "client/src/company/users.tsx",
+                    lineNumber: 106,
+                    columnNumber: 49
+                }, this)
+            }, void 0, false, {
+                fileName: "client/src/company/users.tsx",
+                lineNumber: 106,
+                columnNumber: 21
+            }, this),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("td", {
+                className: "text-nowrap",
+                children: user.accepted == false && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                    className: "btn btn-success",
+                    onClick: ()=>{
+                        AcceptUser(user._id);
+                    },
+                    children: "Accept"
+                }, void 0, false, {
+                    fileName: "client/src/company/users.tsx",
+                    lineNumber: 107,
+                    columnNumber: 76
+                }, this)
+            }, void 0, false, {
+                fileName: "client/src/company/users.tsx",
+                lineNumber: 107,
+                columnNumber: 21
+            }, this),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("td", {
+                className: "text-nowrap",
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                    onClick: EditUser,
+                    className: "btn btn-success",
+                    children: "Submit"
+                }, void 0, false, {
+                    fileName: "client/src/company/users.tsx",
+                    lineNumber: 108,
+                    columnNumber: 49
+                }, this)
+            }, void 0, false, {
+                fileName: "client/src/company/users.tsx",
+                lineNumber: 108,
+                columnNumber: 21
+            }, this),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("td", {
+                className: "text-nowrap",
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                    onClick: ()=>{
+                        setEditUser((prev)=>!prev);
+                    },
+                    className: "btn btn-warning",
+                    children: "Edit"
+                }, void 0, false, {
+                    fileName: "client/src/company/users.tsx",
+                    lineNumber: 109,
+                    columnNumber: 49
+                }, this)
+            }, void 0, false, {
+                fileName: "client/src/company/users.tsx",
+                lineNumber: 109,
+                columnNumber: 21
+            }, this),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("td", {
+                className: "text-nowrap",
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                    onClick: DeleteUser,
+                    className: "btn btn-danger",
+                    children: "Delete"
+                }, void 0, false, {
+                    fileName: "client/src/company/users.tsx",
+                    lineNumber: 110,
+                    columnNumber: 49
+                }, this)
+            }, void 0, false, {
+                fileName: "client/src/company/users.tsx",
+                lineNumber: 110,
+                columnNumber: 21
+            }, this)
+        ]
+    }, void 0, true, {
+        fileName: "client/src/company/users.tsx",
+        lineNumber: 102,
+        columnNumber: 17
+    }, this);
+    else return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("tr", {
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("td", {
+                className: "text-nowrap",
+                children: user.email
+            }, void 0, false, {
+                fileName: "client/src/company/users.tsx",
+                lineNumber: 116,
+                columnNumber: 17
+            }, this),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("td", {
+                className: "text-nowrap",
+                children: user.username
+            }, void 0, false, {
+                fileName: "client/src/company/users.tsx",
+                lineNumber: 117,
+                columnNumber: 17
+            }, this),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("td", {
+                className: "text-nowrap",
+                children: user.firstName
+            }, void 0, false, {
+                fileName: "client/src/company/users.tsx",
+                lineNumber: 118,
+                columnNumber: 17
+            }, this),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("td", {
+                className: "text-nowrap",
+                children: user.lastName
+            }, void 0, false, {
+                fileName: "client/src/company/users.tsx",
+                lineNumber: 119,
+                columnNumber: 17
+            }, this),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("td", {
+                className: "text-nowrap",
+                children: user.accepted == false && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                    className: "btn btn-success",
+                    onClick: ()=>{
+                        AcceptUser(user._id);
+                    },
+                    children: "Accept"
+                }, void 0, false, {
+                    fileName: "client/src/company/users.tsx",
+                    lineNumber: 120,
+                    columnNumber: 72
+                }, this)
+            }, void 0, false, {
+                fileName: "client/src/company/users.tsx",
+                lineNumber: 120,
+                columnNumber: 17
+            }, this),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("td", {}, void 0, false, {
+                fileName: "client/src/company/users.tsx",
+                lineNumber: 121,
+                columnNumber: 17
+            }, this),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("td", {
+                className: "text-nowrap",
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                    onClick: ()=>{
+                        setEditUser((prev)=>!prev);
+                    },
+                    className: "btn btn-warning",
+                    children: "Edit"
+                }, void 0, false, {
+                    fileName: "client/src/company/users.tsx",
+                    lineNumber: 122,
+                    columnNumber: 45
+                }, this)
+            }, void 0, false, {
+                fileName: "client/src/company/users.tsx",
+                lineNumber: 122,
+                columnNumber: 17
+            }, this),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("td", {
+                className: "text-nowrap",
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                    onClick: DeleteUser,
+                    className: "btn btn-danger",
+                    children: "Delete"
+                }, void 0, false, {
+                    fileName: "client/src/company/users.tsx",
+                    lineNumber: 123,
+                    columnNumber: 45
+                }, this)
+            }, void 0, false, {
+                fileName: "client/src/company/users.tsx",
+                lineNumber: 123,
+                columnNumber: 17
+            }, this)
+        ]
+    }, void 0, true, {
+        fileName: "client/src/company/users.tsx",
+        lineNumber: 115,
+        columnNumber: 13
+    }, this);
+}
+_s1(User, "mfeVxobdkqpdpEhNZEkLRE8tLGc=");
+_c1 = User;
+exports.default = Users;
+var _c, _c1;
+$RefreshReg$(_c, "Users");
+$RefreshReg$(_c1, "User");
+
+  $parcel$ReactRefreshHelpers$8547.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","../layout":"gzIZb","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"596yJ":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$2b06 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -38261,7 +38281,7 @@ $RefreshReg$(_c1, "TableItem");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"7crfk","react":"l1Q8s","../layout":"gzIZb","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"ajzFF":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","../layout":"gzIZb","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"ajzFF":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$8ebb = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -38531,7 +38551,7 @@ $RefreshReg$(_c, "CreateCompanyAdmin");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"7crfk","react":"l1Q8s","../layout":"gzIZb","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"lo1V5":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","../layout":"gzIZb","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"lo1V5":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$3751 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -38772,6 +38792,6 @@ $RefreshReg$(_c, "CreateAdmin");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"7crfk","react":"l1Q8s","../layout":"gzIZb","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}]},["8IfB7","1xC6H","7DnZZ"], "7DnZZ", "parcelRequireeb30")
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","../layout":"gzIZb","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}]},["8IfB7","1xC6H","7DnZZ"], "7DnZZ", "parcelRequireeb30")
 
 //# sourceMappingURL=index.40c4ddbe.js.map

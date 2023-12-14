@@ -21,7 +21,8 @@ function TreatedBoxes() {
             credentials: "include"
         })
     }
-    return (
+    if(!treatedboxes) return <></>
+    else return (
         <>
             <div className="overflow-x-scroll m-4">
                 <table className="table table-borderless table-striped text-white">

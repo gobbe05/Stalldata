@@ -33,6 +33,7 @@ function ChooseTreatment() {
         fetch("/api/gettreatments")
         .then((response) => response.json())
         .then((data) => {
+            if(data.treatments.length == 0) return
             setTreatments(data.treatments)
             setName(data.treatments[0].name)
         })

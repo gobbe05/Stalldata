@@ -3,7 +3,7 @@ import { useGlobalState } from "../GlobalState"
 
 function AddBox() {
     const [name, setName] = useState<string>("")
-    const [farms, setFarms] = useState([])
+    const [farms, setFarms] = useState<Array<any> | undefined>()
     const [selectedFarmId, setSelectedfarmId] = useState("")  
     const [sections, setSections] = useState<undefined | Array<any>>([])
     const [section, setSection] = useState<undefined | string>()
@@ -29,6 +29,7 @@ function AddBox() {
             credentials: "include"
         })
         const data = await response.json()
+        if(!data.sections) return
         setSections(data.sections)
         data.sections[0] && setSection(data.sections[0]._id)
         
@@ -42,6 +43,7 @@ function AddBox() {
         fetch("/api/getfarms")
         .then((response) => response.json())
         .then((data) => {
+            if(!data.farms) return
             setFarms(data.farms)
             data.farms[0] && setSelectedfarmId(data.farms[0]._id)
         }
@@ -49,7 +51,8 @@ function AddBox() {
             )
     },[])
 
-    return (
+    if(!farms) return <h1>No farms found!</h1>
+    else return (
         <>
         
             <form className="m-2 mt-4">
@@ -65,7 +68,7 @@ function AddBox() {
 
                 <div className="form-floating my-2">
                     <select id="selectSection" className="form-control" onChange={(event) => {setSection(event.target.value)}}>
-                        {sections.map((section) => 
+                        {sections && sections.map((section) => 
                         <option value={section._id}>
                             {section.name}
                         </option>)}

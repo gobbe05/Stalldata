@@ -7,10 +7,13 @@ import { acceptuserroute, addboxroute, addfarmroute, addsectionroute, addtreatme
 import GetCompany from './middleware/company'
 import { Parser } from 'json2csv'
 import { BoxTreatment } from './models'
-import GetUser from './middleware/username'
+import GetUser from './middleware/getuser'
+import ProtectedCompanyAdmin from './middleware/protectedcompanyadmin'
+import ProtectedAdmin from './middleware/protectedadmin'
 const dotenv = require('dotenv');
 dotenv.config();
-mongoose.connect(process.env.DBSTRING)
+if(!process.env.DBSTRING) throw new Error("Database connection string not set in enviroment")
+else process.env.DBSTRING && mongoose.connect(process.env.DBSTRING)
 const app = express()
 
 /* Middleware */

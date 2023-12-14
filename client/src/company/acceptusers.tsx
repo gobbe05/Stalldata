@@ -7,7 +7,8 @@ function AcceptUsers() {
         .then((response) => response.json())
         .then((data) => setUsers(data.users))
     }, [])
-    return (
+    if(!users) return <></>
+    else return (
         <>
             <div>
                 {users.map((user: {username: string, email: string}) => 

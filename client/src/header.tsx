@@ -46,7 +46,7 @@ function Header() {
                                 {globalState.loggedin && 
                                 <>
                                     <li className="nav-item">
-                                        <Link className="nav-link" to="/" data-bs-dismiss="offcanvas">Home</Link>
+                                        <Link className="nav-link" to="/">Home</Link>
                                     </li>
                                     <li className="nav-item">
                                         <Link className="nav-link" to="/behandling">Behandling</Link>
